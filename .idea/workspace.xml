@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce8f18e9-569b-454f-93d6-a312fbf86ee4" name="Default Changelist" comment="" />
+    <list default="true" id="ce8f18e9-569b-454f-93d6-a312fbf86ee4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/com/config/ConfigServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/com/config/DiscoveryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/config/client.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/config/common.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/config/eureka-server.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/config/gateway.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient/src/main/java/com/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaClient/src/main/java/com/client/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaClient/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient/target/classes/com/client/ClientApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient/target/classes/com/client/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient02/src/main/java/com/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaClient02/src/main/java/com/client02/ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient02/src/main/java/com/client/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaClient02/src/main/java/com/client02/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient02/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaClient02/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient02/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient02/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient02/target/classes/com/client/ClientApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient02/target/classes/com/client/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaClient02/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/target/classes/com/server/ServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/target/classes/META-INF/Gateway.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/target/classes/com/gateway/AccessFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/target/classes/com/gateway/GatewayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Router/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Router/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/config.log.2020-10-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/config.log.2020-10-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/config.log.2020-10-26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/config_error.log.2020-10-22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/config_error.log.2020-10-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/config_error.log.2020-10-26.log" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +60,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -33,6 +83,7 @@
     <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
   </component>
   <component name="ProjectId" id="1j8P7HVnsqq9PW0TgjTWotJiahb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -48,27 +99,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EurekaServer/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26259378" />
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\workspace\Parent-configServer" />
-      <recent name="D:\work\workspace\Parent-configServer\Router\src\main\java\com\router" />
-      <recent name="D:\work\workspace\Parent-configServer\Gateway\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\workspace\Parent-configServer\ConfigServer\src\main\resources\config" />
-      <recent name="D:\work\workspace\Parent-configServer\EurekaClient\src\main\resources" />
+      <recent name="D:\work\workspace\Parent-configServer\EurekaServer\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.router.api" />
       <recent name="com.config" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\workspace\spring-cloud\EurekaServer\src\main\resources" />
+      <recent name="D:\work\workspace\Parent-configServer" />
+      <recent name="D:\work\workspace\Parent-configServer\Router\src\main\java\com\router" />
+      <recent name="D:\work\workspace\Parent-configServer\Gateway\src\main\resources" />
       <recent name="D:\work\workspace\Parent-configServer\ConfigServer\src\main\resources\config" />
-      <recent name="D:\work\workspace\Parent-configServer\EurekaServer\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
@@ -190,12 +241,54 @@
       <workItem from="1603418046447" duration="3048000" />
       <workItem from="1603423577128" duration="9018000" />
       <workItem from="1603675861650" duration="6054000" />
-      <workItem from="1604029585439" duration="689000" />
+      <workItem from="1604029585439" duration="1321000" />
+      <workItem from="1604044613112" duration="1003000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/work/workspace/spring-cloud/log" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="39" key="#Project_Structure" timestamp="1603423534457">
@@ -210,6 +303,14 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="487" y="270" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.760@0.0.1280.760" timestamp="1603243482754" />
+    <state x="247" y="0" key="CommitChangelistDialog2" timestamp="1604045624210">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="247" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1604045624210" />
+    <state x="122" y="66" width="1024" height="634" key="DiffContextDialog" timestamp="1604045616888">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="122" y="66" width="1024" height="634" key="DiffContextDialog/0.0.1280.760@0.0.1280.760" timestamp="1604045616888" />
     <state width="1238" height="263" key="GridCell.Tab.0.bottom" timestamp="1603694204330">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -246,10 +347,22 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="171" y="36" key="Maven.ArtifactSearchDialog/0.0.1280.760@0.0.1280.760" timestamp="1603244908349" />
+    <state x="448" y="103" key="RollbackChangesDialog" timestamp="1604044639117">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="448" y="103" key="RollbackChangesDialog/0.0.1280.760@0.0.1280.760" timestamp="1604044639117" />
     <state x="142" y="23" key="SettingsEditor" timestamp="1603444747913">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="142" y="23" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1603444747913" />
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2" timestamp="1604045221281">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="233" y="114" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1604045221281" />
+    <state x="93" y="93" width="1093" height="573" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1604044746866">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="93" y="93" width="1093" height="573" key="com.intellij.dvcs.ui.CompareBranchesDialog/0.0.1280.760@0.0.1280.760" timestamp="1604044746866" />
     <state x="324" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1603677655306">
       <screen x="0" y="0" width="1280" height="760" />
     </state>

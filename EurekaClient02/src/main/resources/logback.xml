@@ -14,7 +14,7 @@
 <appender name="FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender">
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
         <!--日志文件输出的文件名-->
-        <FileNamePattern>${LOG_HOME}/config.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+        <FileNamePattern>${LOG_HOME}/eureka_client02.log.%d{yyyy-MM-dd}.log</FileNamePattern>
         <!--日志文件保留天数-->
         <MaxHistory>30</MaxHistory>
     </rollingPolicy>
@@ -30,7 +30,7 @@
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名-->
-            <FileNamePattern>${LOG_HOME}/config_error.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>${LOG_HOME}/eureka_client02_error.log.%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数-->
             <MaxHistory>30</MaxHistory>
         </rollingPolicy>
@@ -40,7 +40,7 @@
         </encoder>
     </appender>
 
-<logger name="com.asiainfo.omp" level="DEBUG"/>
+<logger name="com.client02" level="DEBUG"/>
 <logger name="com.apache.ibatis" level="DEBUG"/>
 <logger name="java.sql.Connection" level="DEBUG"/>
 <logger name="java.sql.Statement" level="DEBUG"/>

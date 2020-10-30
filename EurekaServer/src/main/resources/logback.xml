@@ -14,7 +14,7 @@
 <appender name="FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender">
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
         <!--日志文件输出的文件名-->
-        <FileNamePattern>${LOG_HOME}/config.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+        <FileNamePattern>${LOG_HOME}/eureka_server.log.%d{yyyy-MM-dd}.log</FileNamePattern>
         <!--日志文件保留天数-->
         <MaxHistory>30</MaxHistory>
     </rollingPolicy>
@@ -30,7 +30,7 @@
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名-->
-            <FileNamePattern>${LOG_HOME}/config_error.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>${LOG_HOME}/eureka_server_error.log.%d{yyyy-MM-dd}.log</FileNamePattern>
             <!--日志文件保留天数-->
             <MaxHistory>30</MaxHistory>
         </rollingPolicy>
@@ -40,7 +40,7 @@
         </encoder>
     </appender>
 
-<logger name="com.gateway" level="DEBUG"/>
+<logger name="com.server" level="DEBUG"/>
 <logger name="com.apache.ibatis" level="DEBUG"/>
 <logger name="java.sql.Connection" level="DEBUG"/>
 <logger name="java.sql.Statement" level="DEBUG"/>
@@ -53,7 +53,7 @@
 <logger name="org.apache.kafka.clients.consumer" level="error"/>
 
 <!-- 日志输出级别 -->
-<root level="info">
+<root level="INFO">
     <appender-ref ref="STDOUT" />
     <appender-ref ref="FILE" />
     <appender-ref ref="ERROR_FILE" />
