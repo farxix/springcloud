@@ -1,0 +1,63 @@
+body{
+    padding-top:0px  !important;
+}
+.itsm-edit{
+    margin-top:5px;
+}
+.itsm-show{
+    display:none;
+}
+.itsm-drag{
+    display:none;
+}
+
+.form-horizontal .control-label{
+    text-align: right;
+    padding-top: 0px !important;
+}
+.form-horizontal .control-label > span:after{
+    content: ":";
+    padding-right: 5px;
+}
+
+.hide{
+    display:none;
+}
+.bb{
+    margin-bottom: 10px !important;
+}
+.user-items{
+}
+.mini-user-icon{
+    float:right;
+    display: block;
+    width:15px;
+    height:14px;
+    background-image: url('./img/viewuser.png') !important;
+    position: absolute;
+    left: 100%;
+    cursor:pointer;
+    top: 50%;
+    margin-left:-20px;
+    margin-top: -8px;
+}
+.url-edit{
+    display: none;
+}
+
+#chooseUserPanel {
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+.mini-pager-size{
+    display: none  !important;
+}
+
+.mini-textbox-border{
+    margin-right: 18px;
+}
+
+.mini-datagrid{
+    height: 276px !important;
+}

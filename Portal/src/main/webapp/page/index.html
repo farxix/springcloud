@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <meta http-equiv="Pragma" content="public">-->
+<!--    <meta http-equiv="Cache-control" content="public">-->
+<!--    <meta http-equiv="Cache" content="public">-->
+    <title>外包管理系统一期</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Styles -->
+    <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/lib/sidebar.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/lib/nixon.css" rel="stylesheet">
+    <link href="assets/css/personConfig/configPop.css" rel="stylesheet"/>
+    <link href="assets/css/iconfont/iconfont.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-table.min.css" rel="stylesheet">
+    <link href="assets/js/lib/bootstrap/bootstrap-dialog/css/bootstrap-dialog.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="assets/css/common/common.css" rel="stylesheet"/>
+    <link href="assets/css/common/resModelForm.css" rel="stylesheet"/>
+    <link href="assets/css/common/attribute.css" rel="stylesheet"/>
+    <link href="assets/css/common/recycle.css" rel="stylesheet"/>
+    <link href="assets/css/lib/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/ladda/ladda-themeless.min.css" rel="stylesheet" >
+    <style>
+        html,body{
+            height: 100%;
+        }
+        @font-face {font-family: 'iconfont';
+            src: url('assets/css/iconfont/iconfont.eot');
+            src: url('assets/css/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+            url('assets/css/iconfont/iconfont.woff') format('woff'),
+            url('assets/css/iconfont/iconfont.ttf') format('truetype'),
+            url('assets/css/iconfont/iconfont.svg#iconfont') format('svg');
+        }
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        @media (max-width: 1900px) and (min-width: 1059px){
+            html,body{
+                overflow-y: hidden;
+                overflow-x:hidden ;
+                width: 100%;
+            }
+            .modal-backdrop.in {
+                filter: alpha(opacity=50);
+                opacity: .5;
+            }
+          /*  .modal-backdrop {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 400 !important;
+                background-color: #000;
+            }*/
+        }
+        .nav_li_back{
+            background: #ddeefa !important;
+            border-left:2px solid #499fea;
+        }
+        .nav_li_back>a {
+            color: #07A5FD !important;
+        }
+        #side-menu li ul li{
+            background: #F6F7FB;
+        }
+        .modal {
+            z-index: 1050 !important;
+        }
+    </style>
+</head>
+<body data-data="root">
+<div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+    <div class="hamburger sidebar-toggle ">
+        <span class="fa fa-outdent"></span>
+        <span class="ti-menu-text">管理中心</span>
+    </div>
+    <div class="nano" >
+        <div class="nano-content">
+            <ul id="side-menu">
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /# sidebar -->
+<div class="header">
+    <div class="pull-left">
+        <div class="logo">
+            <a href="javascript:void(0);">
+                <img id="logoImg" src="assets/images/logo.png"   alt="集团BOMC" />
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <!--用户信息 -->
+    <ul class="navbar-nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                <i class="fa fa-cog"></i> <span class="label" id="orgId" data-userType="1">我的资料<i class="caret"></i></span>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts animated fadeInRight">
+                <li><a href="#" id="agentConfig">个人信息</a></li>
+                <li><a href="#" id="informationConfig">修改密码</a></li>
+                <li><a href="#" id="oldAgent">退出登录</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!-- -->
+</div>
+<div class="chat-sidebar">
+    <div id="mmc-chat" class="color-default">
+        <div class="chat-box">
+            <ul class="boxs"></ul>
+        </div>
+        <div id="sidebar" class="right scroll">
+            <div class="had-container">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-wrap" style="height: 100%;padding-top: 50px">
+    <div class="main" style="height: 100%;">
+        <div class="container-fluid" style="height: 100%">
+            <div class="row title-row" style="box-shadow: 3px 0 3px #ccc inset;padding-left: 5px;position: absolute;width: 100%">
+                <div class="page-header">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-left">
+                            <li><a href="#"></a></li>
+                            <li  style="color: #151515;" class="active"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content" >
+                <iframe src="./reload.html" data-id="" frameborder="0" scrolling="auto" allowfullscreen id = "mainFrame" width="100%" ></iframe>
+            </div>
+        </div>
+        <div class="addFlow fn-hide" ></div>
+    </div>
+</div>
+<!--人员信息弹窗-->
+<div class="modal fade transparentBg animated fadeInDown" id="right_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 40%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close  clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel1">个人信息</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" style="height: 340px">
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">姓名:</label>
+                        <div class="col-sm-8" id="userName" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">职位:</label>
+                        <div class="col-sm-8" id="positionName" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">部门:</label>
+                        <div class="col-sm-8" id="depName" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">职级:</label>
+                        <div class="col-sm-8" id="rankName" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">成员类型:</label>
+                        <div class="col-sm-8" id="memberType" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">厂商:</label>
+                        <div class="col-sm-8" id="company" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">入职时间:</label>
+                        <div class="col-sm-8" id="entryTime" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">手机号:</label>
+                        <div class="col-sm-8" id="userTel" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">邮箱:</label>
+                        <div class="col-sm-8" id="userEmail" style="padding-top: 7px;"></div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-4 control-label">备注:</label>
+                        <div class="col-sm-8" id="remarks" style="padding-top: 7px;"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="margin-top:50px;margin: 0 10px !important;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade transparentBg animated fadeInDown" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 40%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close  clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">修改密码</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" style="height: 340px" id="person_model">
+
+
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-3 control-label" style="text-align: left;">登录密码:</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control login-r" id="login" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-3 control-label" style="text-align: left;">设置登录密码:</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control reset_login-r" id="reset_login" autocomplete="off">
+                            <span id="reset_login_tips" style="color: red;"></span>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-3 control-label" style="text-align: left;">确认登录密码:</label>
+                        <div class="col-sm-9">
+                            <input  type="password" class="form-control reset_words-r" id="reset_words" autocomplete="off">
+                            <span id="reset_words_tips" style="color: red;"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-12" style="height:40px;">
+                        <label class="col-sm-12 control-label" style="text-align: left;">
+                            <span style="color:red">*</span>8~15位密码，需包含字母及数字。
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="margin-top:50px;margin: 0 10px !important;">
+                <button type="button" id="right_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="gotoSubmit" data-style="zoom-in">重置</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/lib/jquery.min.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap.min.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-modal.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+
+<script src="assets/js/bootstrap-show-password.js"></script>
+<script>
+    $(function() {
+        $('.login-r').onmousedown = function(e) {
+            console.warn('onmousedown');
+            e.preventDefault();
+        };
+
+        $('.login-r').password().password('focus').on('show.bs.password', function(e) {
+                $('#methods').prop('checked', true);
+        }).on('hide.bs.password', function(e) {
+                $('#methods').prop('checked', false);
+        });
+        $('#methods').mousedown(function() {
+            $('#login').password('toggle');
+        });
+
+        $('.reset_login-r').password().password('focus').on('show.bs.password', function(e) {
+                $('#methods').prop('checked', true);
+        }).on('hide.bs.password', function(e) {
+            $('#methods').prop('checked', false);
+        });
+        $('#methods').mousedown(function() {
+            $('.reset_login-r').password('toggle');
+        });
+
+        $('.reset_words-r').password().password('focus').on('show.bs.password', function(e) {
+                $('#methods').prop('checked', true);
+        }).on('hide.bs.password', function(e) {
+            $('#methods').prop('checked', false);
+        });
+        $('#methods').mousedown(function() {
+            $('.reset_words-r').password('toggle');
+        });
+
+
+    });
+</script>
+<script src="assets/js/lib/bootstrap/bootstrap-select.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-editable.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-editable-new.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-select-editor.js"></script>
+<!--    <script src="assets/js/lib/masonary/masonry.pkgd.min.js"></script>-->
+<script src="assets/js/toolUtil.js"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/apiConfig.js"></script>
+<script src="assets/js/formValidate.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/lib/sidebar.js"></script>
+
+<script src="assets/js/lib/ladda/spin.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.jquery.min.js"></script>
+
+<script src="assets/js/lib/sweetalert/sweetalert.min.js" ></script>
+<script src="assets/js/lib/toastr/toastr.min.js" ></script>
+</body>
+
+</html>

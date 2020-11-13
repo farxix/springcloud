@@ -1,0 +1,75 @@
+.mini-indent .mini-textbox-border,
+.mini-indent .mini-buttonedit-border
+{
+    margin-right:0;
+}
+
+.mini-textbox
+{
+	width:80%; 
+    height:24px;
+	display:inline !important;      
+    padding:0;
+    margin:0;
+    border:0;
+    vertical-align:middle;    
+    overflow:hidden;	
+    
+    position:relative;
+    
+}
+
+.mini-textarea
+{
+	/*display:inline-block  !important;*/
+    height:50px;
+}
+
+.mini-buttonedit
+{
+    width:80%;
+    height:24px;
+	display:inline !important;
+    vertical-align:middle;    
+    overflow:hidden;	
+    
+    position:relative;
+}
+
+.mini-buttonedit-border
+{
+    background:white;
+    border: solid 1px #a5acb5;
+    width:auto;
+    height:22px !important;
+	line-height:22px !important;
+    display:block;
+    
+    position:relative;overflow:hidden;
+    padding-right:24px;padding-left:4px;
+}
+
+.mini-buttonedit-input
+{    
+    background:none;
+    
+    background:url(about:blank) no-repeat\0;        
+    border: 0;     
+    height:22px !important;
+    line-height:22px !important;    
+    font-family: Verdana;
+    font-size: 9pt;        
+    padding: 0;
+    margin:0;  
+    outline:none;    
+    z-index:1;
+    cursor:text;    
+    width:100%;float:right;
+    _position:absolute;
+    _left:2px;
+    _top:0px;    
+    
+}
+
+
+

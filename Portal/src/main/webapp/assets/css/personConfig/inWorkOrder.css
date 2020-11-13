@@ -1,0 +1,349 @@
+#title {
+    color: #fff;
+    font-size: 14px;
+     font-weight: bold;
+}
+
+/*.btn{
+    font-size:12px;
+    color:black;
+    margin-right:8px;
+    background: aliceblue;
+}*/
+.glyphicon-edit{
+    /*color:blue;*/
+    color:#1E9FFF;
+}
+.glyphicon-bell{
+    /*color:yellow;*/
+    color:#1E9FFF;
+}
+.glyphicon-remove{
+    /*color:red;*/
+    color:#1E9FFF;
+}
+.glyphicon-repeat{
+    /*color:green;*/
+    color:#1E9FFF;
+}
+.glyphicon-chevron-left{
+    /*color:purple;*/
+    color:#1E9FFF;
+}
+.glyphicon-circle-arrow-left{
+    /*color:orange;*/
+    color:#1E9FFF;
+}
+.skin-main .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: 0px ;
+}
+.nav-tabs {
+    background: #f9f9fa;
+    border: 0px !important;
+    /*box-shadow: 0 1px 0 0 #DEE0E5;*/
+}
+.nav-tabs li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-tabs>li.active {
+    /*border: 1px solid transparent;*/
+    /*border-top: 2px solid #3197FA;*/
+    border:0;
+}
+.nav-tabs li,.active a, .nav-tabs li.active a:focus, .nav-tabs li.active a:hover{
+    font-weight: 600;
+}
+.nav-tabs li a{
+    /*border:1px solid #ddd;*/
+    width:170px;
+    text-align: center;
+}
+.nav-tabs>li.active:after{left:0%; width:100%;}
+.nav-tabs>li:after{content: "";width:0;height:2px;background:#3197FA;
+    position:absolute;
+    top:0%; left:50%;
+    transition:all .8s;}
+
+.glyphicon-repeat:before,.glyphicon-remove:before,.glyphicon-bell:before,.glyphicon-edit:before{
+    margin-right:3px;
+}
+html,body{
+    background: #f0f2f7 !important;
+    /*height: 100%;*/
+}
+/*.modal-content{
+    width:400px;
+    height:240px;
+}*/
+.modal-content1{
+    width:500px;
+    height:360px;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+form-control1{
+    width:500px;
+}
+.modal-title{
+    font-weight:600;
+}
+.modal-header .close{
+    font-size:20px;
+}
+.modal-dialogs{
+    margin: 30px auto;
+    position: relative;
+    top: 50%;
+    width:30%;
+    -webkit-transform: translateY(-50%) !important;
+    transform: translateY(-50%) !important;
+}
+.modal-title{
+    float:left
+}
+.form-control{
+    margin-top:3px;
+}
+.ibox{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #3197FA;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: none solid solid ;
+    /**border-width: 0 0 2px;**/
+    border-width: 0px;
+    color: inherit;
+    margin-bottom: 0;
+    /*padding-top:16px;*/
+    padding: 0px 20px 0px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.tab-content {
+    overflow-y:auto;
+    background: #fff;
+    /*heigt:100%;*/
+    height:calc(100% - 50px);
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    margin-bottom: -4px;
+    font-weight: bold;
+}
+
+
+.skin-main{
+    padding: 14px;
+    /*min-height:100%;*/
+    min-height: calc(100% - 80px);
+}
+
+.skin-main .form-horizontal{
+    min-height: 40px;
+    margin-top: 10px;
+}
+.handModal-dialogs {
+    margin: 30px auto;
+    position: relative;
+    top: 50%;
+    width: 60%;
+    -webkit-transform: translateY(-50%) !important;
+    transform: translateY(-50%) !important;
+}
+.one,.two,.three{
+    display: flex;
+    flex-direction: row;
+    height:30px;
+}
+.one-left,.two-left,.three-left{
+    width:40%
+}
+.one-right,.two-right,three-right{
+    width:40%;
+}
+#date1{
+    height:30px;
+}
+.input-group-addon{
+    width:10px;
+}
+.two{
+    margin-top:20px;
+}
+.three{
+    margin-top:20px;
+}
+.two-search{
+    margin-left:30px;
+}
+.footer{
+    position: fixed;
+    bottom: 66px;
+    text-align: center;
+    width: 100%;
+}
+
+
+/**修改miniui 日历**/
+body .mini-calendar-daysheader td{
+    border: 1px solid transparent;
+    color: #878787;
+    padding: 5px;
+    font-weight: 700;
+}
+
+body .mini-calendar .mini-calendar-weekend {
+     color: #878787;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #000;
+}
+.btn-icons {
+    background: transparent;
+    border-radius: 2px;
+    text-decoration: none !important;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 0.38px;
+    /* min-width: 80px; */
+    height: 30px;
+}
+.form-group .item{
+    display: inline-block;
+    width: calc(100% - 106px);
+    position: relative;
+}
+
+.form-group .item .input-group{
+    position: relative;
+    top:0;
+    width: 100%;
+}
+.form-group .item .input-group .input-sm{
+    position: absolute;
+    z-index: 9;
+    top: 3px;
+    width: 40px;
+    height: 35px;
+    right: 0;
+}
+.input-sm .glyphicon{
+    top:3px;
+}
+
+.form-group .item .caret_new{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.form-group .control-label{
+    width: 94px;
+    text-align: right;
+}
+.skin-main .row-fluid .c-blue,
+.modal-body .row-fluid .c-blue{
+    color:#878787
+}
+.skin-main .mini-textbox-border,
+.skin-main .mini-buttonedit-border{
+    border-color: #E3E7ED;
+}
+.skin-main .mini-textbox-disabled .mini-textbox-input,
+.skin-main .mini-buttonedit-disabled .mini-buttonedit-input{
+    border: transparent;
+    color:#999999;
+}
+
+body .skin-main .mini-textbox-disabled .mini-textbox-border,
+body .skin-main .mini-buttonedit-disabled .mini-buttonedit-border{
+    background: #F6F8FA;
+}
+
+body  .mini-popupedit .mini-buttonedit-trigger .mini-buttonedit-icon{
+    background: url(../../images/arrow@2x.png);
+    background-size: 100%;
+    width:16px;
+    height: 16px;
+}
+body  .mini-datepicker .mini-buttonedit-trigger .mini-buttonedit-icon{
+    background: url(../../images/calendar@2x.png);
+    background-size: 100%;
+    width:16px;
+    height: 16px;
+}
+body  .mini-buttonedit-button{
+    background: transparent !important;
+    border-color: transparent !important;
+    vertical-align: middle;
+    /**margin-top: 6px;**/
+}
+body .mini-calendar-header,
+body .mini-calendar-footer {
+    border-color: #ffffff;
+    background: #ffffff;
+}
+body .mini-calendar-footer .mini-calendar-tadayButton,
+body .mini-calendar-footer .mini-calendar-clearButton{
+    display: none;
+}
+/*历史节点返回来的表格赋值*/
+table.embed2 {
+    color: black;
+    border: 0;
+    font-size: 9pt;
+    padding: 0;
+    background: #F2F4F7;
+}
+table.embed2 td {
+    padding: 3px 3px 2px 4px;
+    background: #F2F4F7;
+    font-size: 9pt;
+    height: 22px;
+    border:1px solid #DDDDDD;
+    color:  #666666;
+}
+table.embed2 th {
+    color:  #333333;
+    background: #F2F4F7;
+    font-weight: normal;
+    font-size: 9pt;
+    padding: 3px 3px 2px 4px;
+    height: 23px;
+    text-align: left;
+    border:1px solid #DDDDDD;
+}
+span.operate {
+    cursor: pointer;
+    color: #3197FA;
+}
+#flow_table{
+    margin-bottom:50px;
+}

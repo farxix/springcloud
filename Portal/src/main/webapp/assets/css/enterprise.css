@@ -1,0 +1,88 @@
+html,body{
+  background: #ffffff;
+}
+h1 {
+  font-size: 16px;
+  padding-left: 20px;
+}
+hr{
+  height:2px;
+  border:none;
+  border-top:1px solid #DADCE2;
+}
+.form{
+  margin: 0 20px;
+}
+.form .form-group .control-label {
+    text-align: right;
+    font-weight: 300;
+    color:#A4AAAE;
+    margin-right: 10px;
+    width: 77px;
+}
+.form .imgage-area{
+   border:1px dashed #DDDDDD;
+   display: inline-block;
+   width: 220px;
+   height: 130px;
+}
+.form .imgage-area .image{
+  background: url('../images/upload.png') no-repeat center center;
+  border-bottom: 1px dashed #DDDDDD;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+.form .imgage-area .image img{
+  position: absolute;
+  width:50px;
+  height:50px;
+  left:86px;
+  top:14px;
+  right:0;
+  bottom:0;
+}
+.image-btn{
+    text-align: center;
+}
+.show{
+    margin-left: 90px;
+
+}
+.show p{
+  color:#A4AAAE;
+  font-weight: 300;
+}
+
+button.btn_default{
+  width: 100px;
+  height: 30px;
+  color: #4F9FFF;
+  margin: 10px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  border-radius: 2px;
+  background: rgba(79,159,255,0.20);
+  border: 0px;
+  font-size: 12px !important;
+}
+button.active{
+  background: #4F9FFF;
+  color: #FFFFFF;
+
+}
+
+.webuploader-pick {
+      top:-11px;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      padding: 10px 15px;
+      text-align: center;
+      border-radius: 3px;
+      overflow: hidden;
+}
+input[type=file] {
+    display: block;
+    opacity: 0;
+}

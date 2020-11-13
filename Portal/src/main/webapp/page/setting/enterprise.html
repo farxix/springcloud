@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业管理</title>
+      <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+      <link href="assets/css/lib/themify-icons.css" rel="stylesheet" />
+      <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" />
+      <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet" />
+      <link href="assets/css/style.css" rel="stylesheet"/>
+      <link href="assets/css/enterprise.css" rel="stylesheet" />
+</head>
+<body class="iframe-body">
+   <h1>企业管理</h1>
+   <hr>
+<div class="form">
+    <form id="form">
+        <div class="row">
+           <div class="col-sm-12">
+                <div class="form-group">
+                  <label class=" control-label">企业名称:</label>
+                  <span id="orgName"></span>
+                </div>
+           </div>
+           <div class="col-sm-12">
+               <div class="form-group">
+                 <label class=" control-label" style="position: relative;top: -126px;"><span style="color:red">*</span>企业LOGO:</label>
+                 <div class="imgage-area">
+                       <div class="image" id="imagesList"></div>
+                       <div class="image-btn">
+                            <button type="button" class="btn_default" id="imagePicker">上传图片</button>
+                       </div>
+                 </div>
+                 <div class="show">
+                    <p>1、建议上传图片尺寸在32*32之内，大小不超过5M</p>
+                    <p>2、视觉元素保持在圆形区域内</p>
+                    <p>3、图片支持格式:PNG/JPG/BMP</p>
+                 </div>
+               </div>
+           </div>
+        </div>
+
+    </form>
+</div>
+<div id="footer" class="footer" style="text-align: center;position:fixed;bottom:20px;width:100%;">
+    <button type="button" data-style="zoom-in" class="ladda-button btn dialog-btn dialog-confirm-btn" id="save">保存</button>
+</div>
+<script src="assets/js/lib/jquery.js"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/apiConfig.js"></script>
+<script src="assets/js/lib/webuploader/dist/webuploader.js" ></script>
+<script src="assets/js/lib/sweetalert/sweetalert.min.js" ></script>
+<script src="assets/js/configurationView/enterprise.js"></script>
+</body>
+</html>

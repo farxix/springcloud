@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结算管理</title>
+    <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-table.min.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-table-reorder-rows.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+
+    <link href="assets/css/lib/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="assets/css/common/cascader.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+
+    <link href="assets/css/layoutit/custom.css" rel="stylesheet" />
+    <link href="assets/js/lib/miniui/themes/default/miniui.css" rel="stylesheet">
+    <link href="assets/js/lib/miniui/themes/default/miniui2.css" rel="stylesheet">
+    <link href="assets/js/lib/miniui/themes/icons.css" rel="stylesheet">
+    <link href="assets/js/lib/miniui/themes/blue2010/skin.css" rel="stylesheet">
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/lib/ladda/ladda-themeless.min.css">
+    <link href="assets/css/personConfig/settings-new.css" rel="stylesheet" />
+
+    <style>
+      .font{
+          font-size:14px;
+          color:#333333;
+      }
+      .list_items_add{
+          border-radius: 5px;
+          width:80px;
+          height:80px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+      }
+      .list_items_img{
+          background: #FBA140;
+          border-radius: 5px;
+          width:80px;
+          height:80px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+
+      }
+      .list_items_img1{
+          background: #EDEDED;
+          border-radius: 5px;
+          width:80px;
+          height:80px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+
+      }
+      .list_items_img img{
+          /* width: 38px;
+          height: 38px; */
+      }
+      .modal-backdrop{
+          z-index: 1 !important;
+      }
+      .has-error span.error{
+        left: 0;
+      }
+      .detail-info .control-label{
+          width: 108px;
+      }
+
+      .detail-info .form-group {
+         margin-left: 0px;
+      }
+
+    </style>
+
+</head>
+<body  style="width: 100%;height: 100%;background: #FFFFFF;" class="iframe-body">
+
+<div class="list-wrap ">
+    <div style="height:50px;line-height:50px;margin-left:20px;border-bottom:1px solid #ddd;">
+        <span class="font">结算管理</span>
+    </div>
+    <div id="settlementList"></div>
+</div>
+
+<div class="form-wrap fn-hide" style="padding-bottom: 20px;">
+    <div class="ibox-content">
+        <h4>公共部分</h4>
+        <hr>
+        <div id="common" class="detail-info"></div>
+        <hr>
+        <h4>统计范围</h4>
+        <hr>
+        <div id="statistics" class="detail-info"></div>
+        <hr>
+        <h4>结算计算部分</h4>
+        <hr>
+        <div id="settlement" class="detail-info"></div>
+        <hr>
+        <h4>邮件派发部分</h4>
+        <hr  >
+        <div id="mail" class="detail-info"></div>
+    </div>
+
+    <div id="footer" class="footer" style="text-align: center">
+        <button type="button" data-style="zoom-in" class="ladda-button btn dialog-btn dialog-confirm-btn" id="save">保存</button>&nbsp;&nbsp;
+        <button type="button" class="btn dialog-btn dialog-return" id="goback">返回</button>
+    </div>
+</div>
+
+
+<!--选择范围-->
+<div class="modal fade transparentBg animated fadeInDown" id="org_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:50%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="addPeople">选择组织</h4>
+            </div>
+            <div class="modal-body">
+                    <div  id="selectedDepTree" style="overflow-y: auto;height:280px;font-size: 12px;"></div>
+
+            </div>
+            <div class="modal-footer" style="margin-top:50px;">
+                <button type="button" id="people_close" class="btn dialog-btn" data-dismiss="modal">返回</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="orgSubmit" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script type="text/javascript">
+    Global ={};
+</script>
+<!-- Mainly scripts -->
+<script src="assets/js/lib/jquery.js"></script>
+<script src="assets/js/lib/bootstrap/jquery.tablednd.min.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap.min.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-reorder-rows.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-modal.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-treeview.js"></script>
+<script src="assets/js/lib/webuploader/dist/webuploader.js" ></script>
+<!--<script src="assets/js/swfuploadHandle.js" ></script>-->
+<script src="assets/js/lib/jquery.tmpl.min.js"></script>
+<script src="assets/js/toolUtil.js"></script>
+<script src="assets/js/apiConfig.js"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-select.js"></script>
+<script src="assets/js/lib/miniui/miniui.js" ></script>
+<script src="assets/js/uitoolUtil.js" ></script>
+<script src="assets/js/swfuploadHandle.js" ></script>
+
+<script src="assets/js/lib/ladda/spin.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.jquery.min.js"></script>
+
+<script src="assets/js/lib/sweetalert/sweetalert.min.js" ></script>
+<script src="assets/js/lib/toastr/toastr.min.js"></script>
+<script src="assets/js/formValidate.js"></script>
+<script src="assets/js/itsmGroupPerson.js"></script>
+<script src="assets/js/configurationView/settlements.js"></script>
+
+<!--公共部分-->
+<script type="text/x-jquery-tmpl" id="common-template">
+     <input id="id" type="hidden" class="form-control"  value={{= settlementId}} >
+     <div class="row">
+             <div class="form-group">
+                 <label class=" control-label col-sm-3">结算名称:</label>
+                 <div class="col-sm-3"><input id="settlementName" type="text" class="form-control" autocomplete="off" value={{= settlementName}}></div>
+                 <div class="col-sm-6"></div>
+             </div>
+      </div>
+      <div class="row">
+              <div class="form-group">
+                  <label class=" control-label col-sm-3">结算模版:</label>
+                  <div class="col-sm-3"><span  class="setting" style="display: inline-block;height:34px;">工作结算</span><span id="setting" style="color:#4F9FFF;cursor: pointer;display:none">修改</span></div>
+                  <div class="col-sm-6"></div>
+              </div>
+       </div>
+       <div class="row">
+               <div class="form-group">
+                   <label class=" control-label col-sm-3">状态:</label>
+                   <div class="col-sm-3">
+                           <select class="form-control" id="status">
+                               <option>启用</option>
+                               <option>禁用</option>
+                           </select>
+                     </div>
+                   <div class="col-sm-6"></div>
+               </div>
+        </div>
+        <div class="row">
+                <div class="form-group">
+                    <label class=" control-label col-sm-3">统计周期:</label>
+                    <div class="col-sm-3">
+                        <select class="form-control" id="statCycle">
+                            <option>每月</option>
+                            <option>每季</option>
+                            <option>每年</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+         </div>
+         <div class="row">
+                 <div class="form-group">
+                     <label class=" control-label col-sm-3">统计开始日期:</label>
+                     <div class="col-sm-3"><input name="statStartTime" id="statStartTime" type='text' class="form-control date-picker"  readonly="readonly" value={{= statStartTime}}></div>
+                     <div class="col-sm-6"></div>
+                 </div>
+          </div>
+          <div class="row">
+                  <div class="form-group">
+                      <label class=" control-label col-sm-3">结算生成时间(天):</label>
+                      <div class="col-sm-3" ><input id="statTime" type="text" autocomplete="off" class="form-control" value={{= statTime}}></div>
+                      <div class="col-sm-6"><div style="line-height:34px;"><span style="color:red">*</span>结算生成时间是在统计周期结束后的N天进行结算计算并生成报表</div></div>
+                  </div>
+           </div>
+</script>
+
+<!--统计范围-->
+<script type="text/x-jquery-tmpl" id="statistics-template">
+     <div class="row">
+             <div class="form-group">
+                 <label class=" control-label col-sm-3">统计范围:</label>
+                 <div class="col-sm-9">
+                      <span id="selectPlace" class="setting" style={{if depName}}"display: inline-block"{{else}}"display: none"{{/if}}   {{if depId}}data-source={{= _perfHandlerConfigItems}}{{/if}}>{{= depName}}</span><span id="setting2"  class="setting" style="color:#4F9FFF;cursor: pointer;">选择范围</span>
+                      <span class="error fa fa-exclamation-circle fn-hide" >统计范围不能为空！</span>
+                 </div>
+             </div>
+      </div>
+      <div class="row">
+              <div class="form-group">
+                  <div class="col-sm-12"><input type="checkbox" name="vehicle" value="" id="memberType"/> 不包含甲方人员</div>
+              </div>
+       </div>
+
+</script>
+
+<!--结算计算部分-->
+<script type="text/x-jquery-tmpl" id="settlement-template">
+     <div class="row">
+             <div class="form-group">
+                 <label class="control-label col-sm-3">考勤扣减系数:</label>
+                 <div class="col-sm-9">
+                     <div class="col-sm-4 form-group"><label class="control-label">迟到扣减</label><input  type="text" autocomplete="off" class="form-control-1" id="workLate" value={{= workLate}}> *1工作量</div>
+                     <div class="col-sm-4 form-group"><label class="control-label">早退扣减</label><input  type="text" autocomplete="off" class="form-control-1" id="workLeave" value={{= workLeave}}> *1工作量</div>
+                     <div class="col-sm-4 form-group"><label class="control-label">缺卡扣减</label><input  type="text" autocomplete="off" class="form-control-1" id="workLack" value={{= workLack}}> *1工作量</div>
+                 </div>
+             </div>
+      </div>
+      <div class="row">
+              <div class="form-group">
+                  <label class=" control-label col-sm-3">任务扣减系数:</label>
+                  <div class="col-sm-9">
+                       <div  class="col-sm-4 form-group">
+                          <label class="control-label">任务超时扣减</label><input  type="text" autocomplete="off" class="form-control-1" id="taskFactor" value={{= taskFactor}}> *1工作量
+                       </div>
+                  </div>
+              </div>
+       </div>
+       <div class="row">
+           <div class="form-group">
+               <label class=" control-label col-sm-3">绩效扣减系数:</label>
+               <div class="col-sm-9">
+                    <div class="col-sm-4 form-group"><label class="control-label">绩效评分及格线</label><input  type="text" autocomplete="off" class="form-control-1" id="achiPass" value={{= achiPass}}> 分</div>
+                    <div class="col-sm-4 form-group" style="width:260px;"><label class="control-label" style="width:120px;">绩效评分不及格扣减</label><input  type="text" autocomplete="off" class="form-control-1" id="achiUnPass" value={{= achiUnPass}}> *1工作量</div>
+                    <div class="col-sm-4"></div>
+               </div>
+           </div>
+        </div>
+</script>
+
+<!--邮件派发部分-->
+<script type="text/x-jquery-tmpl" id="mail-template">
+     <div class="row">
+             <div class="form-group">
+                 <label class=" control-label col-sm-3">邮件派发人员:</label>
+                 <div class="col-sm-9">
+                     <span id="selectsPeople" class="setting" style={{if emailInfo}}"display: inline-block"{{else}}"display: none"{{/if}}   {{if emailInfo}}data-source={{= _emailInfo}}{{/if}}>{{= auditors}}</span><span id="setting3" class="setting"  style="color:#4F9FFF;cursor: pointer;">设置</span>
+                     <span class="error fa fa-exclamation-circle fn-hide" >邮件派发人员不能为空！</span>
+                 </div>
+             </div>
+          </div>
+      </div>
+
+</script>
+
+
+<!--结算列表-->
+<script type="text/x-jquery-tmpl" id="list-template">
+    {{each data}}
+        <div class="list_items list_items_edit" id={{= settlementId}}>
+            <div class="del" title="删除"><i class="fa  fa-trash-o" aria-hidden="true"></i></div>
+            <div class={{if status == 1 }}"edit list_items_img"{{else}}"edit list_items_img1"{{/if}} title="编辑">
+                <img src="assets/images/settlement/settlement.png" alt="">
+            </div>
+            <span style="font-size: 14px;color: #999999;margin-top:20px;"  class="overflow" title={{= settlementName}}>{{= settlementName}}</span>
+        </div>
+    {{/each }}
+    <div class="list_items" id="addTask">
+        <div class="list_items_add">
+            <img src="assets/images/new.png" alt="" class="">
+        </div>
+        <span style="font-size: 14px;color: #999999;margin-top:20px;"></span>
+    </div>
+</script>
+
+
+</html>

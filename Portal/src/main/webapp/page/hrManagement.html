@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人事管理</title>
+    <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-table.min.css" rel="stylesheet">
+    <link href="assets/js/lib/bootstrap/bootstrap-dialog/css/bootstrap-dialog.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-table-reorder-rows.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-select.min.css" rel="stylesheet"/>
+    <link href="assets/css/lib/ladda/ladda-themeless.min.css" rel="stylesheet" />
+    <link href="assets/css/common/cascader.css" rel="stylesheet"/>
+    <link href="assets/css/common/common.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet" />
+    <style>
+        .nav-tabs{
+            height: 50px;
+        }
+        .nav-tabs > li:first-child{
+          margin-left: 14px;
+        }
+        .nav-tabs > li > a{
+            height: 49px;
+            line-height: 35px;
+            font-size: 16px;
+            color: #A9A9A9;
+            border: none;
+        }
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+            font-size: 16px;
+            color: #333333;
+            border-top:0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 3px solid #07A5FD;
+        }
+        .container .col-sm-2{
+            text-align: right;
+        }
+        .form-group{
+            display:flex;
+            flex-direction: row;
+            margin-left:20px;
+        }
+        .form-control{
+            height:30px;
+            margin-top:10px;
+        }
+        input{
+            height:30px;
+            margin-top:10px;
+        }
+        input[readonly]{
+          background: #ffffff !important
+        }
+        .font{
+            font-size:14px;
+            color:#333333;
+            font-family: PingFangSC-Semibold;
+        }
+        .ibox-content{
+            padding:0 !important;
+        }
+        .footer{
+            /*position: fixed;*/
+            /*bottom: 0px;*/
+            width: 100%;
+            text-align: center;
+        }
+        .modal-backdrop{
+            z-index: 1 !important;
+        }
+        .change {
+            font-size: 14px;
+            color: #4F9FFF;
+        }
+        input[type="checkbox"]:after{
+          top:6px;
+        }
+        .modal-dialog{
+          width: 500px;
+          height: 500px;
+        }
+        .modal-body{
+          height: 400px;
+        }
+        #organization  .fixed-table-container{
+          height: 340px !important;
+        }
+        #organization .fixed-table-body{
+           height: 280px !important;
+
+        }
+        #organization .bootstrap-table .table > thead > tr > th, #organization .fixed-table-customer-header .table > thead > tr > th,
+        #organization .fixed-table-body table.table-striped tbody tr, #organization .fixed-table-body table.table-striped tbody td {
+            border: 1px solid transparent;
+            padding: 4px !important;
+        }
+        .breadcrumb{
+          background-color: #FFFFFF;
+        }
+        .form-group .btn {
+          height: 30px;
+          padding-top: 4px;
+        }
+        .fixed-table-container{
+           overflow-y: auto;
+        }
+        .fixed-table-pagination{
+           position: fixed !important;
+           bottom:24px !important;
+           width: calc(100% - 55px);
+        }
+        .fixed-table-pagination .page-list{
+           position: relative;
+           top:2px;
+        }
+        .page-list input {
+          margin-top: 0px;
+        }
+    </style>
+
+</head>
+<body  style="width: 100%;height: 100%;background: #FFFFFF;overflow-y:hidden;" class="iframe-body">
+
+<div class="list-wrap " style="background: #fff">
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active">
+            <a href="#on-the-job" data-toggle="tab">在职记录</a>
+        </li>
+        <li>
+            <a href="#post-adjustment" data-toggle="tab">岗位调整记录</a>
+        </li>
+        <li>
+            <a href="#rank-adjustment" data-toggle="tab">职级调整记录</a>
+        </li>
+        <li>
+            <a href="#quit" data-toggle="tab">离职记录</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="on-the-job">
+            <div style="height:50px;line-height:50px;display: flex;flex-direction: row;">
+                <div class="form-group">
+                   <input  autocomplete="off" type="text" class="form-control"  id="department1" placeholder="部门">
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="position1" placeholder="全部职位">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="rank1" placeholder="全部职级">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="memberType1" placeholder="全部类型">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="company1" placeholder="全部厂商">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="datePickerWrap">
+                       <input name="startTm" id="beginDate1" type='text' class="form-control date-picker" placeholder="入职时间" readonly="readonly"/>
+                       <i class="datePickerIcon fa fa-calendar"></i>
+                    </div>
+                        <span style="margin:0 5px;"> - </span>
+                    <div  class="datePickerWrap">
+                        <input name="endTm" id="endDate1" type='text' class="form-control date-picker" placeholder="入职时间" readonly="readonly"/>
+                        <i class="datePickerIcon fa fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="成员姓名" id="userName1"/>
+                </div>
+            </div>
+            <div class="row" style="text-align: center;">
+                <button type="button" class="btn_default" id="search1" style="margin-bottom:0">查询</button>
+                <button type="button" class="btn_default" id="reset1" style="margin-bottom:0">重置</button>
+                <button type="button" class="btn_default" id="export1" style="margin-bottom:0">批量导出</button>
+            </div>
+            <div class="tab-content" >
+                  <div  id="personList" class="tab-pane active" style="">
+                          <table class="table  table-striped" id="onJob_table" style="overflow:auto;"></table>
+                  </div>
+              </div>
+        </div>
+        <div class="tab-pane fade" id="post-adjustment">
+            <div style="height:50px;line-height:50px;display: flex;flex-direction: row;">
+                <div class="form-group">
+                    <select class="form-control" id="memberType2" placeholder="全部类型">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="company2" placeholder="全部厂商">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="datePickerWrap">
+                       <input name="startTm" id="beginDate2" type='text' class="form-control date-picker" placeholder="入职时间" readonly="readonly"/>
+                       <i class="datePickerIcon fa fa-calendar"></i>
+                    </div>
+                        <span style="margin:0 5px;"> - </span>
+                    <div  class="datePickerWrap">
+                        <input name="endTm" id="endDate2" type='text' class="form-control date-picker" placeholder="入职时间" readonly="readonly"/>
+                        <i class="datePickerIcon fa fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="成员姓名" id="userName2"/>
+                </div>
+            </div>
+            <div class="row" style="text-align: center;">
+                  <button type="button" class="btn_default" id="search2" style="margin-bottom:0">查询</button>
+                  <button type="button" class="btn_default" id="reset2" style="margin-bottom:0">重置</button>
+                  <button type="button" class="btn_default" id="export2" style="margin-bottom:0">批量导出</button>
+            </div>
+            <div class="tab-content" style="max-height: 564px">
+                <div  id="onJobList" class="tab-pane active" style="">
+                        <table class="table  table-striped" id="postAdjust_table"></table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="rank-adjustment">
+            <div style="height:50px;line-height:50px;display: flex;flex-direction: row;">
+                <div class="form-group">
+                    <input  autocomplete="off" type="text" class="form-control"  id="department3" placeholder="部门">
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="position3" placeholder="全部职位">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="memberType3" placeholder="全部类型">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="company3" placeholder="全部厂商">
+                    </select>
+                </div>
+                <div class="form-group">
+                      <div class="datePickerWrap">
+                         <input name="startTm" id="beginDate3" type='text' class="form-control date-picker" placeholder="入职时间" readonly="readonly"/>
+                         <i class="datePickerIcon fa fa-calendar"></i>
+                      </div>
+                          <span style="margin:0 5px;"> - </span>
+                      <div  class="datePickerWrap">
+                          <input name="endTm" id="endDate3" type='text' class="form-control date-picker" placeholder="入职时间" readonly="readonly"/>
+                          <i class="datePickerIcon fa fa-calendar"></i>
+                      </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="成员姓名" id="userName3"/>
+                </div>
+
+            </div>
+            <div class="row" style="text-align: center;">
+                  <button type="button" class="btn_default" id="search3" style="margin-bottom:0">查询</button>
+                  <button type="button" class="btn_default" id="reset3" style="margin-bottom:0">重置</button>
+                  <button type="button" class="btn_default" id="export3" style="margin-bottom:0">批量导出</button>
+            </div>
+            <div class="tab-content" style="max-height: 564px">
+                <div  id="onJobList" class="tab-pane active" style="">
+                        <table class="table  table-striped" id="rankAdjust_table"></table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="quit">
+            <div style="height:50px;line-height:50px;display: flex;flex-direction: row;">
+                <div class="form-group">
+                    <input  autocomplete="off" type="text" class="form-control"  id="department4" placeholder="部门">
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="position4" placeholder="全部职位">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="memberType4" placeholder="全部类型">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="company4" placeholder="全部厂商">
+                    </select>
+                </div>
+                <div class="form-group">
+                      <div class="datePickerWrap">
+                         <input name="startTm" id="beginDate4" type='text' class="form-control date-picker" placeholder="入职时间" readonly="readonly"/>
+                         <i class="datePickerIcon fa fa-calendar"></i>
+                      </div>
+                          <span style="margin:0 5px;"> - </span>
+                      <div  class="datePickerWrap">
+                          <input name="endTm" id="endDate4" type='text' class="form-control date-picker" placeholder="入职时间" readonly="readonly"/>
+                          <i class="datePickerIcon fa fa-calendar"></i>
+                      </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="成员姓名" id="userName4"/>
+                </div>
+            </div>
+            <div class="row" style="text-align: center;">
+                  <button type="button" class="btn_default " id="search4" style="margin-bottom:0">查询</button>
+                  <button type="button" class="btn_default " id="reset4" style="margin-bottom:0">重置</button>
+                  <button type="button" class="btn_default " id="export4" style="margin-bottom:0" >批量导出</button>
+            </div>
+            <div class="tab-content" style="max-height: 564px">
+                <div  id="onJobList" class="tab-pane active" style="">
+                        <table class="table  table-striped" id="quit_table"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 查询部门   -->
+<div class="modal fade transparentBg animated fadeInDown" id="orginzation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close clear1" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" >选择部门</h4>
+            </div>
+            <div class="modal-body">
+                <ol id="choose" class="breadcrumb text-left" style="margin-bottom: 0;">
+
+                </ol>
+                <div id="organization">
+                    <table id="organization_list" class="table  table-striped">
+
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top:50px;">
+                <button type="button" id="guanbi_org" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="gotoSubmit_org" data-style="zoom-in">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 批量导出部门选择 start -->
+<div class="modal fade" id="batchExportDepDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 600px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">选择部门33333</h4>
+            </div>
+            <div class="modal-body" style="min-height:200px;max-height: 440px;overflow: auto">
+                <div id="selectedDepTree"></div>
+            </div>
+            <div class="modal-footer" style="margin: 0 10px">
+                <button type="button" class="btn dialog-btn" data-dismiss="modal" aria-hidden="true">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="batchExportDepSelectedBtn" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 批量导出部门选择 end -->
+
+
+
+
+</body>
+<script type="text/javascript">
+    Global ={};
+</script>
+<!-- Mainly scripts -->
+<script src="assets/js/lib/jquery.js"></script>
+<script src="assets/js/lib/bootstrap/jquery.tablednd.min.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap.min.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-reorder-rows.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-modal.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+<!--<script src="assets/js/swfuploadHandle.js" ></script>-->
+<script src="assets/js/lib/jquery.tmpl.min.js"></script>
+<script src="assets/js/toolUtil.js"></script>
+<script src="assets/js/apiConfig.js"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-select.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-treeview.js"></script>
+<script src="assets/js/lib/xlsx.core.min.js"></script>
+
+
+
+
+<script src="assets/js/lib/ladda/spin.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.jquery.min.js"></script>
+
+<script src="assets/js/lib/sweetalert/sweetalert.min.js" ></script>
+<script src="assets/js/lib/toastr/toastr.min.js"></script>
+<script src="assets/js/formValidate.js"></script>
+<script src="assets/js/configurationView/hrManagement.js"></script>
+
+
+<!--代办展示模版-->
+
+
+
+
+
+</html>

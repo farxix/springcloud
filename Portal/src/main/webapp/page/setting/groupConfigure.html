@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组织管理</title>
+    <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-table.min.css" rel="stylesheet">
+    <link href="assets/js/lib/bootstrap/bootstrap-dialog/css/bootstrap-dialog.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-table-reorder-rows.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-select.min.css" rel="stylesheet"/>
+    <link href="assets/css/lib/ladda/ladda-themeless.min.css" rel="stylesheet" />
+    <link href="assets/css/common/cascader.css" rel="stylesheet"/>
+    <link href="assets/css/common/common.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet" />
+    <link href="assets/css/groupConfigure.css" rel="stylesheet"/>
+    <style>
+        #search_org{
+            background: #4F9FFF;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            margin-left: -4px;
+            border-radius: 5px;
+        }
+        .breadcrumb-item{
+            color: #4F9FFF !important;
+        }
+        .breadcrumb .active{
+            color: #151515 !important;
+        }
+        #phone_title{
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            /* color: #ed7f7e; */
+            position: absolute;
+            right: 0;
+            top: 8px;
+        }
+        #person_table thead:first-child>tr:first-child>th {
+            padding-left: 10px !important;
+        }
+        #no_reg_table thead:first-child>tr:first-child>th ,#wait_true_table thead:first-child>tr:first-child>th ,#reject_table thead:first-child>tr:first-child>th{
+            padding-left: 0px !important;
+        }
+        .title_footer,.title_footer:hover{
+            color: #878787;
+            vertical-align: middle;
+            border: 0px;
+            height: 55px;
+            line-height: 25px;
+        }
+        .fht-cell{width:0px!important;}
+    </style>
+</head>
+<body style="width: 100%;height: 100%;">
+<div style="height:100%;width:100%;">
+    <div class="list-wrap" style="padding-right: 0px;padding-left: 0px;">
+        <div class="div-table-row">
+            <div class=" tree" style="height: 564px;overflow: hidden;">
+                <div  id="tree" style="width:220px;overflow: auto;height:564px;font-size: 12px;"></div>
+            </div>
+            <div class="grid animated fadeInLeft">
+                <div id="tab-four" style="background: #f9f9fa;font-size: 12px;">
+                    <ol class="breadcrumb text-left" style="margin-bottom: 0;">
+                        <!--                        <li class="breadcrumb-item"><a href="#"></a></li>-->
+                        <!--                        <li  style="color: #151515;" class="breadcrumb-item active"></li>-->
+                    </ol>
+                    <ul  id="myTab">
+                        <button type="button" class="btn_default" id="add" style="margin-left: 10px;">添加子部门</button>
+                        <button type="button" class="btn_default" id="save">编辑部门</button>
+                        <button type="button" class="btn_default" id="sort">部门排序</button>
+                        <button type="button" class="btn_default" id="add1">添加成员</button>
+                        <button type="button" class="btn_default" id="checkinBtn">批量导入</button>
+                        <button type="button" class="btn_default" id="checkoutBtn">批量导出</button>
+                        <button type="button" class="btn_default" id="deleteBtn">批量删除</button>
+                        <button type="button" class="btn_default" id="set_btn">设置</button>
+                        <button type="button" class="btn_default" id="org_out">组织外</button>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div id="personList" class="tab-pane active" style="">
+                            <table class="table  table-striped" id="person_table">
+                            </table>
+                    </div>
+                    <div  id="addressList" class="tab-pane" style="max-height: 564px">
+                        <div style="max-height:524px;overflow-y: auto">
+                            <table class="table table-striped" id="address_table">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--新增编辑部门-->
+    <div class="modal fade transparentBg animated fadeInDown" id="left_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close clear1" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" style="height: 250px" id="grpup_model">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"><span style="color:red">*</span>部门名称:</label>
+                            <div class="col-sm-10">
+                                <input  autocomplete="off" id="text" type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">上级部门:</label>
+                            <div class="col-sm-10">
+                                <input autocomplete="off" id="please1" type="text" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="form-group" style="height:40px;" id="user-content">
+                            <label class="col-sm-2 control-label">部门主管:</label>
+                            <div class="col-sm-10">
+                                <input autocomplete="off" id="username" type="text" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-left: 35px;">
+                            <input type="radio" name="optionsRadiosinline" value="1" checkded>成员可以查看本部门及下属部门成员
+                        </div>
+                        <div class="form-group" style="margin-left: 35px;">
+                            <input type="radio" name="optionsRadiosinline"  value="0">成员可查看所有组织成员
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="margin-top:50px;">
+                    <button style="display: none;" type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="delete_org" data-style="zoom-in" style="color: #FF7474;background: #FF7474;border: 0px;">删除</button>
+                    <button type="button" id="left_close" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                    <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="toSubmit" data-style="zoom-in">添加</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--新增编辑人员-->
+    <div class="modal fade transparentBg animated fadeInDown" id="right_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button  type="button" class="close clear clear1" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel1"></h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" style="height: 340px" id="person_model">
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="col-sm-4 control-label"><span style="color:red">*</span>姓名:</label>
+                            <div class="col-sm-8">
+                                <input  autocomplete="off" type="text" maxlength="10" minlength="2" class="form-control" id="user">
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="col-sm-4 control-label"><span style="color:red">*</span>部门:</label>
+                            <div class="col-sm-8">
+                                <input autocomplete="off" id="copy" type="text" class="form-control" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="col-sm-4 control-label"><span style="color:red">*</span>职位:</label>
+                            <div class="col-sm-8">
+                                <select id="connect_position"  class="selectpicker show-tick form-control">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="col-sm-4 control-label">职级:</label>
+                            <div class="col-sm-8">
+                                <select id="connect_level"  class="selectpicker show-tick form-control">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="col-sm-4 control-label"><span style="color:red">*</span>成员类型:</label>
+                            <div class="col-sm-8">
+                                <select id="user_type"  class="selectpicker show-tick form-control">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="col-sm-4 control-label"><span style="color:red">*</span>厂商:</label>
+                            <div class="col-sm-8">
+                                <select id="bussiness"  class="selectpicker show-tick form-control">
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="control-label col-sm-4"><span style="color:red">*</span>入职时间:</label>
+                            <div class="col-sm-8">
+                                <input autocomplete="off" id="autoBeginDate" type='text' class="form-control" readonly="readonly" />
+                            </div>
+                        </div>
+
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="col-sm-4 control-label">邮箱:</label>
+                            <div class="col-sm-8">
+                                <input autocomplete="off" id="email" type="text" maxlength="50" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-6" style="height:40px;">
+                            <label class="col-sm-4 control-label">手机号:</label>
+                            <div class="col-sm-8">
+                                <input autocomplete="off" id="phone" type="text" maxlength="11" minlength="11" class="form-control">
+                                <span id="phone_title" style="display: none;" class="fa fa-question-circle" title="已注册用户无法修改手机号，需成员在App端完成手机号替换方可更新。"></span>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12" style="height:40px;">
+                            <label class="col-sm-2 control-label">备注:</label>
+                            <div class="col-sm-10">
+                                <textarea maxlength="200" name="" id="textArea" cols="65" rows="3" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="margin-top:50px;margin: 0 10px !important;">
+                    <button type="button" id="right_close" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                    <button type="button" id="deleteUser" style="display: none;" class="btn dialog-btn-error" data-style="zoom-in">删除</button>
+                    <button type="button" style="display: none;" id="quick_go" class="btn dialog-btn dialog-confirm-btn" data-style="zoom-in">快速离职</button>
+                    <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="gotoSubmit" data-style="zoom-in">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--快速离职弹窗-->
+    <div class="modal fade transparentBg animated fadeInDown" id="quick_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close  clear clear1" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">快速离职</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" style="height: 340px" id="leaval_model">
+                        <div class="form-group col-sm-12" style="height:20px;">
+                            <label class="col-sm-6 control-label" style="text-align: left;">
+                                操作前，请确认一下信息均已处理完毕;
+                            </label>
+                        </div>
+                        <div class="form-group col-sm-12" style="height:20px;" >
+                            <label class="col-sm-12 control-label" style="text-align: left;">
+                                1、成员本人无待处理申请，若为层级主管请派请新主管，若为审批节点处理人请派新处理人。
+                            </label>
+                        </div>
+                        <div class="form-group col-sm-12" style="height:20px;">
+                            <label class="col-sm-12 control-label" style="text-align: left;">
+                                2、成员本人无待填写任务、无待评价绩效。
+                            </label>
+                        </div>
+                        <div class="form-group col-sm-12" style="height:20px;">
+                            <label class="col-sm-12 control-label" style="text-align: left;">
+                                3、成员本人相关权限已完成移交。
+                            </label>
+                        </div>
+
+                        <div class="form-group col-sm-12" style="height:40px;">
+                            <label class="col-sm-2 control-label" style="text-align: left;"><span style="color:red">*</span>离职原因:</label>
+                            <div class="col-sm-10">
+                                <select id="reason"  class="selectpicker show-tick form-control" multiple>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12" style="height:40px;">
+                            <label class="control-label col-sm-2" style="text-align: left;"><span style="color:red">*</span>离职时间:</label>
+                            <div class="col-sm-10">
+                                <input autocomplete="off" name="datetimepicker" id="time" type='text' class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12" style="height:40px;">
+                            <label class="col-sm-2 control-label" style="text-align: left;">备注:</label>
+                            <div class="col-sm-10">
+                                <textarea name="" id="remark" maxlength="200" cols="65" rows="3" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="margin-top:50px;margin: 0 10px !important;">
+                    <button type="button" id="right_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                    <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="gotoSubmit1" data-style="zoom-in">确认离职</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 查询部门   -->
+    <div class="modal fade transparentBg animated fadeInDown" id="orginzation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close clear1" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" >选择部门</h4>
+                </div>
+                <div class="modal-body">
+                    <ol id="choose" class="breadcrumb text-left" style="margin-bottom: 0;">
+
+                    </ol>
+                    <div id="organization">
+                        <table id="organization_list" class="table  table-striped">
+
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top:50px;">
+                    <button type="button" id="guanbi_org" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                    <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="gotoSubmit_org" data-style="zoom-in">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  查询人员  -->
+    <div class="modal fade transparentBg animated fadeInDown" id="memberSelectDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" style="width:550px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">选择成员</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-sm-12">
+                        <form class="form-horizontal" style="height: 40px" role="form">
+                            <div class="form-group" style="height:40px;">
+                                <div class="col-sm-12" style="position: relative;padding:0px;">
+                                    <i class="glyphicon glyphicon-search" style="position: absolute;font-size: 14px;margin-left: 10px;height: 30px;line-height: 30px;"></i>
+                                    <input  autocomplete="off" type="text" class="form-control"  placeholder="输入成员姓名进行查找" id="org_serarch" style="display:inline-block;padding-left:30px;width: 80%;">
+                                    <span class="" id="search_org">查询</span>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="memberTable_content">
+                            <table id="memberTable"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                    <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="memberSelectDialogConfirmBtn">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 部门排序   -->
+    <div class="modal fade transparentBg animated fadeInDown" id="orginzation_sort" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close clear1" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" >部门排序</h4>
+                </div>
+                <div class="modal-body">
+                    <ol  id="choose1" class="breadcrumb text-left" style="margin-bottom: 0;">
+
+                    </ol>
+                    <div id="sortTable" style="">
+                        <table id="sort_list">
+
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top:50px;">
+                    <button type="button" id="guanbi_sort" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                    <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="gotoSubmit_sort" data-style="zoom-in">提交更改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 多选部门   -->
+    <div class="modal fade transparentBg animated fadeInDown" id="orginzation2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close clear1" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" >选择部门</h4>
+                </div>
+                <div class="modal-body form-group">
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb text-left" style="margin-bottom: 0;">
+                            <li class="breadcrumb-item"><a href="#"></a></li>
+                            <li  style="color: #151515;" class="breadcrumb-item active"></li>
+                        </ol>
+                        <div id="organization2">
+                            <table id="organization_list2">
+
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <table id="organization_sure">
+
+                        </table>
+                    </div>
+
+                </div>
+                <div class="modal-footer" style="margin-top:50px;">
+                    <button type="button" id="guanbi_org2" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                    <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="gotoSubmit_org2" data-style="zoom-in">提交更改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--批量导出-->
+    <div class="modal fade" id="checkout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" style="width: 400px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">批量导出</h4>
+                </div>
+                <div class="modal-body">
+                    <div style="margin: 0 0 10px 10px;">
+                        <button id="selectDepBtn" class="btn dialog-btn dialog-confirm-btn">选择部门</button>
+                    </div>
+                    <label><input type="checkbox" name="inlineCheckbox" id="inlineCheckbox" value="option1">仅导出已同意成员</label>
+                </div>
+                <div class="modal-footer" style="margin-top:50px;margin: 0 10px !important;">
+                    <button type="button" id="guanbi_checkOut" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                    <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="checkoutExport" data-style="zoom-in">导出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 批量导出部门选择 start -->
+<div class="modal fade" id="batchExportDepDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 600px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">选择部门</h4>
+            </div>
+            <div class="modal-body" style="min-height:200px;max-height: 440px;overflow: auto">
+                <div id="selectedDepTree"></div>
+            </div>
+            <div class="modal-footer" style="margin: 0 10px">
+                <button type="button" class="btn dialog-btn" data-dismiss="modal" aria-hidden="true">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="batchExportDepSelectedBtn" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 批量导出部门选择 end -->
+<!--批量导入-->
+<div class="modal fade transparentBg animated fadeInDown" id="checkIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close  clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel1">批量导入</h4>
+            </div>
+            <div class="modal-body" style="padding-bottom: 0">
+                <div class="form-group">
+                    <label class="control-label" style="width: 80px;text-align: right">模版下载：</label>
+                    <div class="item">
+                        <span id="model_load">
+                            <a href="assets/file/template.xls" download="批量导入模板.xls">
+                                <i class="fa fa-download"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" style="width: 80px;text-align: right">选择文件：</label>
+                    <div class="item">
+                        <input type="file" class="form-control" placeholder="点击选择导入文件" id="fileName" accept=".xls">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="right_close1" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="batchImportSubmitBtn" data-style="zoom-in">上传</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--批量导入报告-->
+<div class="modal fade" id="batchImportResultDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close  clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">批量导入报告</h4>
+            </div>
+            <div class="modal-body" style="padding-top: 0">
+                <div><label id="succCount" class="common-label">导入成功：0人</label></div>
+                <div><label class="common-label">
+                    未注册账户已下发短信通知其完成账户注册，注册完毕后成员将在App端完成是否同意加入组织的操作
+                </label></div>
+                <div style="border-bottom: 1px solid #878787;margin: 5px -15px"></div>
+                <div><label id="failCount" class="common-label">导入失败：0人</label></div>
+                <div><table id="batchImportResultTable"></table></div>
+            </div>
+            <div class="modal-footer">
+                <button id="batchImportResultDialogCloseBtn" type="button"  class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="exportImportResult" data-style="zoom-in">下载失败记录</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--设置    -->
+<div class="modal fade" id="settingDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close  clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">设置</h4>
+            </div>
+            <div class="modal-body" style="padding: 0">
+                <ul id="settingMenuUl">
+                    <li class="active" data-value="1" data-target="positionTable">职位</li>
+                    <li data-value="2"  data-target="levelTable">职级</li>
+                    <li data-value="4" data-target="businessTable">厂商</li>
+                    <li data-target="filedContent">字段显示</li>
+                </ul>
+                <div id="settingDialogContent" class="tab-content">
+                    <div id="settingDialogQueryForm" style="margin-top: 15px;padding-left: 10px">
+                        <input autocomplete="off" id="settingDialogQueryInput" class="form-control" placeholder="" style="width: 150px;display: inline-block">
+                        <button id="settingDialogQueryBtn" class="btn btn-confirm btn-xs">查询</button>
+
+                        <div style="float: right">
+                            <button id="settingAddBtn" class="btn btn-confirm btn-xs">添加</button>
+                            <button id="settingBatchAddBtn" class="btn btn-confirm btn-xs">批量添加</button>
+                            <button id="settingDelBtn" class="btn btn-confirm btn-xs">删除</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade in active">
+                        <table id="positionTable"></table>
+                    </div>
+                    <div class="tab-pane fade">
+                        <table id="levelTable"></table>
+                    </div>
+                    <div class="tab-pane fade">
+                        <table id="businessTable"></table>
+                    </div>
+                    <div class="tab-pane fade" id="filedContent">
+                        <div class="form-group">
+                            <label class="common-label">姓名:</label>
+                            <label class="control-label">系统默认</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="common-label">职位:</label>
+                            <label class="control-label">系统默认</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="common-label">部门:</label>
+                            <label class="control-label">系统默认</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="common-label">职级:</label>
+                            <div class="switchBtn off" data-state="0" data-target="rankName" style="vertical-align: middle"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class=" common-label">成员类型:</label>
+                            <div class="switchBtn on" data-state="1" data-target="memberType" style="vertical-align: middle"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class=" common-label">厂商:</label>
+                            <div class="switchBtn on" data-state="1" data-target="company" style="vertical-align: middle"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class=" common-label">入职时间:</label>
+                            <div class="switchBtn off" data-state="0" data-target="entryTime" style="vertical-align: middle"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class=" common-label">手机号:</label>
+                            <div class="switchBtn on" data-state="1" data-target="userTel" style="vertical-align: middle"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class=" common-label">邮箱:</label>
+                            <div class="switchBtn on" data-state="1" data-target="userEmail" style="vertical-align: middle"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class=" common-label">备注:</label>
+                            <div class="switchBtn off" data-state="0" data-target="remarks" style="vertical-align: middle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel" data-dismiss="modal">关闭</button>
+                <button type="button" class="ladda-button btn btn-confirm" id="settingSubmitBtn" data-style="zoom-in">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--组织外-->
+<div class="form-wrap fn-hide" id="outOfOrg" style="padding-bottom: 20px;">
+    <div class="ibox-content" style="padding: 0">
+        <ul id="myTab1" class="nav nav-tabs">
+            <li class="active"><a href="#no_reg" data-toggle="tab" id="no_reg_title">未注册</a></li>
+            <li><a href="#wait_true" data-toggle="tab" id="wait_true_title">待同意</a></li>
+            <li class="dropdown"><a href="#reject" data-toggle="tab" id="reject_title">已拒绝</a></li>
+            <li style="float: right;margin-right: 25px;">
+                <button type="button" class="btn dialog-btn dialog-return" id="goback">返回</button>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="no_reg">
+                <table id="no_reg_table"></table>
+                <ul id="myTab2" style="text-align: right;height: 70px;line-height: 70px;">
+                    <button class="title_footer" style="width: 285px;">
+                        已下发短信通知的成员7个工作日内无法再次发送
+                        修改成员手机号后系统将再次发送短信短信通知
+                    </button>
+                    <button type="button" class="btn_default" id="resend" style="margin-left: 10px;width: 120px;">再次发送短信通知</button>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="wait_true">
+                <table id="wait_true_table"> </table>
+            </div>
+            <div class="tab-pane fade" id="reject">
+                <table id="reject_table"></table>
+                <ul id="myTab3" style="text-align: right;height: 70px;line-height: 70px;">
+                    <button class="title_footer">再次发送邀请后，成员状态将重新更新为'待同意'</button>
+                    <button type="button" class="btn_default" id="send_all" style="margin-left: 10px;width: 100px;">再次发送邀请函</button>
+                    <button type="button" class="btn_default" id="send_del" style="margin-left: 10px;">删除全部</button>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--        <div id="footer" class="footer" style="text-align: center">&nbsp;&nbsp;-->
+    <!--            <button type="button" class="btn dialog-btn dialog-return" id="goback">返回</button>-->
+    <!--        </div>-->
+</div>
+</div>
+
+<script src="assets/js/lib/jquery.js"></script>
+<script src="assets/js/lib/bootstrap/jquery.tablednd.min.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap.min.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-reorder-rows.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-modal.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-treeview.js"></script>
+<script src="assets/js/lib/webuploader/dist/webuploader.js" ></script>
+<!--<script src="assets/js/swfuploadHandle.js" ></script>-->
+<script src="assets/js/lib/jquery.tmpl.min.js"></script>
+<script src="assets/js/toolUtil.js"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/apiConfig.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-select.js"></script>
+
+<script src="assets/js/lib/miniui/miniui.js" ></script>
+<script src="assets/js/uitoolUtil.js" ></script>
+<script src="assets/js/swfuploadHandle.js" ></script>
+<script src="assets/js/commonUtils.js"></script>
+
+<script src="assets/js/lib/ladda/spin.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.jquery.min.js"></script>
+
+<script src="assets/js/lib/sweetalert/sweetalert.min.js" ></script>
+<script src="assets/js/lib/toastr/toastr.min.js"></script>
+<script src="assets/js/formValidate.js"></script>
+<script src="assets/js/configurationView/groupConfigure.js"></script>
+
+<script src="assets/js/lib/layui/layui.all.js"></script>
+</body>
+</html>
+
+
+
+
+

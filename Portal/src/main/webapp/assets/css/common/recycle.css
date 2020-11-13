@@ -1,0 +1,37 @@
+#menuDemo {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.resDetailRight .valid-form .valid-label {
+    display: inline-block;
+    font-size: 12px;
+    width: 150px;
+    color: #333;
+    line-height: 35px;
+    vertical-align: top;
+    margin: 0px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resDetailRight .valid-form .form-item {
+    width: 50%;
+    vertical-align: middle;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+.resDetailRight .tableContainer {
+    width: 360px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.resDetailRight .attrSpan {
+    display: inline-block;
+    /*line-height: 30px;*/
+}

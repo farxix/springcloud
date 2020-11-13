@@ -1,0 +1,273 @@
+.nav-tabs{
+    height: 50px;
+}
+.nav-tabs > li > a{
+    height: 49px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #333 !important;
+    border: none;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover{
+    font-size: 16px;
+    color: #24272E;
+    border:0;
+    border-bottom: 3px solid #07A5FD;
+}
+.taskList .panel-border{
+    width: 420px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.taskList .panel-border .taskTitle{
+    font-size: 15px;
+    color: #24272E;
+    line-height: 30px;
+}
+
+.taskList .panel-border .bottomBtnGroup{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.overtimeHint{
+    margin-left: 10px;
+    background: #FFC04A;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 10px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+}
+
+.timeoutHint{
+    margin-left: 10px;
+    background: #FF7474;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 10px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+}
+
+.common-label{
+    width: 80px;
+    text-align: right;
+}
+
+.detailInfoItem{
+    width: calc(33% - 100px);
+}
+
+.detailInfoItem input,
+.detailInfoItem input:read-only{
+    max-width: 95%;
+    width: 240px;
+    background: rgba(79,159,255,0.05);
+    height: 30px;
+    line-height: 30px;
+    border: none !important;
+}
+.detailInfoItem input:focus{
+    outline: 0;
+    border: none !important;
+}
+
+a{
+    cursor: pointer;
+    font-size: 13px;
+    color: #4F9FFF !important;
+}
+
+#taskBaseInfo .detailInfoItem,
+#flowNode .detailInfoItem{
+    width: calc(25% - 100px);
+}
+
+.hFlowBar{
+    position: relative;
+    padding: 20px 80px;
+}
+
+.hFlowBar .hFlowBarStep{
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 24%;
+    min-height: 200px;
+}
+
+.hFlowBar .hFlowBarStep:last-child{
+    position: absolute;
+}
+
+.hFlowBar .hFlowBarStep.done:not(:last-child):after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid rgba(79,159,255,0.40);
+    float: left;
+    left: 3px;
+    z-index: 1;
+    top: 60px;
+}
+
+.hFlowBar .hFlowBarStep:not(:last-child):after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px dashed rgba(153,153,153,0.40);
+    float: left;
+    left: 3px;
+    z-index: 1;
+    top: 60px;
+}
+
+.hFlowBar .hFlowBarStep.undo img{
+    filter:grayscale(100%);
+}
+
+.hFlowBar .hFlowBarStep.undo .hFlowPoint{
+    filter:grayscale(100%);
+}
+
+.hFlowBarStepImg{
+    position: absolute;
+    left: -60px;
+    top: 0;
+}
+
+.hFlowBarStepImgText{
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 130px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.hFlowPoint{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #F7F7F7;
+    border: 2px solid #4F9FFF;
+    position: absolute;
+    left: 0;
+    top: 57px;
+    z-index: 2;
+}
+
+.hFlowBarDatetime{
+    font-size: 14px;
+    color: #999999;
+    letter-spacing: 0;
+    position: absolute;
+    top: 70px;
+    left: -50px;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+.hFlowBarPerson{
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    position: absolute;
+    top: 95px;
+    left: -50px;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+.hFlowBarResult{
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    position: absolute;
+    top: 125px;
+    left: -66px;
+    min-width: 120px;
+    white-space: nowrap;
+}
+
+.hFlowBarRemarks{
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    position: absolute;
+    top: 155px;
+    left: -66px;
+    width: 200px;
+}
+
+.hFlowBarRemarks .operateRemarks{
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    word-break: break-all;
+}
+
+#approveRemarks{
+    width :calc(100% - 130px);
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    background: rgba(79,159,255,0.05);
+    border: none !important;
+    padding: 5px 10px;
+}
+#approveRemarks:focus{
+    outline: 0;
+}
+
+#mainPanel{
+    background: #fff;
+}
+
+#dialogApproveMessage{
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    height: 150px;
+}
+
+#dialogTaskRejectBtn {
+    background: #ff7475;color: #fff;width: 80px
+}
+#dialogTaskApproveBtn{
+    background: #00dda2;color: #fff;width: 80px
+}
+
+.table-inner{
+    width: 100%;
+    white-space: normal;
+}
+
+.showMore{
+    display: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.showMore.disabled{
+    cursor: auto;
+}

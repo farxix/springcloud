@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置-考勤管理</title>
+    <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-table.min.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-table-reorder-rows.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+
+    <link href="assets/css/lib/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="assets/css/common/cascader.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+
+    <link href="assets/css/layoutit/custom.css" rel="stylesheet" />
+    <link href="assets/js/lib/miniui/themes/default/miniui.css" rel="stylesheet">
+    <link href="assets/js/lib/miniui/themes/default/miniui2.css" rel="stylesheet">
+    <link href="assets/js/lib/miniui/themes/icons.css" rel="stylesheet">
+    <link href="assets/js/lib/miniui/themes/blue2010/skin.css" rel="stylesheet">
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/lib/ladda/ladda-themeless.min.css">
+    <link href="assets/css/groupConfigure.css" rel="stylesheet"/>
+    <link href="assets/fontAwesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/lib/calendar/fullcalendar.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/js/lib/layui/css/layui.css">
+<!--    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />-->
+<!--    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>-->
+    <style>
+            .has-error .bootstrap-select .error{
+                right:  -16px;
+                top: 44px !important;
+            }
+            .has-error .date .error{
+                left:0 !important;
+            }
+            .list_items,.list_items_img{
+                width: 420px;
+                height:300px;
+                display: inline-block;
+                border: 1px solid #DDDDDD;
+                float: left;
+                margin-left: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-top:10px;
+            }
+            .list_items .containers{
+                height: 230px;
+                padding-left: 0px;
+            }
+            .list_items .footer{
+                text-align: center;
+            }
+            .list_items_img{
+                text-align: center;
+                line-height: 300px;
+            }
+            .list_items_img img{
+                width: 60px;
+                height: 60px;
+            }
+            .nav-tabs{
+                height: 50px;
+            }
+            .nav-tabs > li > a{
+                height: 49px;
+                line-height: 35px;
+                font-size: 14px;
+                color: #999999;
+                border: none;
+            }
+            .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+                font-size: 14px;
+                color: #24272E;
+                border-top:0px;
+                border-left: 0px;
+                border-right: 0px;
+                border-bottom: 3px solid #07A5FD;
+            }
+            .modal-backdrop.in {
+                opacity: 0;
+            }
+
+            element.style {
+            }
+            .modal-backdrop.in {
+                filter: alpha(opacity=50);
+                /* opacity: .5; */
+            }
+            .modal-backdrop.fade {
+                filter: alpha(opacity=0);
+                opacity: 0;
+            }
+            .modal-backdrop {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 0;
+                background-color: #000;
+            }
+            .ibox-content{
+                padding:0px;
+            }
+            .form-horizontal .form-group{
+                /* margin-bottom: 0; */
+            }
+            .forms .control-label{
+                margin-left:-60px !important;
+            }
+            .persons-left{
+                margin-right:15px;
+            }
+            .form-group{
+                padding-bottom:10px;
+            }
+            .fc-row .fc-week .ui-widget-content{
+                height:20px;
+            }
+           .row{
+               width:430px;
+           }
+           .div-a{
+            float:left;
+            width:48%;
+               margin-left:10px;
+           }
+            .div-b{
+                float:left;
+                width:45%;
+                margin-left:10px;
+
+            }
+            .divs{
+                margin-left:10px;
+                margin-right: 10px;
+                font-weight: 300;
+            }
+            b, strong {
+                font-weight: 200;
+            }
+        #container{
+            position:relative;
+        }
+        #myPageTop{
+            position:relative;
+        }
+        .btn{
+            border-radius:0rem;
+        }
+            .input-group-addon{
+                position:absolute;
+                z-index:10;
+                margin-left:100px;
+            }
+        .glyphicon{
+            margin-left:-5px;
+        }
+        .sweet-alert fieldset {
+            display: none;
+        }
+
+        .sweet-alert button.cancel, .sweet-alert button.cancel:hover {
+            background-color: rgb(49, 151, 250);
+        }
+
+      #selectsPeople .fixed-table-body {
+           max-height:180px;
+      }
+      .pop-box{
+        position: absolute;
+        width: 250px;
+        z-index: 9999;
+        background: #ffffff;
+        border: 1px solid rgba(0,0,0,.2);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        outline: 0;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+      }
+      .pop-box li {
+          line-height: 26px;
+          float: left;
+          margin-left: 10px;
+          width: 38px;
+          cursor: pointer;
+      }
+      .pop-box li:hover{
+          color: #4F9FFF;
+          background: rgba(79,159,255,0.20);
+          border: 0;
+      }
+      .cell-style{
+            max-width: 304px;
+            display: inline-block;
+            *display: inline;
+            zoom:1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+
+        }
+      .amap-copy,.amap-logo,.amap-copyright{
+            opacity: 0;
+        }
+
+        #addTime_form .control-label{
+            width: 100px;
+            font-size: 14px;
+            color: #A4AAAE;
+            text-align: right;
+            vertical-align: top;
+        }
+
+        #addTime_form .control-form-item{
+            width:calc(100% - 120px);
+            display:inline-block;
+            margin-left:10px;
+        }
+
+        #addTime_form .weekday-label{
+            font-size: 14px;
+            color: #A4AAAE;
+            text-align: left;
+            vertical-align: top;
+            width: 100px
+        }
+
+        .control-label{
+            display: inline-block;
+            width: 140px;
+        }
+        .control-component{
+          display: inline-block;
+          position: relative;
+        }
+        .form-group .btn{
+          border-radius: 4px;
+        }
+        #addPlace_modal .has-error span.error,
+        #addTime_modal .has-error span.error
+        {
+          font-size: 12px;
+          left:2px;
+        }
+      
+        span.error{
+          font-size: 12px;
+          color: #ED7F7E;
+          left:7px;
+        }
+
+    </style>
+
+</head>
+<body  style="background: #FFFFFF;">
+<div style="overflow:hidden;">
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active"><a href="#time" data-toggle="tab" onclick="timeSystem()">考勤时间配置</a></li>
+        <li><a href="#address" data-toggle="tab" onclick="placeSystem()">考勤地点配置</a></li>
+        <li class="dropdown"><a href="#rule" data-toggle="tab" onclick="ruleSystem()">考勤规则配置</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="time"></div>
+        <div class="tab-pane fade" id="address"></div>
+        <div class="tab-pane fade" id="rule"></div>
+    </div>
+</div>
+<div class="form-wrap fn-hide" style="padding-bottom: 20px;">
+    <div class="ibox-content"></div>
+    <div id="footer" class="footer">
+        <button type="button" data-style="zoom-in" class="ladda-button btn dialog-btn dialog-confirm-btn" id="save">保存</button>&nbsp;&nbsp;
+        <button type="button" class="btn dialog-btn dialog-return" id="goback">返回</button>
+    </div>
+</div>
+<!--目标接口的模态框-->
+<div class="modal fade transparentBg animated fadeInDown" id="target_modal"  tabindex="-1"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="detail mini-icon" id="modal_content" style="max-height: 350px;overflow-y: auto;">
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top:50px;">
+                <button type="button" id="left_close" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn dialog-btn dialog-confirm-btn" id="toSubmit">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击新增考勤时间弹出模态框-->
+<div class="modal fade transparentBg animated fadeInDown" id="addTime_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:700px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="addTimeModal">新增考勤时间</h4>
+            </div>
+            <div class="modal-body"  id="attendanceForm">
+            </div>
+            <div class="modal-footer" style="margin-top:30px;">
+                <button type="button" id="addTime_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="timeSubmit" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击编辑考勤时间弹出模态框-->
+<div class="modal fade transparentBg animated fadeInDown" id="editTime_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:700px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="editTimeModal">编辑考勤时间</h4>
+            </div>
+            <div class="modal-body" id="attendanceForm2">
+
+            </div>
+            <div class="modal-footer" style="margin-top:30px;">
+                <button type="button" id="editTime_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="edittimeSubmit" data-value="">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击设置日期弹出模态框-->
+
+<div class="modal fade transparentBg animated fadeInDown" id="date_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:40%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="dateModal">日期设置</h4>
+            </div>
+            <div class="modal-body">
+                <div  style="text-align:center;margin-top:-15px"; class="animated fadeInLeft">
+                    <!--日历主体-->
+                    <div id="calendar" class="dib "></div>
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top:30px;">
+                <button type="button" id="date_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="dateSubmit" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击新增考勤地点弹出模态框-->
+<div class="modal fade transparentBg animated fadeInDown" id="addPlace_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:60%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="addPLaceModal">新增考勤地点</h4>
+            </div>
+            <div class="modal-body"  id="placeForm">
+
+            </div>
+            <div class="modal-footer" style="">
+                <button type="button" id="addPlace_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="placeSubmit" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击新增考勤规则弹出模态框-->
+<div class="modal fade transparentBg animated fadeInDown" style="overflow:auto;" id="addRule_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:50%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="addRuleTitle">新增考勤规则</h4>
+            </div>
+            <div class="modal-body"  id="addRuleForm">
+
+            </div>
+            <div class="modal-footer" style="margin-top:0px;">
+                <button type="button" id="rule_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="ruleSubmit" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击编辑考勤规则弹出模态框-->
+<div class="modal fade transparentBg animated fadeInDown" style="overflow:auto;" id="editRule_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:50%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="editRule">编辑考勤规则</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">考勤规则名称：</label>
+                        <div class="col-sm-3">
+                            <input type="text"  id="editruleName" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">考勤时间：</label>
+                        <div class="col-sm-3">
+                            <select id="editdatetimepicker5"  class="selectpicker show-tick form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">考勤地点：</label>
+                        <div class="col-sm-9" style="margin-top:6px;">
+                            <span id="selectPlace" style="display: none"></span><span id="ruleShezhi" style="color:#4F9FFF;cursor: pointer;">设置</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">弹性上下班时间：</label>
+                        <div class="col-sm-9">
+                            <input type="text"  id="editworkTime" />
+                        </div>
+                        <span style="color:red">*</span> <span>设置为0后则不允许弹性上下班时间。</span>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">迟到时限：</label>
+                        <div class="col-sm-9">
+                            <input type="text"  id="editlateTime" />
+                        </div>
+                        <span style="color:red">*</span>  <span>设置为0后不允许迟到。</span>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-3 control-label">考勤成员：</label>
+                        <div class="col-sm-9" style="margin-top:6px;">
+                            <span id="ruleShezhi1" style="color:#4F9FFF;cursor: pointer;">设置</span>
+                        </div>
+                    </div>
+                    <div class="form-group" style="display:none;height:100px;">
+                        <div style="padding-left:160px;padding-right:50px;">
+                            <table class="table table-striped" id="selectsPeople">
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="margin-top:50px;">
+                <button type="button" id="rule_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="editruleSubmit" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--点击新增考勤规则里面的设置-选择部门弹出模态框-->
+<div class="modal fade transparentBg animated fadeInDown" id="addDepart_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:50%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="addDepart">选择考勤地点</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-striped" id="depart">
+
+                </table>
+            </div>
+            <div class="modal-footer" style="margin-top:50px;">
+                <button type="button" id="depart_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="departSubmit" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击新增考勤规则里面的设置-选择人员弹出模态框-->
+<div class="modal fade transparentBg animated fadeInDown" id="addPeople_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:50%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="addPeople">选择部门</h4>
+            </div>
+            <div class="modal-body">
+                    <div  id="selectedDepTree" style="overflow-y: auto;height:280px;font-size: 12px;"></div>
+
+            </div>
+            <div class="modal-footer" style="margin-top:50px;">
+                <button type="button" id="people_close" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="peopleSubmit" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+<script type="text/javascript">
+    Global ={};
+</script>
+<!-- Mainly scripts -->
+<script src="assets/js/lib/jquery.js"></script>
+<script src="assets/js/lib/bootstrap/jquery.tablednd.min.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap.min.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-reorder-rows.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-modal.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-treeview.js"></script>
+<script src="assets/js/lib/webuploader/dist/webuploader.js" ></script>
+<!--<script src="assets/js/swfuploadHandle.js" ></script>-->
+<script src="assets/js/lib/jquery.tmpl.min.js"></script>
+<script src="assets/js/toolUtil.js"></script>
+<script src="assets/js/apiConfig.js"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-select.js"></script>
+<script src="assets/js/lib/miniui/miniui.js" ></script>
+<script src="assets/js/uitoolUtil.js" ></script>
+<script src="assets/js/swfuploadHandle.js" ></script>
+<script src="assets/js/lib/ladda/spin.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.jquery.min.js"></script>
+
+<script src="assets/js/lib/sweetalert/sweetalert.min.js" ></script>
+<script src="assets/js/lib/toastr/toastr.min.js"></script>
+<script src="assets/js/formValidate.js"></script>
+<script src="assets/js/lib/moment/moment.js"></script>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=61b10f2f79db0858d6015f9fd2eb5823&plugin=AMap.Autocomplete,AMap.PlaceSearch"></script>
+<script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+ <script src="assets/js/formValidate.js"></script>
+<script src="assets/js/lib/calendar/fullcalendar.min.js"></script>
+<script src="assets/js/lib/date-select.js"></script>
+<script src="assets/js/configurationView/workCheck.js"></script>
+<script src="assets/js/lib/layui/layui.all.js"></script>
+<!--地图-->
+<script type="text/javascript">
+    //地图加载
+    var map = new AMap.Map("container", {
+        resizeEnable: true
+    });
+    //输入提示
+    var autoOptions = {
+        input: "tipinput"
+    };
+    var auto = new AMap.Autocomplete(autoOptions);
+    var placeSearch = new AMap.PlaceSearch({
+        map: map
+    });  //构造地点查询类
+    AMap.event.addListener(auto, "select", select);//注册监听，当选中某条记录时会触发
+    function select(e) {
+        placeSearch.setCity(e.poi.adcode);
+        placeSearch.search(e.poi.name);  //关键字查询查询
+    }
+
+    //为地图注册click事件获取鼠标点击出的经纬度坐标
+    map.on('click', function(e) {
+        document.getElementById("lnglat").value = e.lnglat.getLng() + ',' + e.lnglat.getLat()
+    });
+    //地图加载
+    var map = new AMap.Map("container1", {
+        resizeEnable: true
+    });
+    //输入提示
+    var autoOptions = {
+        input: "tipinput1"
+    };
+    var auto = new AMap.Autocomplete(autoOptions);
+    var placeSearch = new AMap.PlaceSearch({
+        map: map
+    });  //构造地点查询类
+    AMap.event.addListener(auto, "select", select);//注册监听，当选中某条记录时会触发
+    function select(e) {
+        placeSearch.setCity(e.poi.adcode);
+        placeSearch.search(e.poi.name);  //关键字查询查询
+    }
+
+    //为地图注册click事件获取鼠标点击出的经纬度坐标
+    map.on('click', function(e) {
+        document.getElementById("editlnglat").value = e.lnglat.getLng() + ',' + e.lnglat.getLat()
+    });
+</script>
+<!--时间展示模版-->
+<script type="text/x-jquery-tmpl" id="time-template">
+    <div class="list_items">
+        <h4 class="time_title">
+        </h4>
+     <div class="containers">
+         <div class="row" style="width:430px;">
+                <div class="divs">办公时间名称:${wtName}</div>
+                </div>
+                 <div class="row" style="width:430px;">
+                <div class="divs">办公时间:${wtStart}～${wtEnd}</div>
+                </div>
+                 <div class="row" style="width:430px;">
+                 <div class="divs">上班日期: {{if wtType == "1" }}常规班制度{{else}}特殊班制度{{/if}}</div>
+                </div>
+        </div>
+         <div class="footer">
+                <button type="button" class="btn_default time_del remove" data-value='${wtId}' >删除</button>
+                <button type="button" class="btn_default active time_edit edit" data-value='${wtId}' >编辑</button>
+            </div>
+    </div>
+</script>
+<!--地点展示模版-->
+<script type="text/x-jquery-tmpl" id="address-template">
+    <div class="list_items">
+        <h4 class="time_title">
+        </h4>
+        <div class="containers">
+         <div class="row" style="width:430px;">
+                <div class="divs" style="font-weight: 500;">${waName}</div>
+                </div>
+                <div class="row" style="width:430px;">
+                <div class="divs">办公地点类型:${waType}</div>
+                </div>
+                  <div class="row" style="width:430px;">
+                <div class="divs">所属厂商:${waCompany}</div>
+                </div>
+                 <div class="row" style="width:430px;">
+                <div class="divs">地址:${waAddress}</div>
+                </div>
+                 <div class="row" style="width:430px;">
+                <div class="divs">坐标:${waCoordinateY}-${waCoordinateX}</div>
+                </div>
+                  <div class="row" style="width:430px;">
+                <div class="divs">打卡范围半径:${waRadius}米</div>
+                </div>
+        </div>
+         <div class="footer">
+                <button type="button" data-send='${waId}' class="btn_default time_del removePlace" >删除</button>
+                <button type="button" data-send='${waId}' class="btn_default active time_edit editPlace" >编辑</button>
+            </div>
+    </div>
+</script>
+<!--规则展示模版-->
+<script type="text/x-jquery-tmpl" id="rule-template">
+    <div class="list_items">
+        <h4 class="time_title">
+        </h4>
+        <div class="containers" >
+             <div class="row" style="width:430px;">
+                <div class="divs" style="font-weight: 500;">${wrName}</div>
+             </div>
+              <div class="row" style="width:430px;">
+                  <div class="divs">考勤时间名称:${wtName}</div>
+             </div>
+            <div class="row" style="width:430px;">
+                <div class="div-a">考勤时间:${wtStart}~${wtEnd}</div>
+                <div class="div-b">上班日期:  {{if wtType != 1}}<strong style="padding-right: 10px;">特殊班制度</strong>{{else}}<strong style="padding-right: 10px;">常规班制度</strong>{{/if}}</div>
+<!--               <div class="div-b">上班日期:  {{each(i) addrList}}{{if !i}}{{if addrList[0].wtType != 1}}<strong style="padding-right: 10px;">特殊班制度</strong>{{else}}<strong style="padding-right: 10px;">常规班制度</strong>{{/if}}{{/if}}{{/each}}</div>-->
+            </div>
+
+            <div class="row" style="width:430px;">
+                <div class="divs">办公地点名称: <div class="cell-style" title={{each(i) addrList}}${addrList[i].waName}{{if i < addrList.length-1}},{{/if}}{{/each}}>{{each(i) addrList}}<strong style="padding-right: 10px;">${addrList[i].waName}</strong>{{/each}}</div></div>
+            </div>
+
+            <div class="row" style="width:430px;">
+                    <div class="div-b">迟到时限:${wrLateTime}</div>
+                     <div class="div-b">弹性时间:${wrTime}</div>
+            </div>
+
+            <div class="row" style="width:430px;">
+                <div class="divs">考勤人员:{{each(depName) depList}}<strong style="padding-right: 10px;">${depName}</strong>{{/each}}</div>
+            </div>
+
+
+        </div>
+
+         <div class="footer">
+                <button type="button" class="btn_default time_del removeRule" data-send='${wrId}'>删除</button>
+                <button type="button" class="btn_default active time_edi editRule" data-send='${wrId}' >编辑</button>
+            </div>
+
+    </div>
+
+</script>
+<script type="text/x-jquery-tmpl" id="addTimeTeml">
+     <div class="list_items_img"  id="addTime" style="cursor: pointer;">
+            <img src="assets/images/new.png" alt="" class="">
+        </div>
+</script>
+<script type="text/x-jquery-tmpl" id="addPlaceTeml">
+     <div class="list_items_img"  id="addPlace" style="cursor: pointer;">
+            <img src="assets/images/new.png" alt="" class="">
+        </div>
+</script>
+<script type="text/x-jquery-tmpl" id="addRuleTeml">
+     <div class="list_items_img"  id="addRule" style="cursor: pointer;">
+            <img src="assets/images/new.png" alt="" class="">
+        </div>
+</script>
+
+<script type="text/x-jquery-tmpl" id="addAttendancel">
+    <form class="form-horizontal" role="form" id="addTime_form">
+        <div class="form-group">
+            <label class="control-label">考勤时间名称:</label>
+            <div style="width:260px;display:inline-block;margin-left:10px;position:relative">
+                <input id="ID" type="text" class="form-control" autocomplete="off">
+            </div>
+        </div>
+        <div>
+            <label class="control-label">办公时间：</label>
+            <div class="control-form-item">
+                <div class='input-group date' style="width:115px;position: relative;float: left;">
+                    <input type='text' class="form-control" id="datetimepicker1" style="height: 29px;width:120px ;background: #ffffff;" autocomplete="off" readonly="readonly"/>
+                    <span class="fa fa-angle-down" style="position:absolute;top:10px;right:5px;z-index:20"></span>
+                </div><span style="position: relative;top:6px; float: left;margin-left: 10px;">—</span>
+                <div class='input-group date'  style="width:115px;position: relative;float: left;margin-left: 5px;">
+                    <input type='text' class="form-control" id="datetimepicker2" style="height: 29px;width: 120px;background: #ffffff;" autocomplete="off" readonly="readonly"/>
+                    <span class="fa fa-angle-down" style="position:absolute;top:10px;right:5px;z-index:20"></span>
+                </div>
+                <span id="wtAcrossSign" style="color:red;font-size:12px;margin:10px;display: inline-block;"><i class="fa fa-exclamation-circle"></i>跨越1天</span>
+            </div>
+        </div>
+        <div>
+            <label class="control-label"></label>
+            <div class="control-form-item">
+                <label class="control-label" style="width:100%;text-align:left">
+                    <input type="checkbox" name="wtStartMin"> 设置设置上班最早打卡时间，上班前
+                    <input id="wtStartMin" type="number" min="0" max="60" class="form-control" style="width:70px;display:inline-block" readonly>分钟可以打卡。
+                </label><br/>
+                <label class="control-label" style="width:100%;text-align:left">
+                    <input type="checkbox" name="wtEndMin"> 设置设置下班最晚打卡时间，下班后
+                    <input id="wtEndMin" type="number" min="0" max="60" class="form-control" style="width:70px;display:inline-block" readonly>分钟不可以打卡。
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">上班日期：</label>
+            <div class="control-form-item">
+                <label class="control-label" style="width:100%;text-align:left">
+                    <input type="radio" name="workDateType" value="1" checked>常规班制度（周一至周五上班，周六日双休，以法定节假日优先决定休息或补班）
+                </label>
+                <label class="control-label" style="width:100%;text-align:left">
+                    <input type="radio" name="workDateType" value="2">特殊日期设定设置
+                </label>
+                <div>
+                    <label class="control-label">上班时间：</label>
+                    <div class="control-form-item" style="padding-top:10px">
+                        <label class="weekday-label">
+                            <input type="checkbox" name="weekday" value="monday" disabled>星期一
+                        </label>
+                        <label class="weekday-label">
+                            <input type="checkbox" name="weekday" value="tuesday" disabled>星期二
+                        </label>
+                        <label class="weekday-label">
+                            <input type="checkbox" name="weekday" value="wednesday" disabled>星期三
+                        </label>
+                        <label class="weekday-label">
+                            <input type="checkbox" name="weekday" value="thursday" disabled>星期四
+                        </label>
+                        <label class="weekday-label">
+                            <input type="checkbox" name="weekday" value="friday" disabled>星期五
+                        </label>
+                        <label class="weekday-label">
+                            <input type="checkbox" name="weekday" value="saturday" disabled>星期六
+                        </label>
+                        <label class="weekday-label">
+                            <input type="checkbox" name="weekday" value="sunday" disabled>星期日
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</script>
+
+<script  type="text/x-jquery-tmpl" id="addPlaceTmpl">
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="control-label" >考勤地点名称:</label>
+            <div class="control-component" style="width:450px">
+                <input id="placeName" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group" style="border-bottom:1px solid #EEEEEE;padding-bottom:20px;">
+        <label class="control-label" >办公地点类型：</label>
+        <div class="control-component" style="width:158px">
+            <select class="form-control" id="waType" onchange="onChangeWaCompany()">
+                <option value="公共考勤地点">公共考勤地点</option>
+                <option value="厂商考勤地点">厂商考勤地点</option>
+            </select>
+        </div>
+        <label class="control-label">所属厂商：</label>
+        <div class="control-component" style="width:158px">
+            <select class="form-control" id="waCompany"></select>
+        </div>
+        </div>
+        <div class="form-group">
+            <div  style="width:50%;float:left;">
+                <div class="form-group">
+                <label class=" control-label">考勤地点地址:</label>
+                <div class="control-component" style="margin-top:6px;">
+                    <input type="text"  id="address1" class="form-control">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">考勤地址坐标:</label>
+                    <div class="control-component" style="margin-top:6px;">
+                        <input type="text" readonly="true" id="lnglat" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">打卡范围半径:</label>
+                    <div class="control-component" style="position:relative;">
+                        <input id="across" type="text" class="form-control" style="width:88%"><span style="position: absolute;right:0;top:0;line-height: 34px;color:#333;font-size:12px">米</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group" style="width:50%;float:left;margin-bottom:0px;margin-top:6px;">
+                <div class="form-group" style="padding-bottom:0">
+                    <div class="form-group has-feedback" style="padding-bottom:0">
+                        <span class="glyphicon glyphicon-search form-control-feedback" style="left:10px;"></span>
+                        <input type="text" id="tipinput" class="form-control" style="padding-left:40px; width: 266px;" placeholder="请输入地点">
+                    </div>
+                </div>
+                <div id="container" style="width:266px;height:200px;border:1px solid #EEEEEE;"></div>
+            </div>
+
+        </div>
+    </form>
+</script>
+
+<script    type="text/x-jquery-tmpl" id="addRuleTmpl">
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">考勤规则名称：</label>
+            <div class="col-sm-6">
+                <input type="text"  id="ruleName"  class="form-control" autocomplete="off"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">考勤时间：</label>
+            <div class="col-sm-6">
+                <select id="datetimepicker5"  class="selectpicker show-tick form-control">
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">考勤地点：</label>
+            <div class="col-sm-6" style="margin-top:6px;" >
+                <span id="selectPlace" style="display: none"></span><span id="ruleShezhi" style="color:#4F9FFF;cursor: pointer;" >设置</span>
+                <span class="error fa fa-exclamation-circle fn-hide" style="top:22px">考勤地点不能为空!</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">弹性上下班时间：</label>
+            <div class="col-sm-6">
+                <input type="text"  id="workTime"   class="form-control" autocomplete="off"/>
+            </div>
+            <span style="color:red">*</span> <span>设置为0后则不允许弹性上下班时间。</span>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">迟到时限：</label>
+            <div class="col-sm-6">
+                <input type="text"  id="lateTime"  class="form-control" autocomplete="off"/>
+            </div>
+            <span style="color:red">*</span>  <span>设置为0后不允许迟到。</span>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-3 control-label">考勤成员：</label>
+            <div class="col-sm-6" style="margin-top:6px;">
+               <span id="ruleShezhi1" style="color:#4F9FFF;cursor: pointer;">设置</span>
+               <span class="error fa fa-exclamation-circle fn-hide" style="top:22px">考勤成员不能为空！</span>
+            </div>
+        </div>
+        <div class="form-group" id="selectsPeople" style="display:none;">
+            <div style="padding-left:125px;padding-right:50px; max-height: 200px;overflow-y: auto;">
+                <table class="table table-striped" id="selectsPeople1">
+                </table>
+            </div>
+        </div>
+    </form>
+</script>
+
+
+
+</html>

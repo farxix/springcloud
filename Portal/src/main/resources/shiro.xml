@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+				http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--  基于表单登录的权限校验配置 -->
+    <bean id="sessionIdGenerator" class="org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator"/>
+
+    <bean id="sessionIdCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <constructor-arg value="sid"/>
+        <property name="httpOnly" value="true"/>
+        <property name="maxAge" value="-1"/>
+        <property name="path" value="/"/>
+    </bean>
+
+    <bean id="sessionDAO" class="org.apache.shiro.session.mgt.eis.MemorySessionDAO">
+        <property name="sessionIdGenerator" ref="sessionIdGenerator"/>
+    </bean>
+
+    <bean id="sessionValidationScheduler"
+          class="org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler" destroy-method="disableSessionValidation">
+        <property name="sessionValidationInterval" value="900000"/>
+        <property name="sessionManager" ref="sessionManager"/>
+    </bean>
+
+    <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+        <property name="globalSessionTimeout" value="-1"/>
+        <property name="deleteInvalidSessions" value="true"/>
+        <property name="sessionValidationSchedulerEnabled" value="false"/>
+        <property name="sessionValidationScheduler" ref="sessionValidationScheduler"/>
+        <property name="sessionDAO" ref="sessionDAO"/>
+        <property name="sessionIdCookieEnabled" value="true"/>
+        <property name="sessionIdCookie" ref="sessionIdCookie"/>
+    </bean>
+
+    <!-- shiro整合echcache的缓存配置 -->
+    <!-- 配置Shiro的平台缓存管理 -->
+    <bean id="shiroCacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"/>
+    </bean>
+
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="shiroSecurityRealm" />
+        <!-- 开启Shiro缓存功能，需要在shiro安全管理器中注入shiro的 平台缓存管理器 -->
+        <property name="cacheManager" ref="shiroCacheManager" />
+    </bean>
+
+    <bean id="shiroSecurityRealm" class="com.web.security.ShiroSecurityRealm">
+        <property name="cachingEnabled" value="true" />
+        <property name="authenticationCachingEnabled" value="false" />
+        <property name="authenticationCacheName" value="authenticationCache" />
+        <property name="authorizationCachingEnabled" value="true" />
+        <property name="authorizationCacheName" value="authorizationCache" />
+    </bean>
+
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" depends-on="lifecycleBeanPostProcessor">
+        <property name="proxyTargetClass" value="true" />
+    </bean>
+
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <!-- 安全管理器 -->
+        <property name="securityManager" ref="securityManager"/>
+        <!-- 未认证，跳转到哪个页面 ，如果认证失败，跳转的默认页面 -->
+        <property name="loginUrl" value="/login"/>
+        <!-- 登录页面页面，如果认证成功，则默认跳转的页面 -->
+        <property name="successUrl" value="/index"/>
+        <!-- 如果没有授权，则默认跳转到该页面 -->
+        <property name="unauthorizedUrl" value="/"/>
+        <!-- shiro URL控制过滤器规则：配置的小过滤器链（过滤器栈）：执行从上倒下有顺序  -->
+        <property name="filterChainDefinitions">
+            <value>
+                /assets/** = anon
+                /hessian/** = anon
+                /document/** = anon
+                /tools/** = anon
+                /itsm3/app/** = anon
+                /resource/hessian/** = anon
+                /file/** = anon
+                /index.jsp = anon
+                /login = anon
+                /gtimg = anon
+                /captchaController/** = anon
+                /logout = logout
+                /user/userRegister = anon
+                /user/manager/checkMsgCode = anon
+                /user/manager/changePwd = anon
+                /user/manager/regCheckUser = anon
+                /data/getEncryptKey = anon
+                /data/postForm = anon
+                /data/checkLogin = anon
+                /** = user
+            </value>
+        </property>
+    </bean>
+
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <!-- 必须注入安全管理器 -->
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+    <bean id="secureRemoteInvocationExecutor"
+          class="org.apache.shiro.spring.remoting.SecureRemoteInvocationExecutor">
+        <property name="securityManager" ref="securityManager" />
+    </bean>
+</beans>

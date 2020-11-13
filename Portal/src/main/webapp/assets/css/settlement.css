@@ -1,0 +1,62 @@
+button.btn_default{
+    min-width: 100px;
+    margin: 0;
+    padding: 0;
+    font-family: PingFangSC-Regular;
+    font-size: 13px !important;
+    color: #4F9FFF;
+}
+
+.staticItem{
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    padding-top: 40px;
+    color: #999999;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.staticItem:hover img{
+    transform: scale(1.1,1.1);
+}
+
+.panel-left{
+    width: calc(50% - 10px);
+    float: left;
+    height: 350px;
+}
+
+.panel-right{
+    width: calc(50% - 10px);
+    float: right;
+    height: 350px;
+}
+
+.chartDom{
+    height: 320px;
+}
+
+.chartsGroup{
+    border-top: 1px solid #DADCE2;
+    padding: 0 20px;
+    margin-bottom: 20px
+}
+
+#reportDetailNoneData{
+    border-top: 1px solid #DADCE2;
+    text-align: center;
+    padding: 50px 0 ;
+}
+#mainPanel{
+    background: #fff;
+}
+
+.fixed-table-body{
+    overflow-x: auto;
+    overflow-y: auto;
+}

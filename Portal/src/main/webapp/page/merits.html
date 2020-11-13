@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绩效</title>
+    <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/lib/bootstrap-table.min.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-select.min.css" rel="stylesheet"/>
+    <link href="assets/css/lib/bootstrap-datetimepicker.css" rel="stylesheet"/>
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet"/>
+    <link href="assets/js/lib/layui/css/layui.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/commonSupply.css" rel="stylesheet"/>
+    <link href="assets/css/merits.css" rel="stylesheet"/>
+</head>
+<body style="background: #fff">
+<!--绩效首页 start -->
+<div id="mainPanel">
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active"><a href="#myMerits" data-toggle="tab">待办绩效</a></li>
+        <li><a href="#hisMerits" data-toggle="tab">历史绩效</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content" style="padding-bottom: 20px">
+        <div class="tab-pane fade in active" id="myMerits">
+            <div id="todoMeritsList" class="meritsList"></div>
+        </div>
+        <div class="tab-pane fade" id="hisMerits">
+            <div id="hisMeritsList" class="meritsList"></div>
+        </div>
+        <div class="showMore">加载更多…</div>
+    </div>
+</div>
+<!--绩效首页 end -->
+
+<!--绩效详情页 start -->
+<div id="detailPanel" style="display: none">
+    <div class="panel" style="margin-bottom: 0">
+        <div id="detailMeritsName" class="panel-heading">20200820工作报告</div>
+        <div id="meritsDetail" style="padding: 0 20px">
+            <div id="meritsBaseInfo">
+                <label class="detailLabel">绩效基本信息</label>
+                <div class="panel-border">
+                    <div>
+                        <label class="common-label">绩效标题：</label>
+                        <span class="detailInfoItem"><input id="perfName" name="meritsBaseInfo" readonly></span>
+
+                        <label class="common-label">创建人：</label>
+                        <span class="detailInfoItem"><input id="createBy" name="meritsBaseInfo" readonly></span>
+
+                        <label class="common-label">创建时间：</label>
+                        <span class="detailInfoItem"><input id="createTime" name="meritsBaseInfo" readonly></span>
+                    </div>
+                    <div>
+                        <label class="common-label">绩效类型：</label>
+                        <span class="detailInfoItem"><input id="perfType" name="meritsBaseInfo" readonly></span>
+
+                        <label class="common-label">完成期限：</label>
+                        <span class="detailInfoItem"><input id="deadline" name="meritsBaseInfo" readonly></span>
+
+                        <label class="common-label">超时状态：</label>
+                        <span class="detailInfoItem"><input id="overtime" name="meritsBaseInfo" readonly></span>
+                    </div>
+                </div>
+            </div>
+            <div id="meritsPersonInfo">
+                <label class="detailLabel">绩效所属人信息</label>
+                <div class="panel-border">
+                    <div>
+                        <label class="common-label">姓名：</label>
+                        <span class="detailInfoItem"><input id="name" name="ownerInfo" readonly></span>
+
+                        <label class="common-label">所属组织：</label>
+                        <span class="detailInfoItem"><input id="org" name="ownerInfo" readonly></span>
+
+                        <label class="common-label">所属厂商：</label>
+                        <span class="detailInfoItem"><input id="company" name="ownerInfo" readonly></span>
+                    </div>
+                    <div>
+                        <label class="common-label">职位：</label>
+                        <span class="detailInfoItem"><input id="position" name="ownerInfo" readonly></span>
+                    </div>
+                </div>
+            </div>
+            <div id="meritsOrderInfo">
+                <label class="detailLabel">工单信息</label>
+                <div>
+                    <label class="common-label" style="width: 100px">工单工作总量：</label>
+                    <span class="detailInfoItem">0</span>
+                </div>
+                <table id="meritsOrderTable"></table>
+            </div>
+            <div id="meritsTaskInfo">
+                <label class="detailLabel">工作任务信息</label>
+                <div>
+                    <label class="common-label" style="width: 100px">工单工作总量：</label>
+                    <span class="detailInfoItem" id="taskWorkloadTotal">0</span>
+                </div>
+                <table id="meritsTaskTable"></table>
+            </div>
+            <div id="meritsEvalPersonInfo">
+                <label class="detailLabel">考评人员信息</label>
+                <div class="panel-border">
+                    <div>
+                        <label class="common-label">姓名：</label>
+                        <span class="detailInfoItem"><input id="name_auditor" name="auditorInfo" readonly></span>
+
+                        <label class="common-label">所属组织：</label>
+                        <span class="detailInfoItem"><input id="org_auditor" name="auditorInfo" readonly></span>
+
+                        <label class="common-label">所属厂商：</label>
+                        <span class="detailInfoItem"><input id="company_auditor" name="auditorInfo" readonly></span>
+                    </div>
+                    <div>
+                        <label class="common-label">职位：</label>
+                        <span class="detailInfoItem"><input id="position_auditor" name="auditorInfo" readonly></span>
+                    </div>
+                </div>
+            </div>
+            <div id="meritsEvaluationInfo" style="margin-bottom: 20px">
+                <label class="detailLabel">绩效评分</label>
+                <div class="panel-border">
+                    <div>
+                        <label class="common-label">考评分数：</label>
+                        <div style="display: inline-block;width: 250px;vertical-align: top">
+                            <input class="form-control" id="perfGrade" type="number" min="1" max="100">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px">
+                        <label class="common-label">考评意见：</label>
+                        <div style="display: inline-block;width: calc(100% - 120px);vertical-align: top">
+                            <textarea class="form-control" rows="5" id="perfMessage" maxlength="200"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer text-center">
+            <button id="returnBtn" type="button" class="btn_default">返回</button>
+            <button id="submitBtn" type="button" class="btn_default active">提交</button>
+        </div>
+    </div>
+</div>
+<!--绩效详情页 end -->
+</body>
+<script src="assets/js/lib/jquery.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap.min.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-select.js"></script>
+<script src="assets/js/lib/layui/layui.all.js"></script>
+<script src="assets/js/apiConfig.js" type="text/javascript"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/lib/sweetalert/sweetalert.min.js"></script>
+<script src="assets/js/lib/toastr/toastr.min.js"></script>
+<script src="assets/js/commonUtils.js"></script>
+<script src="assets/js/configurationView/meritsIndex.js" type="text/javascript"></script>
+</html>

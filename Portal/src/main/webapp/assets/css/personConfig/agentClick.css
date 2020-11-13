@@ -1,0 +1,104 @@
+.information{
+    font-size:16px;
+    color:#0C0C0C;
+    top:3px;
+    position:relative;
+}
+.popup-end{
+    margin-bottom:20px;
+}
+.fixed-table-body table {
+    border-bottom: 1px solid transparent !important;}
+.fixed-table-body {
+    height: 100%;}
+ .btn-self-blue {/*padding: 5px 10px;*/
+     border-radius: 4px;
+     background-color: #3197FA;
+    border: 1px solid #00A3FD;
+    color: #ffffff;
+}
+.glyphicon-repeat:before,.glyphicon-remove:before,.glyphicon-bell:before,.glyphicon-edit:before{
+    margin-right:3px;
+}
+
+/*.modal-content{
+    width:800px;
+    height:440px;
+}*/
+.modal-content1{
+    width:400px;
+    height:320px;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+form-control1{
+    width:500px;
+}
+.modal-title{
+    font-weight:600;
+}
+.modal-header .close{
+    font-size:20px;
+}
+.modal-dialogs{
+    margin: 30px auto;
+    position: relative;
+    top: 50%;
+    width:60%;
+    -webkit-transform: translateY(-50%) !important;
+    transform: translateY(-50%) !important;
+}
+.modal-title{
+    float:left
+}
+.form-control{
+    margin-top:3px;
+}
+/*共用tab栏样式*/
+.nav-tabs li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    line-height: 48px;
+}
+.nav-tabs {
+    background: #f9f9fa;
+    border: 0px !important;
+    /*box-shadow: 0 1px 0 0 #DEE0E5;*/
+}
+.nav-tabs li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-tabs>li.active {
+    /*border: 1px solid transparent;*/
+    /*border-top: 2px solid #3197FA;*/
+    border:0;
+}
+.nav-tabs li,.active a, .nav-tabs li.active a:focus, .nav-tabs li.active a:hover{
+    font-weight: 600;
+}
+.nav-tabs li a{
+    /*border:1px solid #ddd;*/
+    /*width:170px;*/
+    text-align: center;
+    height: 48px;
+
+}
+.nav-tabs>li.active:after{left:0%; width:100%;}
+.nav-tabs>li:after{content: "";width:0;height:2px;background:#3197FA;
+    position:absolute;
+    top:0%; left:50%;
+    transition:all .8s;}

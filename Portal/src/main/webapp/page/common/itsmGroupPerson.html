@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style type="text/css">
+    .list-group-item {
+        font-size: 12px;
+    }
+    .person-left{
+        width: 250px;
+    }
+    .person-right{
+        width: 540px;
+    }
+    .table-add{
+        height: 190px;
+    }
+    .fixed-table-pagination {
+        border-top: 1px solid #F1F3F7;
+        background: #FFFFFF;
+        height: 60px;
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+    }
+    .fixed-table-container{
+       padding-bottom: 0 !important;
+       border-top:0;
+       border-left: 0;
+       border-right: 0;
+    }
+    .fixed-table-body table.table-striped tbody tr:nth-of-type(2n + 1), .fixed-table-column table.table-striped tbody tr:nth-of-type(2n + 1) {
+        background: #fff;
+    }
+    .fixed-table-body table.table-striped tbody tr:nth-of-type(2n), .fixed-table-column table.table-striped tbody tr:nth-of-type(2n) {
+        background: #F6F7FB;
+    }
+    .fixed-table-body table.table-striped tbody tr, .fixed-table-body table.table-striped tbody td {
+        border-bottom: 1px solid transparent;
+        border:0;
+    }
+    .fixed-table-header  table.table-striped tbody tr, .fixed-table-header table.table-striped tbody td {
+      border: 0;
+    }
+</style>
+<body>
+<div class="person-left">
+    <div class="person-tip" id="Grouping">组织</div>
+    <div class="overflow-auto"><div class="reso-tree mag-top25" id="groupTree"></div></div>
+</div>
+<div class="person-right">
+    <div class="person-tip">关联的人员</div>
+    <div class="person-right-content">
+        <div class="person-table table-add" style="overflow:hidden">
+            <table id="personTable" class="table table-no-bordered table-striped table-hover-row " style="overflow:auto;"></table>
+        </div>
+        <div class="person-tip">已 选 人 员</div>
+        <div class="person-table table-add" style="height:252px;overflow:hidden">
+            <table id="checkPersonTable" class="table table-no-bordered table-striped table-hover-row " style="overflow:auto;">
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+.form-group .item{
+    display: inline-block;
+    width: calc(100% - 126px);
+    position: relative;
+}
+.form-group .item .input-group{
+    position: relative;
+    top:0;
+    width: 100%;
+}
+.form-group .item .input-group .input-sm{
+    position: absolute;
+    z-index: 9;
+    top: 0px;
+    width: 40px;
+    height: 35px;
+    right: 0;
+}
+.input-sm .glyphicon{
+    top:3px;
+}
+
+.form-group .item .caret_new{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.form-group .control-label{
+    width: 107px;
+    text-align: right;
+}
+
+.col-sm-4 .form-group label{
+    width: 68px;
+}
+.footer{
+    /*position: fixed;*/
+    /*bottom: 0px;*/
+    width: 100%;
+    text-align: center;
+}
+
+.form-wrap{
+    height: 100%;
+    background-color: #ffffff;
+}
+.fixed-table-toolbar .bs-bars{
+    margin: 0px !important;
+}
+span.operate{
+    cursor: pointer;
+    color: #3197FA;
+}
+.has-error span.error{
+    top:10px;
+    right: -16px;
+}
+.panel-body{
+    padding-bottom: 0px;
+}
+
+/* 模板样式*/
+body .row-fluid .c-blue{
+    color:#878787
+}
+body .mini-textbox-border,
+body .mini-buttonedit-border{
+    border-color: #E3E7ED;
+}
+body .mini-textbox-disabled .mini-textbox-input,
+body .mini-buttonedit-disabled .mini-buttonedit-input{
+    border: transparent;
+    color:#999999;
+}
+
+body .mini-textbox-disabled .mini-textbox-border,
+body  .mini-buttonedit-disabled .mini-buttonedit-border{
+    background: #F6F8FA;
+}
+
+body  .mini-popupedit .mini-buttonedit-trigger .mini-buttonedit-icon{
+    background: url(assets/images/arrow@2x.png);
+    background-size: 100%;
+    width:16px;
+    height: 16px;
+}
+body  .mini-datepicker .mini-buttonedit-trigger .mini-buttonedit-icon{
+    background: url(assets/images/calendar@2x.png);
+    background-size: 100%;
+    width:16px;
+    height: 16px;
+}
+body  .mini-buttonedit-button{
+    background: transparent !important;
+    border-color: transparent !important;
+    vertical-align: middle;
+    /** margin-top: 6px;**/
+}
+body .mini-calendar-header,
+body .mini-calendar-footer {
+    border-color: #ffffff;
+    background: #ffffff;
+}
+body .mini-calendar-footer .mini-calendar-tadayButton,
+body .mini-calendar-footer .mini-calendar-clearButton{
+    display: none;
+}
+body .modal-backdrop {
+    z-index: 999;
+}
+.ibox-btn-group{
+    border-bottom: 1px solid #DADCE3;
+}
+.search-container{
+    border: 1px solid #fbfafb;
+    border-top: 1px solid #DADCE3;
+    background: #ffffff;
+    padding: 20px 10px ;
+    box-shadow: 0 1px 2px 0 #DEE0E5;
+    padding-top:60px;
+}
+.panel-default{
+    border: none;
+}
+.col-sm-12 ul{
+    position: relative;
+}
+.col-sm-12 ul li{
+    float: left;
+    margin: 10px 10px;
+}
+.col-sm-12 .form-group .item{
+    width: calc(100%);
+}
+.col-sm-12 ul li .img_left{
+    width: 180px;
+    height: 100px;
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    line-height: 100px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.col-sm-12 ul li .checkbox{
+    display: inline-block !important;
+}
+.col-sm-12 ul li .img_left img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+h4{
+    font-size: 16px;
+    color: #24272E;
+    line-height: 20px;
+    height: 30px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 15px;
+
+}
+.breadcrumb-item{
+    color: #4F9FFF !important;
+}
+.breadcrumb .active{
+    color: #151515 !important;
+}
+.sweet-alert button.cancel, .sweet-alert button.cancel:hover {
+    background-color: rgb(49, 151, 250);
+}
+.fht-cell{width:0px!important;}
+.has-error span.error{
+    top: 40px;
+    left: 0px;
+}
+input[type="checkbox"]:disabled:after,input[type="checkbox"]:disabled{
+    background-color:#F5F5F5;
+    color:#ACA899;
+    cursor:pointer;
+}
+
+#autoWfoid{
+    margin-left: 20px;
+    width: 180px;
+}
+
+.permissionTypeName{
+    font-size: 16px;
+    color: #24272E;
+}
+
+ul.permissionList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.permissionList li{
+    display: inline-block;
+    width: 340px;
+    margin-top: 10px;
+}
+
+ul.permissionList li .img_left{
+    width: 180px;
+    height: 100px;
+    border: 1px solid #DDDDDD;
+    line-height: 100px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+ul.permissionList li .img_left .imgBG{
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.common-label{
+    color: #878787;
+}

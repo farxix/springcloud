@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权限管理</title>
+    <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-table.min.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-table-reorder-rows.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+
+    <link href="assets/css/lib/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="assets/css/common/cascader.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/commonSupply.css" rel="stylesheet"/>
+    <link href="assets/css/layoutit/custom.css" rel="stylesheet" />
+<!--    <link href="assets/js/lib/miniui/themes/default/miniui.css" rel="stylesheet">-->
+<!--    <link href="assets/js/lib/miniui/themes/default/miniui2.css" rel="stylesheet">-->
+<!--    <link href="assets/js/lib/miniui/themes/icons.css" rel="stylesheet">-->
+<!--    <link href="assets/js/lib/miniui/themes/blue2010/skin.css" rel="stylesheet">-->
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/lib/ladda/ladda-themeless.min.css">
+    <link rel="stylesheet" href="assets/css/rule.css">
+
+</head>
+<body >
+<div class="list-wrap ">
+    <div class="ibox-btn-group">
+        <button type="button" class="btn_default" id="addBtn">添加
+        </button>
+    </div>
+
+    <div class="table-wrap" id="table-wrap" style="overflow-x: hidden;margin-bottom: 0">
+        <table class="table table-striped" id="timeSettings">
+
+        </table>
+    </div>
+    <button id="loadMore" class="btn_default" style="width: 100%">加载更多</button>
+</div>
+<div class="form-wrap fn-hide">
+    <div class="ibox-content" style="padding: 0"></div>
+    <div id="footer" class="footer">
+        <button type="button" data-style="zoom-in" class="ladda-button btn dialog-btn dialog-confirm-btn" id="save">保存</button>&nbsp;&nbsp;
+        <button type="button" class="btn dialog-btn dialog-return" id="goback">返回</button>
+    </div>
+</div>
+<!--新增，修改模态框-->
+<div class="modal fade transparentBg animated fadeInDown" id="target_modal"  tabindex="-1"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="detail mini-icon" id="modal_content" style="max-height: 350px;overflow-y: auto;">
+                </div>
+            </div>
+            <div class="modal-footer" style="margin-top:50px;">
+                <button type="button" id="left_close" class="btn dialog-btn" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn dialog-btn dialog-confirm-btn" id="toSubmit">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  查询人员  -->
+<div class="modal fade transparentBg animated fadeInDown" id="memberSelectDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width:800px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">选择人员</h4>
+            </div>
+            <div class="modal-body">
+                <div style="width: 200px;display: inline-block;vertical-align: top;height: 420px;overflow-y: auto;border-right: 1px solid #ccc">
+                    <div id="orgTree"></div>
+                </div>
+                <div style="width: 550px;display: inline-block;vertical-align: top;height: 400px;">
+                    <div  id="memberTable_content" style="">
+                        <table id="memberTable" >
+                        </table>
+                    </div>
+                    <div id="memberTable_sure_content" style="">
+                        <table id="memberTable_sure">
+
+                        </table>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dialog-btn" data-dismiss="modal">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="memberSelectDialogConfirmBtn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 选择特定层级 start -->
+<div class="modal fade" id="batchExportDepDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" style="width: 600px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close clear" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" style="border: 0px;">选择部门</h4>
+            </div>
+            <div class="modal-body" style="min-height:200px;max-height: 440px;overflow: auto">
+                <div id="selectedDepTree"></div>
+            </div>
+            <div class="modal-footer" style="margin: 0 10px">
+                <button type="button" class="btn dialog-btn" data-dismiss="modal" aria-hidden="true">取消</button>
+                <button type="button" class="ladda-button btn dialog-btn dialog-confirm-btn" id="batchExportDepSelectedBtn" data-style="zoom-in">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 选择特定层级 end -->
+</body>
+<script type="text/javascript">
+    Global ={};
+</script>
+<!-- Mainly scripts -->
+<script src="assets/js/lib/jquery.js"></script>
+<script src="assets/js/lib/bootstrap/jquery.tablednd.min.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap.min.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-reorder-rows.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-modal.js" ></script>
+<script src="assets/js/lib/bootstrap/bootstrap-dialog/js/bootstrap-dialog.js"></script>
+<script src="assets/js/lib/webuploader/dist/webuploader.js" ></script>
+<!--<script src="assets/js/swfuploadHandle.js" ></script>-->
+<script src="assets/js/lib/jquery.tmpl.min.js"></script>
+<script src="assets/js/toolUtil.js"></script>
+<script src="assets/js/apiConfig.js"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-select.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-treeview.js"></script>
+
+<script src="assets/js/lib/miniui/miniui.js" ></script>
+<script src="assets/js/uitoolUtil.js" ></script>
+<script src="assets/js/swfuploadHandle.js" ></script>
+
+<script src="assets/js/lib/ladda/spin.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.min.js"></script>
+<script src="assets/js/lib/ladda/ladda.jquery.min.js"></script>
+
+<script src="assets/js/lib/sweetalert/sweetalert.min.js" ></script>
+<script src="assets/js/lib/toastr/toastr.min.js"></script>
+<script src="assets/js/formValidate.js"></script>
+<script src="assets/js/configurationView/rule.js"></script>
+
+
+
+<script type="text/x-jquery-tmpl" id="cfg-template">
+    <div class="panel">
+        <div class="panel-heading">权限分配</div>
+        <div class="panel-body">
+            <form id="form">
+            {{tmpl() '#form-template'}}
+            </form>
+        </div>
+     </div>
+</script>
+
+<script type="text/x-jquery-tmpl" id="form-template">
+    <div class="form-group">
+         <label class="common-label" style="width:50px;text-align:left">成员:</label>
+         <div class="item">
+             <input type="text" class="form-control" id="autoWfoid" readonly style="background-color:#fff;color:#ACA899;margin:0">
+         </div>
+    </div>
+    <div style="border: 1px solid #DDDDDD;padding:10px 20px 20px 20px">
+        <div class="permissionTypeName">管理类：</div>
+        <label class="common-label" style="margin-top:10px">
+             全部权限：
+            <input type="checkbox" id="check_all" value="Web_all"> 开通全部权限
+        </label>
+        <ul class="permissionList" data-type="manager">
+            <li>
+                <div class="img_left">
+                    <span class="imgBG" style="background: #4F9FFF">
+                        <img src="assets/images/role/renwuguanli.png" alt="">
+                    </span>
+                    <span> 任务管理</span>
+                </div>
+                <label><input type="checkbox" name="rule_list" value="Web_set_task">开通权限</label>
+            </li>
+            <li>
+                <div class="img_left">
+                    <span class="imgBG" style="background: #4F9FFF">
+                        <img src="assets/images/role/jixiaoguanli.png" alt="">
+                    </span>
+                    <span> 绩效管理</span>
+                </div>
+                <label><input type="checkbox" name="rule_list" value="Web_set_merit">开通权限</label>
+            </li>
+            <li>
+                <div class="img_left">
+                    <span class="imgBG" style="background: #FBA140">
+                        <img src="assets/images/role/jiesuanguanli.png" alt="">
+                    </span>
+                    <span> 结算管理</span>
+                </div>
+                <label><input type="checkbox" name="rule_list" value="Web_set_settlement">开通权限</label>
+            </li>
+            <li>
+                <div class="img_left">
+                    <span class="imgBG" style="background: #4F9FFF">
+                        <img src="assets/images/role/kaoqin.png" alt="">
+                    </span>
+                    <span>考勤管理</span>
+                </div>
+                <label><input type="checkbox" name="rule_list" value="Web_set_timecard">开通权限</label>
+            </li>
+<!--            <li>-->
+<!--                <div class="img_left">-->
+<!--                    <span class="imgBG" style="background: #FF7474">-->
+<!--                        <img src="assets/images/role/shenpiguanli.png" alt="">-->
+<!--                    </span>-->
+<!--                    <span>审批管理</span>-->
+<!--                </div>-->
+<!--                <label><input type="checkbox" name="rule_list" value="Web_set_process">开通权限</label>-->
+<!--            </li>-->
+            <li>
+                <div class="img_left">
+                    <span class="imgBG" style="background: #4F9FFF">
+                        <img src="assets/images/role/qiyeshezhi.png" alt="">
+                    </span>
+                    <span>企业设置</span>
+                </div>
+                <label><input type="checkbox" name="rule_list" value="Web_set_enterprise">开通权限</label>
+            </li>
+            <li>
+                <div class="img_left">
+                    <span class="imgBG" style="background: #4F9FFF">
+                        <img src="assets/images/role/riqiguanli.png" alt="">
+                    </span>
+                    <span>日期管理</span>
+                </div>
+                <label><input type="checkbox" name="rule_list" value="Web_set_date">开通权限</label>
+            </li>
+        </ul>
+    </div>
+
+    <div style="border: 1px solid #DDDDDD;padding:10px 20px 20px 20px;margin-top:20px">
+        <div class="permissionTypeName">配置类：</div>
+        <label class="common-label" style="margin-top:10px">
+             全部权限：<input type="checkbox" id="check_all2" value="Web_all"> 开通全部权限
+        </label>
+        <div class="form-group">
+              <label class="common-label" style="width:60px;text-align:left;vertical-align:top">权限范围:</label>
+              <div class="item">
+                 <div class="checkbox" style="margin-top:0">
+                    <label><input type="radio" name="optionsRadiosinline" id="inlineCheckbox1" value="1">全组织</label>
+                 </div>
+                 <div class="checkbox">
+                    <label><input type="radio" name="optionsRadiosinline" id="inlineCheckbox2" value="2">所属层级及以下</label>
+                 </div>
+                 <div class="checkbox">
+                    <label style="float: left;"><input type="radio" name="optionsRadiosinline" id="inlineCheckbox3" value="3">特定层级</label>
+                    <span id="only_select" style="color: #4F9FFF;float: left;margin-left: 30px;display:none;">选择特定层级</span>
+                 </div>
+              </div>
+        </div>
+        <ul class="permissionList" data-type="config">
+<!--            <li>-->
+<!--                <div class="img_left">-->
+<!--                    <span class="imgBG" style="background: #FBA140">-->
+<!--                        <img src="assets/images/role/quanxianguanli.png" alt="">-->
+<!--                    </span>-->
+<!--                    <span>权限管理</span>-->
+<!--                </div>-->
+<!--                <label><input type="checkbox" name="rule_list" value="Web_set_permission">开通权限</label>-->
+<!--            </li>-->
+            <li>
+                <div class="img_left">
+                    <span class="imgBG" style="background: #00DDA3"><img src="assets/images/role/zuzhiguanli.png"></span>
+                    <span>组织管理</span>
+                </div>
+                <label><input type="checkbox" name="rule_list" value="Web_set_group">开通权限</label>
+            </li>
+        </ul>
+    </div>
+</script>
+</html>

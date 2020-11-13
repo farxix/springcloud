@@ -1,0 +1,174 @@
+.res-model-form {
+
+}
+
+.res-model-form .tab-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.res-model-form .tab-content .tab-pane.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.res-model-form .tab-content .tab-pane .label {
+    margin-left: 0;
+    box-sizing: border-box;
+    /*color: #99a9bf;*/
+    color: #333;
+    vertical-align: middle;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.res-model-form .tab-content .tab-pane .value {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.res-model-form .tab-content .tab-pane .file-upload-btn,
+.res-model-form .tab-content .tab-pane .ref-input-btn {
+    position: absolute;
+    top: -7px;
+    right: 1px;
+}
+
+.batch-edit-table .file-upload-btn,
+.batch-edit-table .ref-input-btn {
+    position: absolute;
+    right: 1px;
+    top: 2px;
+}
+
+.batch-edit-table input,
+.batch-edit-table textarea,
+.res-model-form .tab-content .tab-pane input,
+.res-model-form .tab-content .tab-pane textarea {
+    width: 100%;
+}
+
+.batch-edit-table .single-selector,
+.batch-edit-table .single-selector .single-selector-dropdown-content,
+.res-model-form .tab-content .tab-pane .value .single-selector,
+.res-model-form .tab-content .tab-pane .value .single-selector .single-selector-dropdown-content {
+    width: 100%;
+}
+
+.res-model-form .tab-content .tab-pane .value .fileNameInput,
+.res-model-form .tab-content .tab-pane .value .refInput,
+.batch-edit-table .refInput,
+.batch-edit-table .fileNameInput {
+    padding-right: 70px;
+    text-overflow: ellipsis;
+}
+
+.res-model-form .tab-content .tab-pane.row .col-xs-1,
+.res-model-form .tab-content .tab-pane.row .col-sm-1,
+.res-model-form .tab-content .tab-pane.row .col-md-1,
+.res-model-form .tab-content .tab-pane.row .col-lg-1,
+.res-model-form .tab-content .tab-pane.row .col-xs-2,
+.res-model-form .tab-content .tab-pane.row .col-sm-2,
+.res-model-form .tab-content .tab-pane.row .col-md-2,
+.res-model-form .tab-content .tab-pane.row .col-lg-2,
+.res-model-form .tab-content .tab-pane.row .col-xs-3,
+.res-model-form .tab-content .tab-pane.row .col-sm-3,
+.res-model-form .tab-content .tab-pane.row .col-md-3,
+.res-model-form .tab-content .tab-pane.row .col-lg-3,
+.res-model-form .tab-content .tab-pane.row .col-xs-4,
+.res-model-form .tab-content .tab-pane.row .col-sm-4,
+.res-model-form .tab-content .tab-pane.row .col-md-4,
+.res-model-form .tab-content .tab-pane.row .col-lg-4,
+.res-model-form .tab-content .tab-pane.row .col-xs-5,
+.res-model-form .tab-content .tab-pane.row .col-sm-5,
+.res-model-form .tab-content .tab-pane.row .col-md-5,
+.res-model-form .tab-content .tab-pane.row .col-lg-5,
+.res-model-form .tab-content .tab-pane.row .col-xs-6,
+.res-model-form .tab-content .tab-pane.row .col-sm-6,
+.res-model-form .tab-content .tab-pane.row .col-md-6,
+.res-model-form .tab-content .tab-pane.row .col-lg-6,
+.res-model-form .tab-content .tab-pane.row .col-xs-7,
+.res-model-form .tab-content .tab-pane.row .col-sm-7,
+.res-model-form .tab-content .tab-pane.row .col-md-7,
+.res-model-form .tab-content .tab-pane.row .col-lg-7,
+.res-model-form .tab-content .tab-pane.row .col-xs-8,
+.res-model-form .tab-content .tab-pane.row .col-sm-8,
+.res-model-form .tab-content .tab-pane.row .col-md-8,
+.res-model-form .tab-content .tab-pane.row .col-lg-8,
+.res-model-form .tab-content .tab-pane.row .col-xs-9,
+.res-model-form .tab-content .tab-pane.row .col-sm-9,
+.res-model-form .tab-content .tab-pane.row .col-md-9,
+.res-model-form .tab-content .tab-pane.row .col-lg-9,
+.res-model-form .tab-content .tab-pane.row .col-xs-10,
+.res-model-form .tab-content .tab-pane.row .col-sm-10,
+.res-model-form .tab-content .tab-pane.row .col-md-10,
+.res-model-form .tab-content .tab-pane.row .col-lg-10,
+.res-model-form .tab-content .tab-pane.row .col-xs-11,
+.res-model-form .tab-content .tab-pane.row .col-sm-11,
+.res-model-form .tab-content .tab-pane.row .col-md-11,
+.res-model-form .tab-content .tab-pane.row .col-lg-11,
+.res-model-form .tab-content .tab-pane.row .col-xs-12,
+.res-model-form .tab-content .tab-pane.row .col-sm-12,
+.res-model-form .tab-content .tab-pane.row .col-md-12,
+.res-model-form .tab-content .tab-pane.row .col-lg-12 {
+    padding: 0;
+    margin-bottom: 5px;
+    min-height: 35px;
+}
+.copy-btn, .remove-btn {
+    color: #3197FA;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.required {
+    padding-right: 0;
+}
+
+
+.detail-card-ul {
+    max-width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.detail-card-ul li {
+    display: inline-block;
+    width: auto;
+    line-height: 35px;
+}
+
+.detail-card-ul li span.label {
+    width: 100px;
+    margin-left: 0;
+    box-sizing: border-box;
+    color: #99a9bf;
+    text-align: left;
+}
+
+.detail-card-ul li span.value {
+    display: inline-block;
+    /*min-width: 150px;*/
+    width: 200px;
+    /*max-width: 30px;*/
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+.batchEditTableHeaderInlineBtn{
+    display: inline-block;width: 10%;cursor: pointer;padding: 6px;color: #00a3fd;font-size:12px
+}
+
+.bootstrap-table .table td.attrTableCell{
+    padding: 8px 2px !important;
+}

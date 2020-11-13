@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置-日期管理</title>
+    <link href="assets/css/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-table.min.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="assets/css/lib/sweetalert/sweetalert.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/commonSupply.css" rel="stylesheet"/>
+    <link href="assets/css/dateManage.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="panel" style="margin-bottom: 0">
+    <div class="panel-heading">日期管理</div>
+    <div class="panel-form">
+        <label id="dateLabel"></label>
+        <select id="yearSelector" class="form-control"></select>
+        <select id="monthSelector" class="form-control"></select>
+    </div>
+    <div class="panel-body">
+        <div id="calendarPanel">
+            <div class="calendarHead">
+                <div class="weekLabel" style="color: #999">周日</div>
+                <div class="weekLabel">周一</div>
+                <div class="weekLabel">周二</div>
+                <div class="weekLabel">周三</div>
+                <div class="weekLabel">周四</div>
+                <div class="weekLabel">周五</div>
+                <div class="weekLabel" style="color: #999">周六</div>
+            </div>
+            <div id="weekBody" class="weekBody"></div>
+        </div>
+        <div class="calendarPanelExplain">
+            <span class="dateSign flag2">休息</span>
+            <span class="dateSign flag1">上班</span>
+            <span class="circlePoint" style="background: #F8F8F9"></span>
+            <span class="calendarExplainText">已过日期</span>
+            <span class="circlePoint" style="background: rgba(79,159,255,0.15)"></span>
+            <span class="calendarExplainText">鼠标移入</span>
+            <span class="calendarExplainText" style="font-size: 13px;margin-left: 20px">通过点击日期可进行工作模式切换</span>
+        </div>
+    </div>
+    <div class="panel-footer text-center">
+        <button id="saveBtn" class="btn_default active">保存</button>
+    </div>
+</div>
+<script src="assets/js/lib/jquery.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap.min.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table.js" ></script>
+<script src="assets/js/lib/bootstrap/Bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="assets/js/lib/bootstrap/bootstrap-select.js"></script>
+<script src="assets/js/apiConfig.js" type="text/javascript"></script>
+<script src="assets/js/lib/CryptoJS/rollups/aes.js"></script>
+<script src="assets/js/lib/CryptoJS/components/mode-ecb.js"></script>
+<script src="assets/js/lib/CryptoJS/components/pad-nopadding.js"></script>
+<script src="assets/js/lib/sweetalert/sweetalert.min.js" ></script>
+<script src="assets/js/lib/toastr/toastr.min.js"></script>
+<script src="assets/js/configurationView/dateManage.js" type="text/javascript"></script>
+</body>
+</html>

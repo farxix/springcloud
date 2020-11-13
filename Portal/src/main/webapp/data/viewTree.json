@@ -1,0 +1,3956 @@
+{
+    "data": {
+        "nodes": [
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "测试02",
+                        "id": "608",
+                        "sort": -1,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=608"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "手机待办",
+                        "id": "343",
+                        "sort": 1,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=343"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "add-1810",
+                        "id": "655",
+                        "sort": 1,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=655"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "add-1810",
+                        "id": "654",
+                        "sort": 1,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=654"
+                    },
+                    {
+                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "我待办的工单",
+                        "id": "11",
+                        "sort": 1,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=11"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "我待办的工单(批量处理)",
+                        "id": "456",
+                        "sort": 2,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=456"
+                    },
+                    {
+                        "displayText": ":默认(2019-02-07~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "我发出的工单",
+                        "id": "324",
+                        "sort": 2,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=324"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "与我相关的未关闭工单",
+                        "id": "210",
+                        "sort": 3,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=210"
+                    },
+                    {
+                        "displayText": ":默认(2019-02-07~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "我处理过的工单",
+                        "id": "156",
+                        "sort": 3,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=156"
+                    },
+                    {
+                        "displayText": ":默认(2019-05-08~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "手机历史查询",
+                        "id": "344",
+                        "sort": 4,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=344"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "超级历史查询--2期",
+                        "id": "279",
+                        "sort": 4,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=279"
+                    },
+                    {
+                        "displayText": ":默认(2019-05-08~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "历史查询",
+                        "id": "101",
+                        "sort": 4,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=101"
+                    },
+                    {
+                        "displayText": ":默认(2018-02-04~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "超级历史查询",
+                        "id": "224",
+                        "sort": 4,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=224"
+                    },
+                    {
+                        "displayText": ":默认(2018-02-13~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "历史查询(整年)",
+                        "id": "532",
+                        "sort": 5,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=532"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "账号口令开户工单历史查询",
+                        "id": "597",
+                        "sort": 5,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=597"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "人员变动历史信息查询",
+                        "id": "594",
+                        "sort": 5,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=594"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "账号口令开户/销户工单历史查询",
+                        "id": "598",
+                        "sort": 5,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=598"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "通用工单历史查询",
+                        "id": "599",
+                        "sort": 6,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=599"
+                    },
+                    {
+                        "displayText": ":默认(2018-08-11~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本年内打开的变更",
+                        "id": "533",
+                        "sort": 6,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=533"
+                    },
+                    {
+                        "displayText": ":默认(2018-08-06~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "TD突发事件单",
+                        "id": "544",
+                        "sort": 7,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=544"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "待办工单(fanxh)",
+                        "id": "228",
+                        "sort": 10,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=228"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "账号口令审阅工单历史查询",
+                        "id": "595",
+                        "sort": 10,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=595"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "人员组织架构",
+                        "id": "462",
+                        "sort": 11,
+                        "parentId": "1",
+                        "url": ""
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "已登记工单统计",
+                        "id": "500",
+                        "sort": 12,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=500"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "本周我处理过的所有工单",
+                        "id": "501",
+                        "sort": 14,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=501"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "本周侯宇琦处理过的所有工单",
+                        "id": "504",
+                        "sort": 15,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=504"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "本周刘慧芳处理过的所有工单",
+                        "id": "503",
+                        "sort": 16,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=503"
+                    },
+                    {
+                        "displayText": ":默认(2018-08-11~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "我处理过的销户工单",
+                        "id": "507",
+                        "sort": 28,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=507"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "所有处于已登记状态工单",
+                        "id": "494",
+                        "sort": 30,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=494"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "截止上季度超时待处理工单统计",
+                        "id": "515",
+                        "sort": 39,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=515"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "所有超时工单统计",
+                        "id": "510",
+                        "sort": 39,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=510"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "截止三个月前未完成工单",
+                        "id": "517",
+                        "sort": 41,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=517"
+                    },
+                    {
+                        "displayText": ":默认(2018-08-11~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "主机组工单",
+                        "id": "545",
+                        "sort": 42,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=545"
+                    },
+                    {
+                        "displayText": ":默认(2018-10-16~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "BOMC和4A",
+                        "id": "574",
+                        "sort": 45,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=574"
+                    },
+                    {
+                        "displayText": ":默认(2016-11-09~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "数据库变更--导出",
+                        "id": "525",
+                        "sort": 160,
+                        "parentId": "1",
+                        "url": "./viewList.html?viewOid=525"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "当前服务",
+                "id": "1",
+                "sort": 1,
+                "parentId": "-1"
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": ":当天(2019-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本日总部所有变更",
+                                "id": "149",
+                                "sort": 1,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=149"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "本月总部所有变更",
+                                "id": "160",
+                                "sort": 2,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=160"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有总部打开的变更-内容计费",
+                                "id": "377",
+                                "sort": 2,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=377"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "本周总部所有变更",
+                                "id": "198",
+                                "sort": 3,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=198"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "上月（计划开始时间）总部所有变更",
+                                "id": "200",
+                                "sort": 4,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=200"
+                            },
+                            {
+                                "displayText": ":默认(2019-05-08~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月（实际开始时间）总部所有变更",
+                                "id": "202",
+                                "sort": 5,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=202"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "总部所有变更",
+                                "id": "294",
+                                "sort": 155,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=294"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月总部所有变更--导出",
+                                "id": "339",
+                                "sort": 155,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=339"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月总部所有变更--导出",
+                                "id": "340",
+                                "sort": 155,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=340"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "二期总部所有变更",
+                                "id": "237",
+                                "sort": 155,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=237"
+                            },
+                            {
+                                "displayText": ":默认(2016-11-09~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "总部所有变更--导出",
+                                "id": "297",
+                                "sort": 155,
+                                "parentId": "159",
+                                "url": "./viewList.html?viewOid=297"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "变更流程",
+                        "id": "159",
+                        "sort": -1,
+                        "parentId": "104"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "分配给我组的打开事件",
+                                "id": "274",
+                                "sort": 1,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=274"
+                            },
+                            {
+                                "displayText": ":当天(2019-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "今天总部新登记事件",
+                                "id": "264",
+                                "sort": 1,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=264"
+                            },
+                            {
+                                "displayText": ":昨天(2019-08-05~2019-08-05)",
+                                "function": "function(){\"null\"}",
+                                "name": "昨天总部新登记事件",
+                                "id": "265",
+                                "sort": 2,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=265"
+                            },
+                            {
+                                "displayText": ":上周(2019-07-28~2019-08-03)",
+                                "function": "function(){\"null\"}",
+                                "name": "上周总部新登记事件",
+                                "id": "158",
+                                "sort": 3,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=158"
+                            },
+                            {
+                                "displayText": ":本周(2019-08-04~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本周总部新登记事件",
+                                "id": "266",
+                                "sort": 3,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=266"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月总部已打开的事件",
+                                "id": "267",
+                                "sort": 4,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=267"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月总部新登记事件-门户",
+                                "id": "287",
+                                "sort": 5,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=287"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月总部新登记事件",
+                                "id": "268",
+                                "sort": 5,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=268"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月总部新登记事件-积分",
+                                "id": "286",
+                                "sort": 5,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=286"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月总部新登记事件-门户",
+                                "id": "288",
+                                "sort": 5,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=288"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月总部新登记事件-积分",
+                                "id": "285",
+                                "sort": 5,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=285"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月总部新登记事件",
+                                "id": "269",
+                                "sort": 6,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=269"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有总部打开的事件",
+                                "id": "270",
+                                "sort": 7,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=270"
+                            },
+                            {
+                                "displayText": ":默认(2018-08-11~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "所有总部关闭的事件",
+                                "id": "271",
+                                "sort": 8,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=271"
+                            },
+                            {
+                                "displayText": ":默认(2019-07-05~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "所有总部的事件-供导出数据",
+                                "id": "386",
+                                "sort": 9,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=386"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有总部的事件",
+                                "id": "272",
+                                "sort": 9,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=272"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "二期所有总部的事件",
+                                "id": "273",
+                                "sort": 11,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=273"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月总部事件导出视图",
+                                "id": "338",
+                                "sort": 13,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=338"
+                            },
+                            {
+                                "displayText": ":默认(2019-05-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "临时导出视图",
+                                "id": "391",
+                                "sort": 13,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=391"
+                            },
+                            {
+                                "displayText": ":默认(2018-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "总部事件导出视图1",
+                                "id": "276",
+                                "sort": 13,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=276"
+                            },
+                            {
+                                "displayText": ":默认(2019-06-07~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "总部事件导出视图",
+                                "id": "275",
+                                "sort": 13,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=275"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月总部事件导出视图",
+                                "id": "337",
+                                "sort": 13,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=337"
+                            },
+                            {
+                                "displayText": ":默认(2017-12-14~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "总部事件导出视图-HA告警",
+                                "id": "302",
+                                "sort": 13,
+                                "parentId": "157",
+                                "url": "./viewList.html?viewOid=302"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "突发事件流程",
+                        "id": "157",
+                        "sort": -1,
+                        "parentId": "104"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有打开的问题",
+                                "id": "280",
+                                "sort": 1,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=280"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "二期所有问题",
+                                "id": "258",
+                                "sort": 1,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=258"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有问题",
+                                "id": "196",
+                                "sort": 1,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=196"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "今年所有的问题",
+                                "id": "325",
+                                "sort": 2,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=325"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "今年所有的问题",
+                                "id": "197",
+                                "sort": 2,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=197"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "去年发生的问题",
+                                "id": "208",
+                                "sort": 3,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=208"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月发生的问题-导出",
+                                "id": "342",
+                                "sort": 4,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=342"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "benyue",
+                                "id": "439",
+                                "sort": 4,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=439"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "本月发生的问题-导出",
+                                "id": "341",
+                                "sort": 4,
+                                "parentId": "187",
+                                "url": "./viewList.html?viewOid=341"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "问题流程",
+                        "id": "187",
+                        "sort": 3,
+                        "parentId": "104"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "外部变更流程",
+                        "id": "188",
+                        "sort": 4,
+                        "parentId": "104"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "一级协查单",
+                        "id": "189",
+                        "sort": 5,
+                        "parentId": "104"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "电子申告",
+                        "id": "191",
+                        "sort": 6,
+                        "parentId": "104"
+                    },
+                    {
+                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本周机房巡检工单",
+                        "id": "511",
+                        "sort": 34,
+                        "parentId": "104",
+                        "url": "./viewList.html?viewOid=511"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "ITIL标准流程",
+                "id": "104",
+                "sort": 3,
+                "parentId": "-1"
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "我待办的工单(批量处理)",
+                        "id": "573",
+                        "sort": 2,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=573"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "系统运营统计日报",
+                        "id": "554",
+                        "sort": 6,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=554"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "外部变更工单",
+                        "id": "553",
+                        "sort": 7,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=553"
+                    },
+                    {
+                        "displayText": ":默认(2019-05-08~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "贾蕊待处理工单",
+                        "id": "549",
+                        "sort": 8,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=549"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "一级协查单",
+                        "id": "502",
+                        "sort": 9,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=502"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "ITTL标准流程",
+                        "id": "537",
+                        "sort": 10,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=537"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "资源监控核查",
+                        "id": "565",
+                        "sort": 10,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=565"
+                    },
+                    {
+                        "displayText": ":默认(2018-03-24~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "协作服务单",
+                        "id": "551",
+                        "sort": 11,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=551"
+                    },
+                    {
+                        "displayText": ":默认(2016-11-09~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "4A和BOMC变更总申请",
+                        "id": "550",
+                        "sort": 12,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=550"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "4A开户单",
+                        "id": "513",
+                        "sort": 13,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=513"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "4A销户单",
+                        "id": "534",
+                        "sort": 14,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=534"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "定期操作系统备份",
+                        "id": "505",
+                        "sort": 15,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=505"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "处于实施中的监控工单",
+                        "id": "516",
+                        "sort": 15,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=516"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "BOMC和4A销户总申请",
+                        "id": "518",
+                        "sort": 16,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=518"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "BOMC销户单",
+                        "id": "535",
+                        "sort": 17,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=535"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "BOMC开户工单",
+                        "id": "523",
+                        "sort": 18,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=523"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "账号口令",
+                        "id": "520",
+                        "sort": 19,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=520"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "账号口令审阅工单",
+                        "id": "519",
+                        "sort": 20,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=519"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "HP合作厂商服务验收单待办的工单",
+                        "id": "493",
+                        "sort": 21,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=493"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "销户总",
+                        "id": "536",
+                        "sort": 22,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=536"
+                    },
+                    {
+                        "displayText": ":默认(2018-08-05~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "月绩效统计",
+                        "id": "547",
+                        "sort": 23,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=547"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "周报统计全量",
+                        "id": "552",
+                        "sort": 24,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=552"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "超时周报统计",
+                        "id": "546",
+                        "sort": 25,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=546"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "局域网接入工单",
+                        "id": "527",
+                        "sort": 26,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=527"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "直采工单",
+                        "id": "521",
+                        "sort": 27,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=521"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "出库借出",
+                        "id": "538",
+                        "sort": 28,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=538"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "变更事件",
+                        "id": "555",
+                        "sort": 29,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=555"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "备份流程查询",
+                        "id": "508",
+                        "sort": 29,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=508"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "新增总申请工单",
+                        "id": "557",
+                        "sort": 29,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=557"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "一线交接班流程查询",
+                        "id": "526",
+                        "sort": 30,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=526"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "一线机房巡检定时工单",
+                        "id": "466",
+                        "sort": 31,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=466"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "IP互联管理流程",
+                        "id": "564",
+                        "sort": 32,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=564"
+                    },
+                    {
+                        "displayText": ":默认(2019-05-08~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "刘慧芳待处理工单",
+                        "id": "576",
+                        "sort": 35,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=576"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "安全月报",
+                        "id": "556",
+                        "sort": 38,
+                        "parentId": "4",
+                        "url": "./viewList.html?viewOid=556"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "流程查询",
+                "id": "4",
+                "sort": 4,
+                "parentId": "-1"
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "全部备份日志审阅记录",
+                                "id": "592",
+                                "sort": -1,
+                                "parentId": "591",
+                                "url": "./viewList.html?viewOid=592"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "备份日志审阅记录",
+                        "id": "591",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "最近休假",
+                                        "id": "452",
+                                        "sort": -1,
+                                        "parentId": "455",
+                                        "url": "./viewList.html?viewOid=452"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月休假",
+                                        "id": "448",
+                                        "sort": -1,
+                                        "parentId": "455",
+                                        "url": "./viewList.html?viewOid=448"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "休假申请",
+                                "id": "455",
+                                "sort": -1,
+                                "parentId": "446"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"\"}",
+                                "name": "值班表查询",
+                                "id": "447",
+                                "sort": -1,
+                                "parentId": "446",
+                                "url": ""
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "交接班",
+                                "id": "449",
+                                "sort": -1,
+                                "parentId": "446"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的交接班工单",
+                                        "id": "454",
+                                        "sort": -1,
+                                        "parentId": "450",
+                                        "url": "./viewList.html?viewOid=454"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的交接班工单",
+                                        "id": "453",
+                                        "sort": -1,
+                                        "parentId": "450",
+                                        "url": "./viewList.html?viewOid=453"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的交接班工单-导出",
+                                        "id": "451",
+                                        "sort": -1,
+                                        "parentId": "450",
+                                        "url": "./viewList.html?viewOid=451"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "交接班",
+                                "id": "450",
+                                "sort": 1,
+                                "parentId": "446"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "值班管理",
+                        "id": "446",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": ":默认(2018-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "今年所有打开的需求",
+                                "id": "441",
+                                "sort": -1,
+                                "parentId": "440",
+                                "url": "./viewList.html?viewOid=441"
+                            },
+                            {
+                                "displayText": ":默认(2018-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "我提出的需求",
+                                "id": "445",
+                                "sort": -1,
+                                "parentId": "440",
+                                "url": "./viewList.html?viewOid=445"
+                            },
+                            {
+                                "displayText": ":默认(2018-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "今年所有的需求",
+                                "id": "442",
+                                "sort": -1,
+                                "parentId": "440",
+                                "url": "./viewList.html?viewOid=442"
+                            },
+                            {
+                                "displayText": ":默认(2018-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "我处理过的需求",
+                                "id": "444",
+                                "sort": -1,
+                                "parentId": "440",
+                                "url": "./viewList.html?viewOid=444"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "需求记录及跟踪",
+                        "id": "440",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "内容计费维护作业工单",
+                                "id": "524",
+                                "sort": -1,
+                                "parentId": "489",
+                                "url": "./viewList.html?viewOid=524"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "未关闭的工单",
+                                "id": "491",
+                                "sort": -1,
+                                "parentId": "489",
+                                "url": "./viewList.html?viewOid=491"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "内容计费未及时关闭工单人员",
+                                "id": "490",
+                                "sort": -1,
+                                "parentId": "489",
+                                "url": "./viewList.html?viewOid=490"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "内容计费日常工单情况",
+                        "id": "489",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": ":默认(2018-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "机房管理定时审阅/机房授权定时审阅工单",
+                                "id": "529",
+                                "sort": 1,
+                                "parentId": "531",
+                                "url": "./viewList.html?viewOid=529"
+                            },
+                            {
+                                "displayText": ":默认(2018-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "机房管理定时审阅/交接班定时审阅工单",
+                                "id": "530",
+                                "sort": 2,
+                                "parentId": "531",
+                                "url": "./viewList.html?viewOid=530"
+                            },
+                            {
+                                "displayText": ":默认(2018-08-06~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "机房管理定时审阅/机房出入定时审阅工单",
+                                "id": "528",
+                                "sort": 3,
+                                "parentId": "531",
+                                "url": "./viewList.html?viewOid=528"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "机房管理定时审阅",
+                        "id": "531",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "合作厂商服务验收单",
+                        "id": "471",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "配置项新增",
+                                "id": "469",
+                                "sort": -1,
+                                "parentId": "468",
+                                "url": "./viewList.html?viewOid=469"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "配置项变更",
+                                "id": "463",
+                                "sort": -1,
+                                "parentId": "468",
+                                "url": "./viewList.html?viewOid=463"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "配置项批量更新",
+                                "id": "470",
+                                "sort": -1,
+                                "parentId": "468",
+                                "url": "./viewList.html?viewOid=470"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "配置项",
+                        "id": "468",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "function": "function(){\"\"}",
+                                "name": "账号口令配置",
+                                "id": "588",
+                                "sort": -1,
+                                "parentId": "587",
+                                "url": ""
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "账号口令管理",
+                        "id": "587",
+                        "sort": -1,
+                        "parentId": "3",
+                        "url": "./viewList.html?viewOid=587"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月监控管理流程工单",
+                                "id": "379",
+                                "sort": 3,
+                                "parentId": "380",
+                                "url": "./viewList.html?viewOid=379"
+                            },
+                            {
+                                "displayText": ":上周(2019-07-28~2019-08-03)",
+                                "function": "function(){\"null\"}",
+                                "name": "上周监控管理流程工单",
+                                "id": "384",
+                                "sort": 3,
+                                "parentId": "380",
+                                "url": "./viewList.html?viewOid=384"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月监控管理流程工单",
+                                "id": "382",
+                                "sort": 3,
+                                "parentId": "380",
+                                "url": "./viewList.html?viewOid=382"
+                            },
+                            {
+                                "displayText": ":本周(2019-08-04~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本周监控管理流程工单",
+                                "id": "383",
+                                "sort": 3,
+                                "parentId": "380",
+                                "url": "./viewList.html?viewOid=383"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有打开的监控管理流程工单",
+                                "id": "381",
+                                "sort": 3,
+                                "parentId": "380",
+                                "url": "./viewList.html?viewOid=381"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "监控管理",
+                        "id": "380",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": ":本周(2019-08-04~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本周协作服务单",
+                                "id": "569",
+                                "sort": -1,
+                                "parentId": "367",
+                                "url": "./viewList.html?viewOid=569"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有协作服务单",
+                                "id": "368",
+                                "sort": -1,
+                                "parentId": "367",
+                                "url": "./viewList.html?viewOid=368"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有协作服务单",
+                                "id": "567",
+                                "sort": -1,
+                                "parentId": "367",
+                                "url": "./viewList.html?viewOid=567"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月协作服务单",
+                                "id": "370",
+                                "sort": -1,
+                                "parentId": "367",
+                                "url": "./viewList.html?viewOid=370"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月协作服务单",
+                                "id": "568",
+                                "sort": -1,
+                                "parentId": "367",
+                                "url": "./viewList.html?viewOid=568"
+                            },
+                            {
+                                "displayText": ":本周(2019-08-04~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本周协作服务单",
+                                "id": "369",
+                                "sort": -1,
+                                "parentId": "367",
+                                "url": "./viewList.html?viewOid=369"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "协作服务流程",
+                        "id": "367",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":昨天(2019-08-05~2019-08-05)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "昨天省公司处理的一级协查单",
+                                        "id": "355",
+                                        "sort": -1,
+                                        "parentId": "350",
+                                        "url": "./viewList.html?viewOid=355"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的一级协查单",
+                                        "id": "346",
+                                        "sort": -1,
+                                        "parentId": "350",
+                                        "url": "./viewList.html?viewOid=346"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周省公司处理的一级协查单",
+                                        "id": "364",
+                                        "sort": -1,
+                                        "parentId": "350",
+                                        "url": "./viewList.html?viewOid=364"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的一级协查单",
+                                        "id": "348",
+                                        "sort": -1,
+                                        "parentId": "350",
+                                        "url": "./viewList.html?viewOid=348"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的一级协查单",
+                                        "id": "374",
+                                        "sort": -1,
+                                        "parentId": "350",
+                                        "url": "./viewList.html?viewOid=374"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有关闭的一级协查单",
+                                        "id": "347",
+                                        "sort": -1,
+                                        "parentId": "350",
+                                        "url": "./viewList.html?viewOid=347"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月省公司处理的一级协查单",
+                                        "id": "354",
+                                        "sort": -1,
+                                        "parentId": "350",
+                                        "url": "./viewList.html?viewOid=354"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "一级协查",
+                                "id": "350",
+                                "sort": -1,
+                                "parentId": "345"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有关闭的外部变更",
+                                        "id": "353",
+                                        "sort": -1,
+                                        "parentId": "349",
+                                        "url": "./viewList.html?viewOid=353"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月的外部变更",
+                                        "id": "362",
+                                        "sort": -1,
+                                        "parentId": "349",
+                                        "url": "./viewList.html?viewOid=362"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的外部变更",
+                                        "id": "351",
+                                        "sort": -1,
+                                        "parentId": "349",
+                                        "url": "./viewList.html?viewOid=351"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的外部变更",
+                                        "id": "352",
+                                        "sort": -1,
+                                        "parentId": "349",
+                                        "url": "./viewList.html?viewOid=352"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周的外部变更",
+                                        "id": "363",
+                                        "sort": -1,
+                                        "parentId": "349",
+                                        "url": "./viewList.html?viewOid=363"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "外部变更",
+                                "id": "349",
+                                "sort": -1,
+                                "parentId": "345"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "全网流程",
+                        "id": "345",
+                        "sort": -1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年实施完成的监控工单",
+                                        "id": "497",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=497"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "侯宇琦工单处理情况",
+                                        "id": "496",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=496"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有监控工单",
+                                        "id": "357",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=357"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有工单",
+                                        "id": "506",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=506"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有监控工单",
+                                        "id": "371",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=371"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周实施完成的监控工单",
+                                        "id": "499",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=499"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有监控工单",
+                                        "id": "358",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=358"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "刘胜全工单处理情况",
+                                        "id": "486",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=486"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "未关闭监控工单",
+                                        "id": "372",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=372"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年所有直采工单",
+                                        "id": "498",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=498"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "实施完成的直采监控工单",
+                                        "id": "509",
+                                        "sort": -1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=509"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "贾蕊工单情况",
+                                        "id": "495",
+                                        "sort": 1,
+                                        "parentId": "356",
+                                        "url": "./viewList.html?viewOid=495"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "监控管理流程",
+                                "id": "356",
+                                "sort": -1,
+                                "parentId": "184"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "分配给我组的打开事件",
+                                        "id": "477",
+                                        "sort": -1,
+                                        "parentId": "476",
+                                        "url": "./viewList.html?viewOid=477"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有组内处理事件",
+                                        "id": "481",
+                                        "sort": 1,
+                                        "parentId": "476",
+                                        "url": "./viewList.html?viewOid=481"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周组内处理事件",
+                                        "id": "478",
+                                        "sort": 1,
+                                        "parentId": "476",
+                                        "url": "./viewList.html?viewOid=478"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月组内处理事件",
+                                        "id": "480",
+                                        "sort": 1,
+                                        "parentId": "476",
+                                        "url": "./viewList.html?viewOid=480"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "突发事件工单",
+                                "id": "476",
+                                "sort": -1,
+                                "parentId": "184"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "值班管理",
+                                "id": "185",
+                                "sort": 1,
+                                "parentId": "184"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有的合作厂商服务验收单",
+                                        "id": "243",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=243"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的合作厂商服务验收单",
+                                        "id": "475",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=475"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年的合作厂商服务验收单",
+                                        "id": "323",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=323"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的合作厂商服务验收单",
+                                        "id": "241",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=241"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月的合作厂商维护服务验收单",
+                                        "id": "278",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=278"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的合作厂商服务验收单",
+                                        "id": "283",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=283"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本厂所有的合作厂商验收单-export",
+                                        "id": "472",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=472"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "去年的合作厂商服务验收单",
+                                        "id": "322",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=322"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月本厂所有的合作厂商维护服务验收单",
+                                        "id": "484",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=484"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月本厂所有的合作厂商验收单",
+                                        "id": "485",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=485"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月的合作厂商服务验收单",
+                                        "id": "277",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=277"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期本厂所有的合作厂商验收单",
+                                        "id": "483",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=483"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本厂所有的合作厂商服务验收单",
+                                        "id": "492",
+                                        "sort": -1,
+                                        "parentId": "186",
+                                        "url": "./viewList.html?viewOid=492"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "合作厂商服务验收单",
+                                "id": "186",
+                                "sort": 2,
+                                "parentId": "184"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "系统运营",
+                        "id": "184",
+                        "sort": 1,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月新登记的总申请工单视图",
+                                        "id": "431",
+                                        "sort": 1,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=431"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月新登记的总申请工单视图",
+                                        "id": "430",
+                                        "sort": 2,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=430"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的总申请工单视图",
+                                        "id": "437",
+                                        "sort": 3,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=437"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的4A申请工单视图",
+                                        "id": "435",
+                                        "sort": 4,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=435"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的4A申请工单视图",
+                                        "id": "438",
+                                        "sort": 5,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=438"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月新登记的4A申请工单视图",
+                                        "id": "390",
+                                        "sort": 6,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=390"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月新登记的4A申请工单视图",
+                                        "id": "389",
+                                        "sort": 7,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=389"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月新登记的BOMC申请工单视图",
+                                        "id": "432",
+                                        "sort": 8,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=432"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的BOMC申请工单视图",
+                                        "id": "434",
+                                        "sort": 9,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=434"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的BOMC申请工单视图",
+                                        "id": "436",
+                                        "sort": 10,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=436"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月新登记的BOMC申请工单视图",
+                                        "id": "433",
+                                        "sort": 11,
+                                        "parentId": "388",
+                                        "url": "./viewList.html?viewOid=433"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "BOMC和4A",
+                                "id": "388",
+                                "sort": -1,
+                                "parentId": "114"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"\"}",
+                                "name": "IP互联管理报表",
+                                "id": "459",
+                                "sort": -1,
+                                "parentId": "114",
+                                "url": ""
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "已关闭的公告",
+                                        "id": "177",
+                                        "sort": 1,
+                                        "parentId": "171",
+                                        "url": "./viewList.html?viewOid=177"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "已发布的公告",
+                                        "id": "194",
+                                        "sort": 2,
+                                        "parentId": "171",
+                                        "url": "./viewList.html?viewOid=194"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "待审核的公告",
+                                        "id": "195",
+                                        "sort": 3,
+                                        "parentId": "171",
+                                        "url": "./viewList.html?viewOid=195"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的公告",
+                                        "id": "193",
+                                        "sort": 4,
+                                        "parentId": "171",
+                                        "url": "./viewList.html?viewOid=193"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周新申请公告",
+                                        "id": "190",
+                                        "sort": 5,
+                                        "parentId": "171",
+                                        "url": "./viewList.html?viewOid=190"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月新申请公告",
+                                        "id": "192",
+                                        "sort": 6,
+                                        "parentId": "171",
+                                        "url": "./viewList.html?viewOid=192"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有公告",
+                                        "id": "176",
+                                        "sort": 8,
+                                        "parentId": "171",
+                                        "url": "./viewList.html?viewOid=176"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "公告管理",
+                                "id": "171",
+                                "sort": 1,
+                                "parentId": "114"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的入库申请单",
+                                        "id": "296",
+                                        "sort": -1,
+                                        "parentId": "170",
+                                        "url": "./viewList.html?viewOid=296"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的出入库管理工单",
+                                        "id": "248",
+                                        "sort": -1,
+                                        "parentId": "170",
+                                        "url": "./viewList.html?viewOid=248"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有的出入库管理工单",
+                                        "id": "230",
+                                        "sort": 2,
+                                        "parentId": "170",
+                                        "url": "./viewList.html?viewOid=230"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "出入库管理",
+                                "id": "170",
+                                "sort": 2,
+                                "parentId": "114"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"\"}",
+                                        "name": "局域网接入报表",
+                                        "id": "457",
+                                        "sort": -1,
+                                        "parentId": "172",
+                                        "url": ""
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的局域网接入工单",
+                                        "id": "239",
+                                        "sort": 1,
+                                        "parentId": "172",
+                                        "url": "./viewList.html?viewOid=239"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有关闭的局域网接入工单",
+                                        "id": "242",
+                                        "sort": 2,
+                                        "parentId": "172",
+                                        "url": "./viewList.html?viewOid=242"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有的局域网接入工单",
+                                        "id": "222",
+                                        "sort": 3,
+                                        "parentId": "172",
+                                        "url": "./viewList.html?viewOid=222"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "局域网接入管理",
+                                "id": "172",
+                                "sort": 3,
+                                "parentId": "114"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":默认(2019-06-07~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月、本月新登记的帐号口令工单",
+                                        "id": "303",
+                                        "sort": -1,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=303"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有处理结果是不成功的帐号口令工单",
+                                        "id": "308",
+                                        "sort": -1,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=308"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的帐号口令审阅工单",
+                                        "id": "236",
+                                        "sort": -1,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=236"
+                                    },
+                                    {
+                                        "displayText": ":默认(2019-06-07~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月、本月新登记的帐号口令相关通用工单",
+                                        "id": "304",
+                                        "sort": -1,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=304"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"\"}",
+                                        "name": "帐号口令配置",
+                                        "id": "461",
+                                        "sort": -1,
+                                        "parentId": "173",
+                                        "url": ""
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的帐号口令相关通用工单",
+                                        "id": "306",
+                                        "sort": -1,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=306"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的帐号口令工单",
+                                        "id": "305",
+                                        "sort": -1,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=305"
+                                    },
+                                    {
+                                        "displayText": ":默认(2019-06-07~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月、本月处理结果是不成功的帐号口令工单",
+                                        "id": "307",
+                                        "sort": -1,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=307"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的帐号口令管理工单",
+                                        "id": "233",
+                                        "sort": 1,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=233"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有关闭的帐号口令管理工单",
+                                        "id": "225",
+                                        "sort": 2,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=225"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的帐号口令管理工单",
+                                        "id": "234",
+                                        "sort": 3,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=234"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有的帐号口令管理工单",
+                                        "id": "235",
+                                        "sort": 4,
+                                        "parentId": "173",
+                                        "url": "./viewList.html?viewOid=235"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "帐号口令管理",
+                                "id": "173",
+                                "sort": 4,
+                                "parentId": "114"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有IP地址管理单",
+                                        "id": "261",
+                                        "sort": 1,
+                                        "parentId": "174",
+                                        "url": "./viewList.html?viewOid=261"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有IP地址管理单",
+                                        "id": "262",
+                                        "sort": 1,
+                                        "parentId": "174",
+                                        "url": "./viewList.html?viewOid=262"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有打开的IP地址管理单",
+                                        "id": "259",
+                                        "sort": 1,
+                                        "parentId": "174",
+                                        "url": "./viewList.html?viewOid=259"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周所有IP地址管理单",
+                                        "id": "232",
+                                        "sort": 4,
+                                        "parentId": "174",
+                                        "url": "./viewList.html?viewOid=232"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有IP地址管理单",
+                                        "id": "260",
+                                        "sort": 5,
+                                        "parentId": "174",
+                                        "url": "./viewList.html?viewOid=260"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "IP地址接入管理",
+                                "id": "174",
+                                "sort": 5,
+                                "parentId": "114"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "机房及拨号管理",
+                                "id": "175",
+                                "sort": 6,
+                                "parentId": "114"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "访问管理",
+                        "id": "114",
+                        "sort": 2,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "所有的帐号口令管理工单",
+                        "id": "373",
+                        "sort": 3,
+                        "parentId": "3",
+                        "url": "./viewList.html?viewOid=373"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "外部协作管理",
+                        "id": "183",
+                        "sort": 4,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "ITTL标准流程",
+                        "id": "482",
+                        "sort": 4,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "未关闭的维护作业工单",
+                                        "id": "321",
+                                        "sort": -1,
+                                        "parentId": "179",
+                                        "url": "./viewList.html?viewOid=321"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有的维护作业工单",
+                                        "id": "247",
+                                        "sort": 137,
+                                        "parentId": "179",
+                                        "url": "./viewList.html?viewOid=247"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有的维护作业工单-export",
+                                        "id": "336",
+                                        "sort": 137,
+                                        "parentId": "179",
+                                        "url": "./viewList.html?viewOid=336"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的维护作业工单-export",
+                                        "id": "326",
+                                        "sort": 137,
+                                        "parentId": "179",
+                                        "url": "./viewList.html?viewOid=326"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的维护作业工单",
+                                        "id": "246",
+                                        "sort": 137,
+                                        "parentId": "179",
+                                        "url": "./viewList.html?viewOid=246"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的维护作业工单-export",
+                                        "id": "335",
+                                        "sort": 137,
+                                        "parentId": "179",
+                                        "url": "./viewList.html?viewOid=335"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的帐号口令定期核对工单",
+                                        "id": "375",
+                                        "sort": 137,
+                                        "parentId": "179",
+                                        "url": "./viewList.html?viewOid=375"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的维护作业工单",
+                                        "id": "139",
+                                        "sort": 137,
+                                        "parentId": "179",
+                                        "url": "./viewList.html?viewOid=139"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "维护作业管理",
+                                "id": "179",
+                                "sort": 1,
+                                "parentId": "178"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":默认(2019-06-07~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "定期机房巡检单",
+                                        "id": "250",
+                                        "sort": 1,
+                                        "parentId": "249",
+                                        "url": "./viewList.html?viewOid=250"
+                                    },
+                                    {
+                                        "displayText": ":默认(2019-06-07~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "定期维护作业执行情况检查单",
+                                        "id": "251",
+                                        "sort": 2,
+                                        "parentId": "249",
+                                        "url": "./viewList.html?viewOid=251"
+                                    },
+                                    {
+                                        "displayText": ":默认(2019-06-07~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "定期备份检查单",
+                                        "id": "252",
+                                        "sort": 3,
+                                        "parentId": "249",
+                                        "url": "./viewList.html?viewOid=252"
+                                    },
+                                    {
+                                        "displayText": ":默认(2016-11-09~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有的定时作业计划",
+                                        "id": "253",
+                                        "sort": 4,
+                                        "parentId": "249",
+                                        "url": "./viewList.html?viewOid=253"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "系统运营统计日报",
+                                        "id": "558",
+                                        "sort": 5,
+                                        "parentId": "249",
+                                        "url": "./viewList.html?viewOid=558"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "定时作业计划",
+                                "id": "249",
+                                "sort": 2,
+                                "parentId": "178"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的业务支撑系统日常安全维护",
+                                        "id": "255",
+                                        "sort": 1,
+                                        "parentId": "254",
+                                        "url": "./viewList.html?viewOid=255"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "二期所有的业务支撑系统日常安全维护",
+                                        "id": "256",
+                                        "sort": 2,
+                                        "parentId": "254",
+                                        "url": "./viewList.html?viewOid=256"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "业务支撑系统日常安全维护",
+                                "id": "254",
+                                "sort": 3,
+                                "parentId": "178"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "作业计划管理",
+                        "id": "178",
+                        "sort": 4,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "工程项目交维管理",
+                                "id": "181",
+                                "sort": 1,
+                                "parentId": "180"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "交维管理",
+                        "id": "180",
+                        "sort": 5,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": ":默认(2019-07-07~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月未完成月报提交的系统",
+                                "id": "365",
+                                "sort": -1,
+                                "parentId": "182",
+                                "url": "./viewList.html?viewOid=365"
+                            },
+                            {
+                                "displayText": ":默认(2019-07-07~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月已完成月报提交的系统",
+                                "id": "366",
+                                "sort": -1,
+                                "parentId": "182",
+                                "url": "./viewList.html?viewOid=366"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有未完成月报提交的系统",
+                                "id": "376",
+                                "sort": -1,
+                                "parentId": "182",
+                                "url": "./viewList.html?viewOid=376"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月所有的通用工单",
+                                "id": "143",
+                                "sort": 2,
+                                "parentId": "182",
+                                "url": "./viewList.html?viewOid=143"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有打开的通用工单",
+                                "id": "281",
+                                "sort": 2,
+                                "parentId": "182",
+                                "url": "./viewList.html?viewOid=281"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有的通用工单",
+                                "id": "295",
+                                "sort": 2,
+                                "parentId": "182",
+                                "url": "./viewList.html?viewOid=295"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "二期所有的通用工单",
+                                "id": "257",
+                                "sort": 141,
+                                "parentId": "182",
+                                "url": "./viewList.html?viewOid=257"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "通用任务管理",
+                        "id": "182",
+                        "sort": 6,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "派发至网络部的所有工单",
+                                "id": "213",
+                                "sort": 1,
+                                "parentId": "211",
+                                "url": "./viewList.html?viewOid=213"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "派发至数据部的所有工单",
+                                "id": "214",
+                                "sort": 2,
+                                "parentId": "211",
+                                "url": "./viewList.html?viewOid=214"
+                            },
+                            {
+                                "displayText": ":本月(2019-08-01~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月所有外部互联工单",
+                                "id": "212",
+                                "sort": 3,
+                                "parentId": "211",
+                                "url": "./viewList.html?viewOid=212"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月所有外部互联工单",
+                                "id": "282",
+                                "sort": 3,
+                                "parentId": "211",
+                                "url": "./viewList.html?viewOid=282"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "二期派发至网络部的所有工单",
+                                "id": "244",
+                                "sort": 4,
+                                "parentId": "211",
+                                "url": "./viewList.html?viewOid=244"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "二期派发至数据部的所有工单",
+                                "id": "245",
+                                "sort": 5,
+                                "parentId": "211",
+                                "url": "./viewList.html?viewOid=245"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "外部互联工单",
+                        "id": "211",
+                        "sort": 7,
+                        "parentId": "3"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "本周备份流程工单",
+                                "id": "540",
+                                "sort": 1,
+                                "parentId": "539",
+                                "url": "./viewList.html?viewOid=540"
+                            },
+                            {
+                                "displayText": ":默认(2019-07-07~2019-08-06)",
+                                "function": "function(){\"null\"}",
+                                "name": "本月备份流程工单",
+                                "id": "541",
+                                "sort": 2,
+                                "parentId": "539",
+                                "url": "./viewList.html?viewOid=541"
+                            },
+                            {
+                                "displayText": ":上月(2019-07-01~2019-07-31)",
+                                "function": "function(){\"null\"}",
+                                "name": "上月备份流程工单",
+                                "id": "542",
+                                "sort": 3,
+                                "parentId": "539",
+                                "url": "./viewList.html?viewOid=542"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"null\"}",
+                                "name": "所有备份流程工单",
+                                "id": "543",
+                                "sort": 4,
+                                "parentId": "539",
+                                "url": "./viewList.html?viewOid=543"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "备份流程",
+                        "id": "539",
+                        "sort": 8,
+                        "parentId": "3"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "日常运维管理",
+                "id": "3",
+                "sort": 4,
+                "parentId": "-1"
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                        "function": "function(){\"null\"}",
+                        "name": "上月本人所有的运营管控周报工单",
+                        "id": "584",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=584"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "归属于我的月绩效",
+                        "id": "168",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=168"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "网管组所有未关闭的工单",
+                        "id": "562",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=562"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "本人所有的运营管控周报工单",
+                        "id": "583",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=583"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "分配给我的运维周报",
+                        "id": "575",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=575"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本月所有的运营管控周报工单",
+                        "id": "579",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=579"
+                    },
+                    {
+                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                        "function": "function(){\"null\"}",
+                        "name": "上月本组所有的运营管控周报工单",
+                        "id": "581",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=581"
+                    },
+                    {
+                        "displayText": ":默认(2019-02-07~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "网管融合团队",
+                        "id": "298",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=298"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本月本组所有的运营管控周报工单",
+                        "id": "582",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=582"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "本组所有的运营管控周报工单",
+                        "id": "580",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=580"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "二期所有的运营管控工单",
+                        "id": "263",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=263"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "所有的运营管控周报工单",
+                        "id": "577",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=577"
+                    },
+                    {
+                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                        "function": "function(){\"null\"}",
+                        "name": "上月所有的运营管控周报工单",
+                        "id": "578",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=578"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "管理用视图融合团队",
+                        "id": "299",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=299"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本月本人所有的运营管控周报工单",
+                        "id": "585",
+                        "sort": -1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=585"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "所有的运维周报工单",
+                        "id": "169",
+                        "sort": 1,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=169"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "所有的运维月绩效工单",
+                        "id": "359",
+                        "sort": 2,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=359"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "本组所有的运营管控月绩效工单",
+                        "id": "165",
+                        "sort": 3,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=165"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "即将被强制关闭周报",
+                        "id": "319",
+                        "sort": 3,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=319"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本月所有的运维周报工单",
+                        "id": "293",
+                        "sort": 4,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=293"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本月所有的运维月绩效工单",
+                        "id": "360",
+                        "sort": 5,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=360"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "本组所有未关闭的工单",
+                        "id": "561",
+                        "sort": 6,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=561"
+                    },
+                    {
+                        "displayText": ":默认(2018-08-11~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本组所有的运维周报工单",
+                        "id": "218",
+                        "sort": 7,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=218"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "本组所有未关闭的运维周报工单_可批量处理",
+                        "id": "385",
+                        "sort": 8,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=385"
+                    },
+                    {
+                        "displayText": ":默认(2016-11-09~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本组所有的审阅中状态的周报_可批量处理",
+                        "id": "387",
+                        "sort": 9,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=387"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本月本组所有的运维周报工单",
+                        "id": "220",
+                        "sort": 10,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=220"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本月本组所有的运维月绩效工单",
+                        "id": "361",
+                        "sort": 11,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=361"
+                    },
+                    {
+                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                        "function": "function(){\"null\"}",
+                        "name": "上月本组所有工单",
+                        "id": "473",
+                        "sort": 12,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=473"
+                    },
+                    {
+                        "displayText": ":默认(2019-04-28~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本厂商所有运营管控周报工单",
+                        "id": "217",
+                        "sort": 13,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=217"
+                    },
+                    {
+                        "displayText": ":默认(2019-04-28~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "本厂商所有运营管控月绩效工单",
+                        "id": "586",
+                        "sort": 13,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=586"
+                    },
+                    {
+                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "今天本厂商所有运营管控工单",
+                        "id": "219",
+                        "sort": 14,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=219"
+                    },
+                    {
+                        "displayText": ":默认(2019-01-18~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "亚信--本厂商所有运营管控工单",
+                        "id": "300",
+                        "sort": 15,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=300"
+                    },
+                    {
+                        "displayText": ":默认(2019-01-18~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "王敬忠--本厂商所有运营管控工单",
+                        "id": "301",
+                        "sort": 16,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=301"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "聂总处理的工单",
+                        "id": "514",
+                        "sort": 17,
+                        "parentId": "118",
+                        "url": "./viewList.html?viewOid=514"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "运营管控",
+                "id": "118",
+                "sort": 5,
+                "parentId": "-1"
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今天所有的直采管理VOLTE变更工单",
+                                        "id": "419",
+                                        "sort": 1,
+                                        "parentId": "411",
+                                        "url": "./viewList.html?viewOid=419"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周所有的直采管理VOLTE变更工单",
+                                        "id": "424",
+                                        "sort": 2,
+                                        "parentId": "411",
+                                        "url": "./viewList.html?viewOid=424"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的直采管理VOLTE变更工单",
+                                        "id": "423",
+                                        "sort": 3,
+                                        "parentId": "411",
+                                        "url": "./viewList.html?viewOid=423"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有的直采管理VOLTE变更工单",
+                                        "id": "420",
+                                        "sort": 4,
+                                        "parentId": "411",
+                                        "url": "./viewList.html?viewOid=420"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年所有的直采管理VOLTE变更工单",
+                                        "id": "421",
+                                        "sort": 5,
+                                        "parentId": "411",
+                                        "url": "./viewList.html?viewOid=421"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "去年所有的直采管理VOLTE变更工单",
+                                        "id": "425",
+                                        "sort": 6,
+                                        "parentId": "411",
+                                        "url": "./viewList.html?viewOid=425"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的直采管理VOLTE变更工单",
+                                        "id": "422",
+                                        "sort": 7,
+                                        "parentId": "411",
+                                        "url": "./viewList.html?viewOid=422"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "变更流程",
+                                "id": "411",
+                                "sort": -1,
+                                "parentId": "409"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"\"}",
+                                "name": "本省所有的VOLTE资源",
+                                "id": "428",
+                                "sort": -1,
+                                "parentId": "409",
+                                "url": ""
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今天所有的直采管理VOLTE新建工单",
+                                        "id": "413",
+                                        "sort": 1,
+                                        "parentId": "410",
+                                        "url": "./viewList.html?viewOid=413"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周所有的直采管理VOLTE新建工单",
+                                        "id": "416",
+                                        "sort": 2,
+                                        "parentId": "410",
+                                        "url": "./viewList.html?viewOid=416"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的直采管理VOLTE新建工单",
+                                        "id": "417",
+                                        "sort": 3,
+                                        "parentId": "410",
+                                        "url": "./viewList.html?viewOid=417"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有的直采管理VOLTE新建工单",
+                                        "id": "415",
+                                        "sort": 4,
+                                        "parentId": "410",
+                                        "url": "./viewList.html?viewOid=415"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年所有的直采管理VOLTE新建工单",
+                                        "id": "412",
+                                        "sort": 5,
+                                        "parentId": "410",
+                                        "url": "./viewList.html?viewOid=412"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "去年所有的直采管理VOLTE新建工单",
+                                        "id": "414",
+                                        "sort": 6,
+                                        "parentId": "410",
+                                        "url": "./viewList.html?viewOid=414"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的直采管理VOLTE新建工单",
+                                        "id": "418",
+                                        "sort": 7,
+                                        "parentId": "410",
+                                        "url": "./viewList.html?viewOid=418"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "新建流程",
+                                "id": "410",
+                                "sort": -1,
+                                "parentId": "409"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "VOLTE",
+                        "id": "409",
+                        "sort": -1,
+                        "parentId": "309"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今天所有的直采管理CG变更工单",
+                                        "id": "334",
+                                        "sort": 1,
+                                        "parentId": "327",
+                                        "url": "./viewList.html?viewOid=334"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周所有的直采管理CG变更工单",
+                                        "id": "328",
+                                        "sort": 2,
+                                        "parentId": "327",
+                                        "url": "./viewList.html?viewOid=328"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的直采管理CG变更工单",
+                                        "id": "331",
+                                        "sort": 3,
+                                        "parentId": "327",
+                                        "url": "./viewList.html?viewOid=331"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有的直采管理CG变更工单",
+                                        "id": "332",
+                                        "sort": 4,
+                                        "parentId": "327",
+                                        "url": "./viewList.html?viewOid=332"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年所有的直采管理CG变更工单",
+                                        "id": "404",
+                                        "sort": 5,
+                                        "parentId": "327",
+                                        "url": "./viewList.html?viewOid=404"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "去年所有的直采管理CG变更工单",
+                                        "id": "329",
+                                        "sort": 6,
+                                        "parentId": "327",
+                                        "url": "./viewList.html?viewOid=329"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的直采管理CG变更工单",
+                                        "id": "330",
+                                        "sort": 7,
+                                        "parentId": "327",
+                                        "url": "./viewList.html?viewOid=330"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "变更流程",
+                                "id": "327",
+                                "sort": -1,
+                                "parentId": "310"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"\"}",
+                                "name": "本省所有的CG资源",
+                                "id": "426",
+                                "sort": -1,
+                                "parentId": "310",
+                                "url": ""
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周所有的直采管理CG新建工单",
+                                        "id": "315",
+                                        "sort": -1,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=315"
+                                    },
+                                    {
+                                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今天所有的直采管理CG新建工单",
+                                        "id": "589",
+                                        "sort": 1,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=589"
+                                    },
+                                    {
+                                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今天所有的直采管理CG新建工单",
+                                        "id": "316",
+                                        "sort": 1,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=316"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周所有的直采管理CG新建工单",
+                                        "id": "458",
+                                        "sort": 2,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=458"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的直采管理CG新建工单",
+                                        "id": "314",
+                                        "sort": 3,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=314"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有的直采管理CG新建工单",
+                                        "id": "397",
+                                        "sort": 4,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=397"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年所有的直采管理CG新建工单",
+                                        "id": "317",
+                                        "sort": 5,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=317"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "去年所有的直采管理CG新建工单",
+                                        "id": "318",
+                                        "sort": 6,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=318"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的直采管理CG新建工单",
+                                        "id": "312",
+                                        "sort": 7,
+                                        "parentId": "311",
+                                        "url": "./viewList.html?viewOid=312"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "新建流程",
+                                "id": "311",
+                                "sort": -1,
+                                "parentId": "310"
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "CG",
+                        "id": "310",
+                        "sort": -1,
+                        "parentId": "309"
+                    },
+                    {
+                        "displayText": "",
+                        "nodes": [
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今天所有的直采管理SMSC新建工单",
+                                        "id": "395",
+                                        "sort": 1,
+                                        "parentId": "393",
+                                        "url": "./viewList.html?viewOid=395"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周所有的直采管理SMSC新建工单",
+                                        "id": "398",
+                                        "sort": 2,
+                                        "parentId": "393",
+                                        "url": "./viewList.html?viewOid=398"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的直采管理SMSC新建工单",
+                                        "id": "399",
+                                        "sort": 3,
+                                        "parentId": "393",
+                                        "url": "./viewList.html?viewOid=399"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有的直采管理SMSC新建工单",
+                                        "id": "313",
+                                        "sort": 4,
+                                        "parentId": "393",
+                                        "url": "./viewList.html?viewOid=313"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年所有的直采管理SMSC新建工单",
+                                        "id": "394",
+                                        "sort": 5,
+                                        "parentId": "393",
+                                        "url": "./viewList.html?viewOid=394"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "去年所有的直采管理SMSC新建工单",
+                                        "id": "396",
+                                        "sort": 6,
+                                        "parentId": "393",
+                                        "url": "./viewList.html?viewOid=396"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的直采管理SMSC新建工单",
+                                        "id": "400",
+                                        "sort": 7,
+                                        "parentId": "393",
+                                        "url": "./viewList.html?viewOid=400"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "新建流程",
+                                "id": "393",
+                                "sort": -1,
+                                "parentId": "392"
+                            },
+                            {
+                                "displayText": "",
+                                "nodes": [
+                                    {
+                                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今天所有的直采管理SMSC变更工单",
+                                        "id": "402",
+                                        "sort": 1,
+                                        "parentId": "401",
+                                        "url": "./viewList.html?viewOid=402"
+                                    },
+                                    {
+                                        "displayText": ":本周(2019-08-04~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本周所有的直采管理SMSC变更工单",
+                                        "id": "407",
+                                        "sort": 2,
+                                        "parentId": "401",
+                                        "url": "./viewList.html?viewOid=407"
+                                    },
+                                    {
+                                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "本月所有的直采管理SMSC变更工单",
+                                        "id": "406",
+                                        "sort": 3,
+                                        "parentId": "401",
+                                        "url": "./viewList.html?viewOid=406"
+                                    },
+                                    {
+                                        "displayText": ":上月(2019-07-01~2019-07-31)",
+                                        "function": "function(){\"null\"}",
+                                        "name": "上月所有的直采管理SMSC变更工单",
+                                        "id": "403",
+                                        "sort": 4,
+                                        "parentId": "401",
+                                        "url": "./viewList.html?viewOid=403"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "今年所有的直采管理SMSC变更工单",
+                                        "id": "333",
+                                        "sort": 5,
+                                        "parentId": "401",
+                                        "url": "./viewList.html?viewOid=333"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "去年所有的直采管理SMSC变更工单",
+                                        "id": "408",
+                                        "sort": 6,
+                                        "parentId": "401",
+                                        "url": "./viewList.html?viewOid=408"
+                                    },
+                                    {
+                                        "displayText": "",
+                                        "function": "function(){\"null\"}",
+                                        "name": "所有的直采管理SMSC变更工单",
+                                        "id": "405",
+                                        "sort": 7,
+                                        "parentId": "401",
+                                        "url": "./viewList.html?viewOid=405"
+                                    }
+                                ],
+                                "function": "function(){\"null\"}",
+                                "name": "变更流程",
+                                "id": "401",
+                                "sort": -1,
+                                "parentId": "392"
+                            },
+                            {
+                                "displayText": "",
+                                "function": "function(){\"\"}",
+                                "name": "本省所有的SMSC资源",
+                                "id": "427",
+                                "sort": -1,
+                                "parentId": "392",
+                                "url": ""
+                            }
+                        ],
+                        "function": "function(){\"null\"}",
+                        "name": "SMSC",
+                        "id": "392",
+                        "sort": -1,
+                        "parentId": "309"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "所有未关闭的工单",
+                        "id": "460",
+                        "sort": -1,
+                        "parentId": "309",
+                        "url": "./viewList.html?viewOid=460"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "待审批的工单",
+                        "id": "429",
+                        "sort": 1,
+                        "parentId": "309",
+                        "url": "./viewList.html?viewOid=429"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "直采管理",
+                "id": "309",
+                "sort": 6,
+                "parentId": "-1"
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "未完成工单统计视图",
+                        "id": "560",
+                        "sort": 1,
+                        "parentId": "559",
+                        "url": "./viewList.html?viewOid=560"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "融合团队配置",
+                        "id": "512",
+                        "sort": 2,
+                        "parentId": "559",
+                        "url": ""
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "超时工单统计",
+                        "id": "563",
+                        "sort": 2,
+                        "parentId": "559",
+                        "url": "./viewList.html?viewOid=563"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "未完成工单统计",
+                "id": "559",
+                "sort": 7,
+                "parentId": "-1"
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "故障上报",
+                        "id": "603",
+                        "sort": -1,
+                        "parentId": "600",
+                        "url": "./viewList.html?viewOid=603"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "事件工单",
+                        "id": "602",
+                        "sort": -1,
+                        "parentId": "600",
+                        "url": "./viewList.html?viewOid=602"
+                    },
+                    {
+                        "displayText": ":本月(2019-08-01~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "变更工单",
+                        "id": "601",
+                        "sort": -1,
+                        "parentId": "600",
+                        "url": "./viewList.html?viewOid=601"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "全网接入流程",
+                "id": "600",
+                "sort": 8,
+                "parentId": "-1"
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "融合团队人员信息",
+                        "id": "572",
+                        "sort": -1,
+                        "parentId": "571",
+                        "url": ""
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "岗位信息",
+                        "id": "590",
+                        "sort": -1,
+                        "parentId": "571",
+                        "url": ""
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "工单超过3个月未处理的人员统计",
+                        "id": "570",
+                        "sort": -1,
+                        "parentId": "571",
+                        "url": ""
+                    }
+                ],
+                "function": "function(){\"\"}",
+                "name": "融合团队",
+                "id": "571",
+                "sort": 8,
+                "parentId": "-1",
+                "url": ""
+            },
+            {
+                "displayText": "",
+                "nodes": [
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "定时工单配置",
+                        "id": "163",
+                        "sort": -1,
+                        "parentId": "2",
+                        "url": "./timingSettings.html"
+                    },
+                    {
+                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "测试01",
+                        "id": "609",
+                        "sort": -1,
+                        "parentId": "2",
+                        "url": "./viewList.html?viewOid=609"
+                    },
+                    {
+                        "displayText": ":当天(2019-08-06~2019-08-06)",
+                        "function": "function(){\"null\"}",
+                        "name": "20190412视图change",
+                        "id": "611",
+                        "sort": -1,
+                        "parentId": "2",
+                        "url": "./viewList.html?viewOid=611"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"null\"}",
+                        "name": "20190412change",
+                        "id": "610",
+                        "sort": -1,
+                        "parentId": "2"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "配置小工具",
+                        "id": "164",
+                        "sort": -1,
+                        "parentId": "2",
+                        "url": "./viewConfiguration.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "代理人列表",
+                        "id": "28",
+                        "sort": 1,
+                        "parentId": "2",
+                        "url": "./agentConfiguration.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "工作日配置",
+                        "id": "27",
+                        "sort": 2,
+                        "parentId": "2",
+                        "url": "./calenderConfig.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "工作组配置",
+                        "id": "26",
+                        "sort": 3,
+                        "parentId": "2",
+                        "url": "./groupConfigure.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "字段配置",
+                        "id": "22",
+                        "sort": 4,
+                        "parentId": "2",
+                        "url": "./filedDeploy.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "视图配置",
+                        "id": "23",
+                        "sort": 5,
+                        "parentId": "2",
+                        "url": "./view.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "配置表配置",
+                        "id": "152",
+                        "sort": 6,
+                        "parentId": "2",
+                        "url": "./viewConfiguration.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "代码配置",
+                        "id": "25",
+                        "sort": 7,
+                        "parentId": "2",
+                        "url": "./codeConfig.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "流程配置",
+                        "id": "21",
+                        "sort": 8,
+                        "parentId": "2",
+                        "url": "./workFlowConfiguration.html"
+                    },
+                    {
+                        "displayText": "",
+                        "function": "function(){\"\"}",
+                        "name": "系统配置",
+                        "id": "29",
+                        "sort": 9,
+                        "parentId": "2",
+                        "url": "./systemConfig.html"
+                    }
+                ],
+                "function": "function(){\"null\"}",
+                "name": "配置",
+                "id": "2",
+                "sort": 9,
+                "parentId": "-1"
+            }
+        ],
+        "name": "虚拟根",
+        "id": "-1",
+        "sort": 1,
+        "parentId": "0"
+    },
+    "message": "success",
+    "status": 0,
+    "success": true
+}

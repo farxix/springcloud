@@ -1,0 +1,308 @@
+.row-fluid .control-label{float:left;width:100px/*160px*/;padding-top:5px;text-align:right;}
+.row-fluid .controls{padding-left:10px;padding-right:10px;*display:inline-block;*padding-left:20px;margin-left:100px !important;*margin-left:100px;}
+
+.row-fluid .c-blue {
+    color: #42AAB5;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+
+.row-fluid .c-red {
+    color: #F1353F;
+}
+
+.row-fluid .c-white {
+    color: #FFFFFF;
+}
+
+.row-fluid .bc-grey {
+    border: solid 1px #C7D3DF;
+}
+
+.row-fluid .bgc-blue {
+    background-color: #42AAB5;
+}
+
+.row-fluid .minus + [class*="span"] {
+    margin-left:0;
+}
+
+
+/* textarea */
+.row-fluid .bm-textarea {
+    background-color:#fff;
+    min-height:2em;
+}
+
+.drag2 {
+    top: 5px;
+    right: 100px;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.drag1 {
+    position: absolute;
+    right: 160px;
+    top: 5px;
+    z-index: 10;
+}
+.sidebar-nav .remove1 {
+    display: none;
+}
+
+.edit .demo .remove1 {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 160px;
+    z-index: 10;
+}
+
+.devpreview .remove1 {
+    display: none !Important;
+}
+
+.row-fluid .bb {
+    border-bottom: 1px solid #42AAB5;
+}
+
+.row-fluid .minus {
+    line-height: 2.0em;
+    font-size: 1.2em;
+}
+
+.row-fluid .minus-btn {
+    float: right;
+    margin-right: 0.6em;
+    margin-top: 0.5em;
+}
+
+.row-fluid .ub-img
+{
+    -webkit-background-size:contain;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+/*
+.icon-plus {
+    background-image: url('./img/icon_plus.png');
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.row-fluid .icon-minus {
+    background-image: url('./img/icon_minus.png');
+    width: 1.4em;
+    height: 1.4em;
+}
+*/
+
+.row-fluid .fieldName {
+    padding-left: 0.5em;
+}
+
+.row-fluid .ctextarea textarea {
+    min-height: 48px;
+}
+
+.row-fluid .strong-title {
+    font-weight:bold;
+}
+
+.row-fluid .red-title {
+    color:red;
+}
+
+/*
+.row-fluid .uploader {
+    margin-left:50px !Important;
+}
+*/
+
+.row-fluid .hidden-field {
+    display:none;
+}
+
+.row-fluid .itsm-input-border {
+    background: white;
+    border: solid 1px #a5acb5;
+    width: auto;
+    height: 25px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-color: #ddd;
+    border-radius: 4px;
+}
+
+.row-fluid .as-input {
+    display: inline;
+    width: 100%;
+    height: 25px;
+    line-height: 23px;
+    /*
+    border: 0;
+    padding:0;
+    */
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.row-fluid .icon-add {
+    /*background: url(icons/add.gif) no-repeat;*/
+    font-family:not specified !Important;
+}
+
+.row-fluid .icon-remove {
+    /*background: url(icons/remove.gif) no-repeat;*/
+    font-family:not specified !Important;
+}
+
+.row-fluid .mini-error .mini-buttonedit-border,.mini-textbox-border {
+    margin-right: 0px !important;
+}
+
+.row-fluid .tabCon .tab-column {
+    background-color: #FFFFFF;
+    /*border: 1px solid #DDDDDD;*/
+    border-radius: 4px 4px 4px 4px;
+    /*margin: 15px 0;*/
+    /*padding: 39px 19px 24px;*/
+    position: relative;
+}
+
+
+/*miniui重写CSS*/
+.row-fluid .mini-indent .mini-textbox-border,
+.row-fluid .mini-indent .mini-buttonedit-border
+{
+    margin-right:0;
+}
+
+.row-fluid .mini-textarea
+{
+    display:inline-block  !important;
+    /*height:inherit !important;*/
+}
+
+.row-fluid .mini-textbox
+{
+    width:100%;
+    height:24px;
+    display:inline;
+    padding:0;
+    margin:0;
+    border:0;
+    vertical-align:middle;
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.row-fluid .mini-toolbar .mini-buttonedit
+{
+    width:80%;
+    height:24px;
+    display:inline-block !important;
+    vertical-align:middle;
+    overflow:hidden;
+    position:relative;
+}
+
+.row-fluid .mini-buttonedit
+{
+    width:80%;
+    height:24px;
+    display:inline !important;
+    vertical-align:middle;
+    overflow:hidden;
+    position:relative;
+}
+
+.row-fluid .mini-buttonedit-border
+{
+    background:white;
+    /*border: solid 1px #a5acb5;*/
+    width:auto;
+    height:22px !important;
+    line-height:22px !important;
+    display:block;
+    border-radius : 4px;
+    position:relative;overflow:hidden;
+    padding-right:24px;padding-left:4px;
+}
+
+.row-fluid .mini-buttonedit-input
+{
+    background:none;
+    background:url(about:blank) no-repeat\0;
+    border: 0;
+    height:22px !important;
+    line-height:22px !important;
+    font-family: Verdana;
+    font-size: 9pt;
+    padding: 0;
+    margin:0;
+    outline:none;
+    z-index:1;
+    cursor:text;
+    width:100%;float:right;
+    _position:absolute;
+    _left:2px;
+    _top:0px;
+
+}
+
+.row-fluid input:disabled, select:disabled, textarea:disabled, .readOnlyClass
+{
+    background: #f0f0f0 !important;
+    color : #6d6d6d;
+}
+
+.row-fluid .mini-textbox-border{
+    height : 90%;
+}
+
+.row-fluid .icon-remove::before,.icon-add::before,.icon-download::before {
+    content: "" !important;
+}
+
+.webuploader-pick + div {
+    width:80px !important;
+    height:25px !important;
+    top:-14px !important;
+}
+
+.row-fluid .separator{
+    display : inline-block !important;
+}
+
+.row-fluid .mini-toolbar .webuploader-container{
+    top:10px;
+}
+
+/*
+.row-fluid .mini-toolbar .uploader-list{
+	display:none !important;
+}
+*/
+
+.row-fluid .mini-toolbar .webuploader-pick, .webuploadbtn{
+    height: 20px;
+    line-height: 16px;
+    background: #fbfbfb;
+    color: #333333;
+    background: url(img/upload.gif) no-repeat;
+}
+

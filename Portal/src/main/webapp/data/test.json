@@ -1,0 +1,23 @@
+{
+  "data": {
+        "is_root_node": "false",
+        "overtime": "false",
+        "task_create_by": "系统管理员",
+        "task_create_time": "2019-11-07 17:38:40",
+        "task_data_id": "6",
+        "task_execute_user": "系统管理员",
+        "task_node_id": "node5",
+        "task_oid": "769039",
+        "task_priority": "0",
+        "task_status": "已解决",
+        "task_title": "测试测试",
+        "task_update_time": "2019-11-07 17:38:40",
+        "task_wait_task_oid": "",
+        "task_wf_name": "应用类从账号管理/BOMC开户申请流程",
+        "task_wf_oid": "185",
+        "task_wf_ver": "1"
+  },
+  "message": "success",
+  "status": 0,
+  "success": true
+}

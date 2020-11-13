@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .fixed-table-pagination {
+            border-top: 1px solid #F1F3F7;
+            background: #FFFFFF;
+            height: 60px;
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+        }
+        .person-left{
+            width: 250px;
+        }
+        .person-right{
+            width: 540px;
+        }
+        .person-table{
+          height: 470px;
+        }
+        .fixed-table-container{
+           padding-bottom: 0 !important;
+           border:0;
+        }
+        .fixed-table-body table.table-striped tbody tr:nth-of-type(2n + 1), .fixed-table-column table.table-striped tbody tr:nth-of-type(2n + 1) {
+            background: #fff;
+        }
+        .fixed-table-body table.table-striped tbody tr:nth-of-type(2n), .fixed-table-column table.table-striped tbody tr:nth-of-type(2n) {
+            background: #F6F7FB;
+        }
+        .fixed-table-body table.table-striped tbody tr, .fixed-table-body table.table-striped tbody td {
+            border-bottom: 1px solid transparent;
+              border:0;
+        }
+        .fixed-table-header  table.table-striped tbody tr, .fixed-table-header table.table-striped tbody th {
+          border: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="person-left">
+    <div class="person-tip" id="Grouping">组织</div>
+    <div class="overflow-auto"><div class="reso-tree mag-top25" id="groupTree"></div></div>
+</div>
+<div class="person-right">
+    <div class="person-tip">关联的人员</div>
+    <div class="person-right-content">
+        <div class="person-table"><table id="personTable" class="table  table-striped"></table></div>
+    </div>
+</div>
+<script>
+    function queryGroupUserHandler() {
+        $('#itsmPersonTable').bootstrapTable('refresh');
+    }
+</script>
+</body>
+</html>
