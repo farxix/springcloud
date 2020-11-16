@@ -1,7 +1,7 @@
 //package com.web.service;
 //
 //import com.asiainfo.omp.common.api.Client;
-//import com.asiainfo.omp.portal.security.AESUtils;
+//import com.asiainfo.omp.portal.security.AESUtils2;
 //import com.asiainfo.omp.portal.security.SpringSecurityUtils;
 //import com.asiainfo.omp.portal.security.User;
 //import org.apache.commons.collections4.CollectionUtils;
@@ -54,7 +54,7 @@
 //        // return new Sha256Hash(password, salt).toHex();
 //
 //        /* 使用自定义的AES方式加密密码 */
-//        return AESUtils.encryptWithAES(password);
+//        return AESUtils2.encryptWithAES(password);
 //    }
 //
 //    public String getEncryptedPassword(String password) {
